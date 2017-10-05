@@ -20,8 +20,8 @@ public class DrillingMain implements Study{
 	public void execute() {
 		Calendar date = Calendar.getInstance();
 		date.set(2014, 0, 1);
-		String input = "C:/Users/Justin/SA/mauricioaniche-repodriller-60e48cd/test-repos/git-1";
-		CSVFile csv = new CSVFile("C:/Users/Justin/SA/mauricioaniche-repodriller-60e48cd/test-output/diffs.csv");
+		String input = "./git-1";
+		CSVFile csv = new CSVFile("./diffs.csv");
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
 		.through(Commits.since(date))
