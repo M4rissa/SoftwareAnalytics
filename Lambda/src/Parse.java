@@ -55,7 +55,7 @@ public class Parse {
 
 		});
 		Parse.bw.write(Parse.count + " lambda expressions in " + directory + "\n");
-		Parse.count = 0;
+		// Parse.count = 0;
 	}
  
 	//read file content into a string
@@ -96,6 +96,7 @@ public class Parse {
 	public static void main(String[] args) throws IOException {
 // WHOLE PROJECT
 		ParseFilesInDir("./spring-framework");
+		 System.out.println(Parse.count);
 		Parse.bw.close();
 		Parse.fw.close();
 // SINGLE FILE
