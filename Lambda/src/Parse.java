@@ -16,7 +16,7 @@ import org.eclipse.jdt.core.dom.LambdaExpression;
 
 public class Parse {
 	// static counts and writer, im sure this can be improved
-	public static int count = 0;
+	public int count = 0;
 	private FileWriter fw;
 	private BufferedWriter bw;
 
@@ -41,7 +41,7 @@ public class Parse {
 		cu.accept(new ASTVisitor() {
 
 			public boolean visit(LambdaExpression node) {
-				Parse.count = Parse.count + 1;
+				count+=1;
 				// still need to explore the documentation to see what information we can extract from the node
 				// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
 				boolean l = node.hasParentheses();
@@ -55,7 +55,7 @@ public class Parse {
 			}
 
 		});
-		bw.write(Parse.count + " lambda expressions in " + directory + "\n");
+		bw.write(count + " lambda expressions in " + directory + "\n");
 		// Parse.count = 0;
 	}
 
@@ -100,7 +100,7 @@ public class Parse {
 		// WHOLE PROJECT
 		Parse parse = new Parse();
 		parse.ParseFilesInDir("./spring-framework");
-		System.out.println(Parse.count);
+		System.out.println(parse.count);
 		// SINGLE FILE
 		//		parse(readFileToString("./src/SourceAnalysis.java"), "S.java");
 	}
