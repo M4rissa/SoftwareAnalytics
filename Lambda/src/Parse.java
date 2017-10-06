@@ -16,91 +16,93 @@ import org.eclipse.jdt.core.dom.LambdaExpression;
 
 public class Parse {
 	// static counts and writer, im sure this can be improved
-	 public static int count = 0;
-	 static FileWriter fw;
-	 static BufferedWriter bw;
-	 static {
-	     try {
-	         fw = new FileWriter("results.txt");
-	         bw = new BufferedWriter(Parse.fw);
-	     } 
-	     catch (final IOException e) {
-	         throw new ExceptionInInitializerError(e.getMessage());
-	     }
-	 }
+	public static int count = 0;
+	private FileWriter fw;
+	private BufferedWriter bw;
+
+	public Parse() {
+		try {
+			fw = new FileWriter("results.txt");
+			bw = new BufferedWriter(fw);
+		} 
+		catch (final IOException e) {
+			throw new ExceptionInInitializerError(e.getMessage());
+		}
+	}
 
 	//use ASTParse to parse string of files sourcecode
-	public static void parse(String str, String directory) throws IOException {
+	public void parse(String str, String directory) throws IOException {
 		ASTParser parser = ASTParser.newParser(AST.JLS8);
 		parser.setSource(str.toCharArray());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
- 
+
 		final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
- 
+
 		cu.accept(new ASTVisitor() {
-			
+
 			public boolean visit(LambdaExpression node) {
-			Parse.count = Parse.count + 1;
-			// still need to explore the documentation to see what information we can extract from the node
-			// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
-		    boolean l = node.hasParentheses();
-			try {
-				Parse.bw.write("Declaration of LAMBDA EXPRESSION, parentheses:" + l + ", at line"
-						+ cu.getLineNumber(node.getStartPosition()) + "\n");
-			} catch (IOException e) {
-				e.printStackTrace();
+				Parse.count = Parse.count + 1;
+				// still need to explore the documentation to see what information we can extract from the node
+				// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
+				boolean l = node.hasParentheses();
+				try {
+					bw.write("Declaration of LAMBDA EXPRESSION, parentheses:" + l + ", at line"
+							+ cu.getLineNumber(node.getStartPosition()) + "\n");
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				return false; // do not continue 
 			}
-			return false; // do not continue 
-		}
 
 		});
-		Parse.bw.write(Parse.count + " lambda expressions in " + directory + "\n");
+		bw.write(Parse.count + " lambda expressions in " + directory + "\n");
 		// Parse.count = 0;
 	}
- 
+
 	//read file content into a string
-	public static String readFileToString(String filePath) throws IOException {
+	public String readFileToString(String filePath) throws IOException {
 		StringBuilder fileData = new StringBuilder(1000);
 		BufferedReader reader = new BufferedReader(new FileReader(filePath));
- 
+
 		char[] buf = new char[10];
 		int numRead = 0;
 		while ((numRead = reader.read(buf)) != -1) {
-//			System.out.println(numRead);
+			//			System.out.println(numRead);
 			String readData = String.valueOf(buf, 0, numRead);
 			fileData.append(readData);
 			buf = new char[1024];
 		}
- 
+
 		reader.close();
 		return  fileData.toString();	
 	}
- 
+
 	//loop directory of repository to get java files list and parse it
-	public static void ParseFilesInDir(String directory) throws IOException{
+	public void ParseFilesInDir(String directory) throws IOException{
 		File dir = new File(directory);
 		String[] extensions = new String[] { "java" };
-		Parse.bw.write("Getting all .java files in " + dir.getCanonicalPath()
-				+ " including those in subdirectories \n");
+		bw.write("Getting all .java files in " + dir.getCanonicalPath()
+		+ " including those in subdirectories \n");
 		List<File> files = (List<File>) FileUtils.listFiles(dir, extensions, true);
-		Parse.bw.write(files.size() + " java files in " + directory + "\n");		
+		bw.write(files.size() + " java files in " + directory + "\n");		
 		String filePath = null;
-		 for (File f : files ) {
-			 filePath = f.getAbsolutePath();
-			 if(f.isFile()){
-				 parse(readFileToString(filePath), filePath);
-			 }
-		 }
+		for (File f : files ) {
+			filePath = f.getAbsolutePath();
+			if(f.isFile()){
+				parse(readFileToString(filePath), filePath);
+			}
+		}
+		bw.close();
+		fw.close();
 	}
 
 	public static void main(String[] args) throws IOException {
-// WHOLE PROJECT
-		ParseFilesInDir("./spring-framework");
-		 System.out.println(Parse.count);
-		Parse.bw.close();
-		Parse.fw.close();
-// SINGLE FILE
-//		parse(readFileToString("./src/SourceAnalysis.java"), "S.java");
+		// WHOLE PROJECT
+		Parse parse = new Parse();
+		parse.ParseFilesInDir("./spring-framework");
+		System.out.println(Parse.count);
+		// SINGLE FILE
+		//		parse(readFileToString("./src/SourceAnalysis.java"), "S.java");
 	}
 }
 
