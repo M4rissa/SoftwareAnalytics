@@ -22,7 +22,7 @@ public class Parse {
 
 	public Parse() {
 		try {
-			fw = new FileWriter("results.txt");
+			fw = new FileWriter("C:/Users/Justin/SA/results.txt");
 			bw = new BufferedWriter(fw);
 		} 
 		catch (final IOException e) {
@@ -31,13 +31,12 @@ public class Parse {
 	}
 
 	//use ASTParse to parse string of files sourcecode
-	public void parse(String str, String directory) throws IOException {
+	public void parse(String str) throws IOException {
 		ASTParser parser = ASTParser.newParser(AST.JLS8);
 		parser.setSource(str.toCharArray());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
-
+	
 		final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
-
 		cu.accept(new ASTVisitor() {
 
 			public boolean visit(LambdaExpression node) {
@@ -55,7 +54,9 @@ public class Parse {
 			}
 
 		});
-		bw.write(count + " lambda expressions in " + directory + "\n");
+		System.out.println(count);
+		bw.write(count + " lambda expressions in "  + "\n");
+		bw.flush();
 		// Parse.count = 0;
 	}
 
@@ -89,7 +90,7 @@ public class Parse {
 		for (File f : files ) {
 			filePath = f.getAbsolutePath();
 			if(f.isFile()){
-				parse(readFileToString(filePath), filePath);
+				parse(readFileToString(filePath));
 			}
 		}
 		bw.close();
