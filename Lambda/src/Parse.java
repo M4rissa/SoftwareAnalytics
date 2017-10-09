@@ -59,6 +59,27 @@ public class Parse {
 		bw.flush();
 		// Parse.count = 0;
 	}
+	
+	//use ASTParse to parse string of files sourcecode
+	public int countLambdas(String str) throws IOException {
+		ASTParser parser = ASTParser.newParser(AST.JLS8);
+		parser.setSource(str.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+	
+		final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		cu.accept(new ASTVisitor() {
+
+			public boolean visit(LambdaExpression node) {
+				count+=1;
+				// still need to explore the documentation to see what information we can extract from the node
+				// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
+				return false; // do not continue 
+			}
+
+		});
+		return count;
+		// Parse.count = 0;
+	}
 
 	//read file content into a string
 	public String readFileToString(String filePath) throws IOException {
