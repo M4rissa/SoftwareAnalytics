@@ -44,14 +44,16 @@ import java.util.Collection;
  * See the original discussion at http://stackoverflow.com/a/40803945/411846
  */
 public class WalkAllCommits {
+	
+	static String repoLoc;
 
-	static String path = "C:/Users/Justin/SA/gumtree/";
-
-	public static void main(String[] args) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
-		try (Repository repository = getRepository(path)) {
+	public static void walkRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+		repoLoc = reposDir+repoName+"/";
+		try (Repository repository = getRepository(repoLoc)) {
 			walkCommits(repository);
 		}
 	}
+
 
 	/**
 	 * Gets repository at given fileLocation
@@ -59,7 +61,7 @@ public class WalkAllCommits {
 	 * @return
 	 * @throws IOException
 	 */
-	public static Repository getRepository(String repLocation) throws IOException {
+	private static Repository getRepository(String repLocation) throws IOException {
 		FileRepositoryBuilder builder = new FileRepositoryBuilder();
 		//        builder.setGitDir(new File("C:/Users/Justin/SA/PocketHub"));
 		return builder
@@ -79,7 +81,7 @@ public class WalkAllCommits {
 	 * @throws RefNotFoundException 
 	 * @throws RefAlreadyExistsException 
 	 */
-	public static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		// get a list of all known heads, tags, remotes, ...
 		Collection<Ref> allRefs = repository.getAllRefs().values();
 
@@ -88,14 +90,14 @@ public class WalkAllCommits {
 			//                for( Ref ref : allRefs ) {
 			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
 			//                }
-			Ref head = repository.exactRef("refs/heads/develop"); 		//doesn't work if master isnt called master
+			Ref head = repository.exactRef("refs/heads/master"); 		//doesn't work if master isnt called master
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
 			int count = 0;
 			Git git = new Git(repository);
 			TreeWalk treeWalk = new TreeWalk(repository);
 			//			RevCommit commit = revWalk.next();
-			PrintWriter pw = new PrintWriter(new File("C:/Users/Justin/SA/gumtreeLambdaCount.csv"));
+			PrintWriter pw = new PrintWriter(new File(repoLoc+"LambdaCount.csv"));
 			pw.write("sep=,\n");
 			pw.write("Hash,Lambda count,Time\n");
 			boolean commitBefore = false;
@@ -114,7 +116,7 @@ public class WalkAllCommits {
 		}
 	}
 
-	public static int lambdasInCommit(RevCommit commit,TreeWalk treeWalk) throws MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
+	private static int lambdasInCommit(RevCommit commit,TreeWalk treeWalk) throws MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
 		int lambdaCount = 0;
 		RevTree tree = commit.getTree();
 		//System.out.println("Having tree: " + tree);
@@ -129,7 +131,7 @@ public class WalkAllCommits {
 		while (treeWalk.next()) {
 			String fileName = treeWalk.getPathString();
 			if(fileName.contains(".java")){
-				lambdaCount = parser.countLambdas(parser.readFileToString(path+fileName));
+				lambdaCount = parser.countLambdas(parser.readFileToString(repoLoc+fileName));
 			}
 		}
 		return lambdaCount;
