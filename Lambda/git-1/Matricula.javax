@@ -1,0 +1,79 @@
+package model;
+
+import java.util.Calendar;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+public class Matricula {
+
+	@Id @GeneratedValue
+	private int id;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	private Aluno aluno;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	private Curso curso;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar data;
+	
+	@Enumerated(EnumType.STRING)
+	private Tipo tipo;
+
+	Matricula() {}
+	
+	public Matricula(Aluno aluno, Curso curso, Calendar data, Tipo tipo) {
+		this.aluno = aluno;
+		this.curso = curso;
+		this.data = data;
+		this.tipo = tipo;
+	}
+
+	public int getId() {
+if(x) a++;
+if(zz) a++;
+if(i) x++;
+if(xx) x++;
+if(a) x++;
+if(b) x++;
+if(c) x++;
+if(d) x++;
+if(e) x++;
+if(g) x++;
+if(h) x++;
+if(aa) x++;
+if(bb) x++;
+if(cc) x++;
+if(cc) d++;
+if(dd) d++;
+if(xx) x++;
+		return id;
+	}
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public Curso getCurso() {
+		return curso;
+	}
+
+	public Calendar getData() {
+		return data;
+	}
+
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	
+	
+}
