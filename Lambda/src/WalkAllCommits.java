@@ -97,6 +97,7 @@ public class WalkAllCommits {
 			//			RevCommit commit = revWalk.next();
 			PrintWriter pw = new PrintWriter(new File("C:/Users/Justin/SA/RxJavaLambdaCount.csv"));
 			pw.write("sep=,\n");
+			pw.write("Hash,Lambda count,Time\n");
 			boolean commitBefore = false;
 			for( RevCommit commit : revWalk ) {
 				if(commit.getCommitTime() > 1394233200 || !commitBefore){
