@@ -21,13 +21,13 @@ public class Parse {
 	private BufferedWriter bw;
 
 	public Parse() {
-		try {
-			fw = new FileWriter("C:/Users/Justin/SA/results.txt");
-			bw = new BufferedWriter(fw);
-		} 
-		catch (final IOException e) {
-			throw new ExceptionInInitializerError(e.getMessage());
-		}
+//		try {
+//			fw = new FileWriter("C:/Users/Justin/SA/results.txt");
+//			bw = new BufferedWriter(fw);
+//		} 
+//		catch (final IOException e) {
+//			throw new ExceptionInInitializerError(e.getMessage());
+//		}
 	}
 
 	//use ASTParse to parse string of files sourcecode
@@ -43,20 +43,20 @@ public class Parse {
 				count+=1;
 				// still need to explore the documentation to see what information we can extract from the node
 				// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
-				boolean l = node.hasParentheses();
-				try {
-					bw.write("Declaration of LAMBDA EXPRESSION, parentheses:" + l + ", at line"
-							+ cu.getLineNumber(node.getStartPosition()) + "\n");
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+//				boolean l = node.hasParentheses();
+//				try {
+//					bw.write("Declaration of LAMBDA EXPRESSION, parentheses:" + l + ", at line"
+//							+ cu.getLineNumber(node.getStartPosition()) + "\n");
+//				} catch (IOException e) {
+//					e.printStackTrace();
+//				}
 				return false; // do not continue 
 			}
 
 		});
-		System.out.println(count);
-		bw.write(count + " lambda expressions in "  + "\n");
-		bw.flush();
+//		System.out.println(count);
+//		bw.write(count + " lambda expressions in "  + "\n");
+//		bw.flush();
 		// Parse.count = 0;
 	}
 	

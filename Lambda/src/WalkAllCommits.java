@@ -45,7 +45,7 @@ import java.util.Collection;
  */
 public class WalkAllCommits {
 
-	static String path = "C:/Users/Justin/SA/RxJava/";
+	static String path = "C:/Users/Justin/SA/gumtree/";
 
 	public static void main(String[] args) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		try (Repository repository = getRepository(path)) {
@@ -88,14 +88,14 @@ public class WalkAllCommits {
 			//                for( Ref ref : allRefs ) {
 			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
 			//                }
-			Ref head = repository.exactRef("refs/heads/2.x"); 		//doesn't work if master isnt called master
+			Ref head = repository.exactRef("refs/heads/develop"); 		//doesn't work if master isnt called master
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
 			int count = 0;
 			Git git = new Git(repository);
 			TreeWalk treeWalk = new TreeWalk(repository);
 			//			RevCommit commit = revWalk.next();
-			PrintWriter pw = new PrintWriter(new File("C:/Users/Justin/SA/RxJavaLambdaCount.csv"));
+			PrintWriter pw = new PrintWriter(new File("C:/Users/Justin/SA/gumtreeLambdaCount.csv"));
 			pw.write("sep=,\n");
 			pw.write("Hash,Lambda count,Time\n");
 			boolean commitBefore = false;
