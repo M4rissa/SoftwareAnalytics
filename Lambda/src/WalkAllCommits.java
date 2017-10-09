@@ -33,6 +33,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collection;
 
 
@@ -44,7 +45,7 @@ import java.util.Collection;
  */
 public class WalkAllCommits {
 
-	static String path = "C:/Users/Justin/SA/gumtree/";
+	static String path = "C:/Users/Justin/SA/RxJava/";
 
 	public static void main(String[] args) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		try (Repository repository = getRepository(path)) {
@@ -87,28 +88,27 @@ public class WalkAllCommits {
 			//                for( Ref ref : allRefs ) {
 			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
 			//                }
-			Ref head = repository.exactRef("refs/heads/develop"); 		//doesn't work if master isnt called master
+			Ref head = repository.exactRef("refs/heads/2.x"); 		//doesn't work if master isnt called master
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
 			int count = 0;
 			Git git = new Git(repository);
 			TreeWalk treeWalk = new TreeWalk(repository);
 			//			RevCommit commit = revWalk.next();
-			FileWriter fw = new FileWriter("C:/Users/Justin/SA/gumtreeLambdaCount.txt");
-			BufferedWriter bw = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(new File("C:/Users/Justin/SA/RxJavaLambdaCount.csv"));
+			pw.write("sep=,\n");
 			boolean commitBefore = false;
 			for( RevCommit commit : revWalk ) {
 				if(commit.getCommitTime() > 1394233200 || !commitBefore){
 					git.checkout().setName(commit.name()).call();
 					int lambdaCount = lambdasInCommit(commit,treeWalk);
-					bw.write(commit.getName() + " " + lambdaCount + " " + commit.getCommitTime() + "\r\n");
+					pw.write(commit.getName() + ',' + lambdaCount + ',' + commit.getCommitTime() + "000" + "\n");
 					if(commit.getCommitTime() <= 1394233200){
 						commitBefore = true;
 					}
 				}
 			}
-			bw.close();
-			fw.close();
+			pw.close();
 			//System.out.println("Had " + count + " commits");
 		}
 	}
