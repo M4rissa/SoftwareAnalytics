@@ -19,6 +19,7 @@ public class Parse {
 	public int count = 0;
 	private FileWriter fw;
 	private BufferedWriter bw;
+	private boolean containsLambda = false;
 
 	public Parse() {
 //		try {
@@ -79,6 +80,27 @@ public class Parse {
 		});
 		return count;
 		// Parse.count = 0;
+	}
+	
+	public boolean containsLambda(String str) throws IOException {
+		ASTParser parser = ASTParser.newParser(AST.JLS8);
+		parser.setSource(str.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+	
+		final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		
+		cu.accept(new ASTVisitor() {
+
+			public boolean visit(LambdaExpression node) {
+				containsLambda = true;
+				return true;
+				// still need to explore the documentation to see what information we can extract from the node
+				// ChildPropertyDescriptor body = LambdaExpression.BODY_PROPERTY;
+				 // do not continue 
+			}
+
+		});
+		return containsLambda;
 	}
 
 	//read file content into a string
