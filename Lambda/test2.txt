@@ -1,8 +1,0 @@
-processElements(
-			    roster,
-			    p -> p.getGender().equals("MALE")
-			        && p.getAge() >= 18
-			        && p.getAge() <= 25,
-			    p -> p.getEmailAddress(),
-			    email -> System.out.println(email)
-			);

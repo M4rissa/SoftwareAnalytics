@@ -125,10 +125,10 @@ public class Parse {
 	public void ParseFilesInDir(String directory) throws IOException{
 		File dir = new File(directory);
 		String[] extensions = new String[] { "java" };
-		bw.write("Getting all .java files in " + dir.getCanonicalPath()
-		+ " including those in subdirectories \n");
+//		bw.write("Getting all .java files in " + dir.getCanonicalPath()
+//		+ " including those in subdirectories \n");
 		List<File> files = (List<File>) FileUtils.listFiles(dir, extensions, true);
-		bw.write(files.size() + " java files in " + directory + "\n");		
+//		bw.write(files.size() + " java files in " + directory + "\n");		
 		String filePath = null;
 		for (File f : files ) {
 			filePath = f.getAbsolutePath();
@@ -136,14 +136,14 @@ public class Parse {
 				parse(readFileToString(filePath));
 			}
 		}
-		bw.close();
-		fw.close();
+//		bw.close();
+//		fw.close();
 	}
 
 	public static void main(String[] args) throws IOException {
 		// WHOLE PROJECT
 		Parse parse = new Parse();
-		parse.ParseFilesInDir("./spring-framework");
+		parse.ParseFilesInDir("./repos/spring-framework");
 		System.out.println(parse.count);
 		// SINGLE FILE
 		//		parse(readFileToString("./src/SourceAnalysis.java"), "S.java");
