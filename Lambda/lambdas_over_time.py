@@ -44,6 +44,22 @@ for date in order:
     lambdas_per_time[date] = calculate_current_lambdas(repo_state)
 
 x_times, y_values = zip(*sorted(lambdas_per_time.items(), key=lambda x: x[0]))
-plt.plot(x_times, y_values)
+# plt.plot(x_times, y_values)
 plt.plot([1394755200000], [0], 'ro')  #  release date
+
+# x_times_jgit = []
+# y_values_jgit = []
+# with open("rx_jgit.csv", "r") as f:
+#     for l in f.readlines():
+#         h, n, t = l.strip().split(",")
+#         x_times_jgit.append(int(t))
+#         y_values_jgit.append(int(n))
+# plt.plot(x_times_jgit, y_values_jgit, 'k')
+# plt.xlabel('Java milliseconds')
+# plt.ylabel('Amount of Lambdas')
+# plt.title('Lambda usage evolution in RxJava')
+
+# Thursday, February 4, 2016 1
+# uesday, August 25, 2015
+
 plt.show()
