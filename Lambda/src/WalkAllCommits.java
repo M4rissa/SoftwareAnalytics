@@ -47,8 +47,8 @@ public class WalkAllCommits {
 	
 	static String repoLoc;
 
-	public static void walkRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
-		repoLoc = reposDir+repoName+"/";
+	public static void walkRepo(String reposDir) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+		repoLoc = reposDir;
 		try (Repository repository = getRepository(repoLoc)) {
 			walkCommits(repository);
 		}
@@ -84,7 +84,12 @@ public class WalkAllCommits {
 	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		// get a list of all known heads, tags, remotes, ...
 		Collection<Ref> allRefs = repository.getAllRefs().values();
-
+		for(Ref r: allRefs){
+			if(!r.isSymbolic()){
+				System.out.println(r);
+			}
+		}
+		
 		// a RevWalk allows to walk over commits based on some filtering that is defined
 		try (RevWalk revWalk = new RevWalk( repository )) {
 			//                for( Ref ref : allRefs ) {
