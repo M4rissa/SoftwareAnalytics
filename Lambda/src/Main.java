@@ -8,7 +8,7 @@ import org.eclipse.jgit.api.errors.RefNotFoundException;
 
 public class Main {
 
-	static String reposDir = "./gumtree/";
+	static String reposDir = "./repos/netty/";
  
 	public static void main(String[] args) throws RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
 		WalkAllCommits.walkRepo(reposDir);

@@ -83,10 +83,13 @@ public class WalkAllCommits {
 	 */
 	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		// get a list of all known heads, tags, remotes, ...
+		Ref head = null;
 		Collection<Ref> allRefs = repository.getAllRefs().values();
+		int c = 0;
 		for(Ref r: allRefs){
-			if(!r.isSymbolic()){
-				System.out.println(r);
+			c++;
+			if(c==2){
+				head = r;
 			}
 		}
 		
@@ -95,7 +98,8 @@ public class WalkAllCommits {
 			//                for( Ref ref : allRefs ) {
 			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
 			//                }
-			Ref head = repository.exactRef("refs/heads/master"); 		//doesn't work if master isnt called master
+//			Ref head = repository.exactRef("refs/heads/master"); 		//doesn't work if master isnt called master
+			System.out.println(head);
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
 			int count = 0;
@@ -107,6 +111,7 @@ public class WalkAllCommits {
 			pw.write("Hash,Lambda count,Time\n");
 			boolean commitBefore = false;
 			for( RevCommit commit : revWalk ) {
+				System.out.println(commit.getName());
 				if(commit.getCommitTime() > 1394233200 || !commitBefore){
 					git.checkout().setName(commit.name()).call();
 					int lambdaCount = lambdasInCommit(commit,treeWalk);
