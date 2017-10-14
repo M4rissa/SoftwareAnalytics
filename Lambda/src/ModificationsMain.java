@@ -19,8 +19,8 @@ public class ModificationsMain implements Study{
 	public void execute() {
 		Calendar date = Calendar.getInstance();
 		date.set(2017, 0, 1);
-		String input = "./repos/RxJava";
-		CSVFile csv = new CSVFile("./RxJava_commits.csv");
+		String input = "./repos/spring-framework";
+		CSVFile csv = new CSVFile("./spring-framework_commits_mod.csv");
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
 		 .through(Commits.all())

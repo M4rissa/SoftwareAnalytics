@@ -1,5 +1,5 @@
 *.txt
-*.csv
+# *.csv
 
 # Eclipse
 .classpath
@@ -17,3 +17,7 @@
 # Maven
 log/
 target/
+
+# repos
+repos/
+repos_with_branches/
