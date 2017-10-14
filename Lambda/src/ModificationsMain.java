@@ -1,6 +1,5 @@
 import java.util.Calendar;
 
-import org.repodriller.RepoDriller;
 import org.repodriller.RepositoryMining;
 import org.repodriller.Study;
 import org.repodriller.filter.commit.OnlyInMainBranch;
@@ -10,23 +9,27 @@ import org.repodriller.scm.GitRepository;
 
 public class ModificationsMain implements Study{
 
-	public static void main(String[] args) {
-		new RepoDriller().start(new ModificationsMain());
-	}
+	   private String repo_path;
+	   private String csv_path;
+
+	   public ModificationsMain(String repo_path, String csv_path) {
+		       this.repo_path = repo_path;
+		       this.csv_path = csv_path;
+	   }
 
 
 	@Override
 	public void execute() {
 		Calendar date = Calendar.getInstance();
-		date.set(2017, 0, 1);
-		String input = "./repos/RxJava";
-		CSVFile csv = new CSVFile("./RxJava_commits_upd.csv");
+		date.set(2017, 6, 1);
+		String input = repo_path;
+		CSVFile csv = new CSVFile(csv_path);
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
 		 .through(Commits.all())
 //		.through(Commits.since(date))
 		.filters(new OnlyInMainBranch())
-		.process(new ModificationsVisitorNew(), csv)
+		.process(new ModificationsVisitor(), csv)
 		.mine();
 	}
 

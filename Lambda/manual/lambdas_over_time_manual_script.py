@@ -1,14 +1,17 @@
 import matplotlib.pyplot as plt
 import re
+from matplotlib import colors
+
 #  types 'RENAME', 'COPY', 'MODIFY', 'DELETE', 'ADD'
 # sin UPD se demora 6 minutos,  rename errors 647015, delete_errors 1443687
 # con UPD se demora 11 minutos, rename errors 647556, delete errors 1443376
 # 1 hora el old en spring-framework, 1956, 799954, 3356528
 # 40 ERROR diff for rxjava-core/src/main/java/rx/Observable.java too big
 
-REPO_NAME = 'RxJava'
-METHOD = 'mod'
+REPO_NAME = 'spring-framework'
+METHOD = 'upd'
 
+colors = list(colors.cnames)
 
 class Modification:
 
@@ -90,7 +93,7 @@ x_times, y_values = zip(
     *filter(lambda x: x[0] >= years[0][1], sorted(lambdas_per_time.items(), key=lambda x: x[0])))
 
 plt.plot(x_times, y_values)
-plt.plot([1394755200000], [0], 'ro')  #  release date
+plt.plot([1394755200000], [0], colors[1])  #  release date
 
 plt.axes().set_xticks([x[1] for x in years])
 plt.axes().set_xticklabels([x[0] for x in years])

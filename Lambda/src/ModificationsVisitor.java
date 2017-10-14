@@ -1,13 +1,11 @@
 
 
 import java.io.IOException;
-import java.util.List;
 
 import org.repodriller.domain.Commit;
 import org.repodriller.domain.Modification;
 import org.repodriller.persistence.PersistenceMechanism;
 import org.repodriller.scm.CommitVisitor;
-import org.repodriller.scm.RepositoryFile;
 import org.repodriller.scm.SCMRepository;
 
 public class ModificationsVisitor implements CommitVisitor {
