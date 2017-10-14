@@ -19,14 +19,14 @@ public class ModificationsMain implements Study{
 	public void execute() {
 		Calendar date = Calendar.getInstance();
 		date.set(2017, 0, 1);
-		String input = "./repos/spring-framework";
-		CSVFile csv = new CSVFile("./spring-framework_commits_mod.csv");
+		String input = "./repos/RxJava";
+		CSVFile csv = new CSVFile("./RxJava_commits_upd.csv");
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
 		 .through(Commits.all())
 //		.through(Commits.since(date))
 		.filters(new OnlyInMainBranch())
-		.process(new ModificationsVisitor(), csv)
+		.process(new ModificationsVisitorNew(), csv)
 		.mine();
 	}
 

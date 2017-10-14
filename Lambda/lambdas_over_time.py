@@ -3,9 +3,10 @@ import re
 #  types 'RENAME', 'COPY', 'MODIFY', 'DELETE', 'ADD'
 # sin UPD se demora 6 minutos,  rename errors 647015, delete_errors 1443687
 # con UPD se demora 11 minutos, rename errors 647556, delete errors 1443376
-# 1 hora en spring-framework
+# 1 hora el old en spring-framework, 1956, 799954, 3356528
+# 40 ERROR diff for rxjava-core/src/main/java/rx/Observable.java too big
 
-REPO_NAME = 'spring-framework'
+REPO_NAME = 'RxJava'
 METHOD = 'mod'
 
 
@@ -82,16 +83,15 @@ for date in dates:
         print("Problem with dates")
     lambdas_per_time[date] = calculate_current_lambdas(repo_state)
 
-# print("RENAME ERRORS", rename_errors)
-# print("DELETE ERRORS", delete_errors)
-
-x_times, y_values = zip(*sorted(lambdas_per_time.items(), key=lambda x: x[0]))
-
-plt.plot(x_times, y_values)
-plt.plot([1394755200000], [0], 'ro')  #  release date
 years = [("2013", 1356998400000), ("2014", 1388534400000),
          ("2015", 1420070400000), ("2016", 1451606400000),
          ("2017", 1483228800000)]
+x_times, y_values = zip(
+    *filter(lambda x: x[0] >= years[0][1], sorted(lambdas_per_time.items(), key=lambda x: x[0])))
+
+plt.plot(x_times, y_values)
+plt.plot([1394755200000], [0], 'ro')  #  release date
+
 plt.axes().set_xticks([x[1] for x in years])
 plt.axes().set_xticklabels([x[0] for x in years])
 plt.xlabel('Year')
@@ -113,3 +113,5 @@ plt.title('Lambda usage evolution in {}'.format(REPO_NAME))
 plt.show()
 
 print("ACTUAL LAMBDAS = ", lambdas_per_time[dates[len(dates) - 1]])
+print("RENAME ERRORS", rename_errors)
+print("DELETE ERRORS", delete_errors)
