@@ -1,4 +1,4 @@
-//import java.util.Calendar;
+import java.util.Calendar;
 
 import org.repodriller.RepoDriller;
 import org.repodriller.RepositoryMining;
@@ -17,10 +17,10 @@ public class ModificationsMain implements Study{
 
 	@Override
 	public void execute() {
-//		Calendar date = Calendar.getInstance();
-//		date.set(2017, 0, 1);
-		String input = "./repos/spring-boot";
-		CSVFile csv = new CSVFile("./spring-boot_m.csv");
+		Calendar date = Calendar.getInstance();
+		date.set(2017, 0, 1);
+		String input = "./repos/RxJava";
+		CSVFile csv = new CSVFile("./RxJava_commits.csv");
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
 		 .through(Commits.all())
