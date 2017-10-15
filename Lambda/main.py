@@ -43,15 +43,22 @@ repo_names = "repo_names.csv"
 # generate_postprocess_info(repo_names)
 repos_x, repos_y, repos_names = get_plotting_info(repo_names)
 
-
+good_colors = ['r', 'b', 'g', 'm', 'c']
 colors = list(colors.cnames)
+c = 0
 for i in range(len(repos_names)):
-    plt.plot(repos_x[i], repos_y[i], colors[i], label=repos_names[i])
+    # if repos_names[i] in ["RxJava", "elasticsearch", "spring-framework", "spring-boot", "PocketHub"]:
+    #     color = good_colors[c]
+    #     c += 1
+    # else:
+    #     color = colors[i]
+    color = colors[i]
+    plt.plot(repos_x[i], repos_y[i], color, label=repos_names[i])
 plt.plot([1394755200000], [0], 'g')  #  release date
 plt.axes().set_xticks([tick[1] for tick in years()])
 plt.axes().set_xticklabels([label[0] for label in years()])
 plt.xlabel('Year')
 plt.ylabel('Amount of Lambdas')
-plt.title('Lambda usage evolution in the 20 most popular Java projects')
+plt.title('Lambda usage evolution in 22 popular Java projects')
 plt.legend()
 plt.show()
