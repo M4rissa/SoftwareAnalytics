@@ -50,10 +50,10 @@ public class WalkAllCommits {
 
 	static String repoLoc;
 
-	public static void walkRepo(String reposDir) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	public static void walkRepo(String reposDir,String githubRepoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		repoLoc = reposDir;
 		try (Repository repository = getRepository(repoLoc)) {
-			walkCommits(repository);
+			walkCommits(repository,githubRepoName);
 		}
 	}
 
@@ -77,6 +77,7 @@ public class WalkAllCommits {
 	/**
 	 * Walks over the commits of a repository.
 	 * @param repository
+	 * @param githubRepoName 
 	 * @throws IOException
 	 * @throws GitAPIException 
 	 * @throws CheckoutConflictException 
@@ -84,7 +85,7 @@ public class WalkAllCommits {
 	 * @throws RefNotFoundException 
 	 * @throws RefAlreadyExistsException 
 	 */
-	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	private static void walkCommits(Repository repository, String githubRepoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		Ref head = null;
 		Collection<Ref> allRefs = repository.getAllRefs().values();
 		HashMap<String,ArrayList<String>> lambdasInFiles = new HashMap<String, ArrayList<String>>();
@@ -103,7 +104,7 @@ public class WalkAllCommits {
 			TreeWalk treeWalk = new TreeWalk(repository);
 			PrintWriter pw = new PrintWriter(new File(repoLoc+"NewLambdas.csv"));
 			pw.write("sep=,\n");
-			pw.write("Hash-After,Hash-Before,Filename,Flag\n");
+			pw.write("Github_diffs,Github_file_after,Github_file_before,Hash_After,Hash_Before Filename\n");
 			boolean commitBefore = false;
 			RevCommit oldcommit = null;
 			RevCommit commit = revWalk.parseCommit(head.getObjectId());
@@ -115,10 +116,20 @@ public class WalkAllCommits {
 						ArrayList<String> newlambdas = newlambdasInFiles.get(k);
 						ArrayList<String> oldlambdas = lambdasInFiles.get(k);
 						if(newlambdas == null){
-							pw.write(oldcommit.getName() + "," + commit.getName() + "," + k + "," + 1 + "\n");
+							pw.write("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
+									+ "," + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + k + "\" )"
+									+ "," + " "
+									+ "," + oldcommit.getName() 
+									+ "," + commit.getName() 
+									+ "," + k + "\n");
 						}
 						else if(oldlambdas.size() != newlambdas.size()){
-							pw.write(oldcommit.getName() + "," + commit.getName() + "," + k + "," + 0 + "\n");
+							pw.write("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
+									+ "," + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + k + "\" )"
+									+ "," + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commit.getName() + "/" + k + "\" )"
+									+ "," + oldcommit.getName() 
+									+ "," + commit.getName() 
+									+ "," + k + "\n");
 						}
 					}
 					lambdasInFiles = newlambdasInFiles;
