@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -80,6 +81,24 @@ public class Parse {
 		});
 		return count;
 		// Parse.count = 0;
+	}
+	
+	public ArrayList<String> saveLambdas(String str) throws IOException {
+		ArrayList<String> lambdas = new ArrayList<String>();
+		ASTParser parser = ASTParser.newParser(AST.JLS8);
+		parser.setSource(str.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+	
+		final CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		cu.accept(new ASTVisitor() {
+
+			public boolean visit(LambdaExpression node) {
+				lambdas.add(node.toString());
+				return false; // do not continue 
+			}
+
+		});
+		return lambdas;
 	}
 	
 	public boolean containsLambda(String str) throws IOException {

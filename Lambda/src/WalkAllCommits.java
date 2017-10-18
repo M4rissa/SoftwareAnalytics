@@ -34,7 +34,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Set;
 
 
 /**
@@ -44,7 +47,7 @@ import java.util.Collection;
  * See the original discussion at http://stackoverflow.com/a/40803945/411846
  */
 public class WalkAllCommits {
-	
+
 	static String repoLoc;
 
 	public static void walkRepo(String reposDir) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
@@ -82,9 +85,10 @@ public class WalkAllCommits {
 	 * @throws RefAlreadyExistsException 
 	 */
 	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
-		// get a list of all known heads, tags, remotes, ...
 		Ref head = null;
 		Collection<Ref> allRefs = repository.getAllRefs().values();
+		HashMap<String,ArrayList<String>> lambdasInFiles = new HashMap<String, ArrayList<String>>();
+		HashMap<String,ArrayList<String>> newlambdasInFiles = new HashMap<String, ArrayList<String>>();
 		int c = 0;
 		for(Ref r: allRefs){
 			c++;
@@ -92,39 +96,65 @@ public class WalkAllCommits {
 				head = r;
 			}
 		}
-		
-		// a RevWalk allows to walk over commits based on some filtering that is defined
 		try (RevWalk revWalk = new RevWalk( repository )) {
-			//                for( Ref ref : allRefs ) {
-			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
-			//                }
-//			Ref head = repository.exactRef("refs/heads/master"); 		//doesn't work if master isnt called master
 			System.out.println(head);
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
-			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
-			int count = 0;
 			Git git = new Git(repository);
 			TreeWalk treeWalk = new TreeWalk(repository);
-			//			RevCommit commit = revWalk.next();
-			PrintWriter pw = new PrintWriter(new File(repoLoc+"LambdaCount.csv"));
+			PrintWriter pw = new PrintWriter(new File(repoLoc+"NewLambdas.csv"));
 			pw.write("sep=,\n");
-			pw.write("Hash,Lambda count,Time\n");
+			pw.write("Hash-After,Hash-Before,Filename,Flag\n");
 			boolean commitBefore = false;
-			for( RevCommit commit : revWalk ) {
-				System.out.println(commit.getName());
-				if(commit.getCommitTime() > 1394233200 || !commitBefore){
+			RevCommit oldcommit = null;
+			RevCommit commit = revWalk.parseCommit(head.getObjectId());
+				while(commit.getCommitTime() > 1394233200 || !commitBefore){
 					git.checkout().setName(commit.name()).call();
-					int lambdaCount = lambdasInCommit(commit,treeWalk);
-					pw.write(commit.getName() + ',' + lambdaCount + ',' + commit.getCommitTime() + "000" + "\n");
+					newlambdasInFiles = lambdasInFile(commit,treeWalk);
+					Set<String> keys = lambdasInFiles.keySet();
+					for(String k : keys){
+						ArrayList<String> newlambdas = newlambdasInFiles.get(k);
+						ArrayList<String> oldlambdas = lambdasInFiles.get(k);
+						if(newlambdas == null){
+							pw.write(oldcommit.getName() + "," + commit.getName() + "," + k + "," + 1 + "\n");
+						}
+						else if(oldlambdas.size() != newlambdas.size()){
+							pw.write(oldcommit.getName() + "," + commit.getName() + "," + k + "," + 0 + "\n");
+						}
+					}
+					lambdasInFiles = newlambdasInFiles;
 					if(commit.getCommitTime() <= 1394233200){
 						commitBefore = true;
 					}
+					oldcommit = commit;
+					commit = revWalk.parseCommit(commit.getParent(0).getId());
 				}
-			}
+			
+			git.close();
 			pw.close();
-			//System.out.println("Had " + count + " commits");
 		}
 	}
+
+	private static HashMap<String,ArrayList<String>> lambdasInFile(RevCommit commit,TreeWalk treeWalk) throws MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
+		HashMap<String,ArrayList<String>> lambdasInFiles = new HashMap<String, ArrayList<String>>();
+		RevTree tree = commit.getTree();
+		Parse parser = new Parse();
+		treeWalk.reset();
+		treeWalk.addTree(tree);
+		treeWalk.setRecursive(true);
+		while (treeWalk.next()) {
+			String fileName = treeWalk.getPathString();
+			if(fileName.contains(".java")){
+				ArrayList<String> lambdas = parser.saveLambdas(parser.readFileToString(repoLoc+fileName));
+				if(!lambdas.isEmpty()){
+					lambdasInFiles.put(fileName, lambdas);
+				}
+			}
+		}
+		return lambdasInFiles;
+	}
+
+
+
 
 	private static int lambdasInCommit(RevCommit commit,TreeWalk treeWalk) throws MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
 		int lambdaCount = 0;
@@ -142,9 +172,13 @@ public class WalkAllCommits {
 			String fileName = treeWalk.getPathString();
 			if(fileName.contains(".java")){
 				lambdaCount = parser.countLambdas(parser.readFileToString(repoLoc+fileName));
+
 			}
 		}
 		return lambdaCount;
 	}
+
+
+
 
 }
