@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +16,6 @@ import org.eclipse.jdt.core.dom.LambdaExpression;
 public class Parse {
 	// static counts and writer, im sure this can be improved
 	public int count = 0;
-	private FileWriter fw;
-	private BufferedWriter bw;
 	private boolean containsLambda = false;
 
 	public Parse() {
@@ -93,7 +89,7 @@ public class Parse {
 		cu.accept(new ASTVisitor() {
 
 			public boolean visit(LambdaExpression node) {
-				lambdas.add(node.toString());
+				lambdas.add(node.toString().replaceAll("\n", ""));
 				return false; // do not continue 
 			}
 

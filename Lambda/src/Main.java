@@ -8,10 +8,10 @@ import org.eclipse.jgit.api.errors.RefNotFoundException;
 
 public class Main {
 
-	static String reposDir = "C:/Users/Justin/SA/gumtree/";
+	static String reposDir = "C:/Users/install/Repos/gumtree/";
 	static String githubRepoName = "GumTreeDiff/gumtree/";
  
 	public static void main(String[] args) throws RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
-		WalkAllCommits.walkRepo(reposDir,githubRepoName);
+		GetCurrentLambdas.curLambdasRepo(reposDir,githubRepoName);
 	}
 }
