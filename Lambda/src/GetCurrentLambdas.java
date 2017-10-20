@@ -29,6 +29,7 @@ import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -45,14 +46,14 @@ import java.util.Set;
  */
 public class GetCurrentLambdas {
 
-	static String repoLoc;
+	static String reposDir;
 	static String repoName;
 
-	public static void curLambdasRepo(String reposDir,String githubRepoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
-		repoLoc = reposDir;
-		repoName = githubRepoName;
-		try (Repository repository = getRepository(repoLoc)) {
-			walkCommit(repository,githubRepoName);
+	public static void curLambdasRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+		GetCurrentLambdas.reposDir = reposDir;
+		GetCurrentLambdas.repoName = repoName;
+		try (Repository repository = getRepository(reposDir+repoName)) {
+			walkCommit(repository,repoName);
 		}
 	}
 
@@ -100,7 +101,7 @@ public class GetCurrentLambdas {
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			Git git = new Git(repository);
 			TreeWalk treeWalk = new TreeWalk(repository);
-			PrintWriter pw = new PrintWriter(new File(repoLoc+"allLambdas.csv"));
+			PrintWriter pw = new PrintWriter(new File(reposDir+repoName+"allLambdas.csv"));
 			pw.write("sep=#\n");
 			pw.write("toString#Filename\n");
 			RevCommit commit = revWalk.parseCommit(head.getObjectId());
@@ -118,8 +119,8 @@ public class GetCurrentLambdas {
 			}
 			git.close();
 			pw.close();
-			PrintWriter counter = new PrintWriter(new File(repoLoc+ "count.txt"));
-			counter.print(repoName + " " + count);
+			FileWriter counter = new FileWriter(new File(reposDir+"count.txt"),true);
+			counter.append(repoName + " " + count + "\n");
 			counter.close();
 		}
 	}
@@ -134,7 +135,7 @@ public class GetCurrentLambdas {
 		while (treeWalk.next()) {
 			String fileName = treeWalk.getPathString();
 			if(fileName.contains(".java")){
-				ArrayList<String> lambdas = parser.saveLambdas(parser.readFileToString(repoLoc+fileName));
+				ArrayList<String> lambdas = parser.saveLambdas(parser.readFileToString(reposDir+repoName+fileName));
 				if(!lambdas.isEmpty()){
 					lambdasInFiles.put(fileName, lambdas);
 				}
