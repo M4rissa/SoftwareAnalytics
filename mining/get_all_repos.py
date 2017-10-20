@@ -1,8 +1,9 @@
 import requests
 import time
+from password import get_pass
 
 USERNAME = 'tamycova'
-PASSWORD = 'PASSWORD'
+PASSWORD = get_pass()
 
 
 def calculate_java_percentage(dic):
@@ -69,27 +70,41 @@ def get_next_page(r):
 #         r_url = get_next_page(r)
 
 
+# FILTER BY JAVA LANGUAGE DATA
 # 1020 repos, info of all repos given by init req
-all_repos = open("repos.csv", "r")
-#  instead of language link it has java % if > 90, 821
-filtered_repos = open("repos_requirements.csv", "w")
-# url links of repos
-to_clone = open("repo_links_all.csv", "w")
-# names of repos
-to_process = open("repos_names_all.csv", "w")
-p = open("p", "w")
+# all_repos = open("repos.csv", "r")
+# #  instead of language link it has java % if > 90, 821
+# filtered_repos = open("repos_requirements.csv", "w")
+# # url links of repos
+# to_clone = open("repo_links_all.csv", "w")
+# # names of repos
+# to_process = open("repos_names_all.csv", "w")
+# p = open("p", "w")
+# for line in all_repos.readlines():
+#     path, languages, stars = line.strip().split(",")
+#     percentage = calculate_java_percentage(get(languages).json())
+#     p.write(str(percentage) + "\n")
+#     if percentage >= 90:
+#         name = path.split("/")[-1]
+#         filtered_repos.write("{0},{1},{2}\n".format(path, percentage, stars))
+#         to_clone.write("{}\n".format(path))
+#         to_process.write("{}\n".format(name))
+# all_repos.close()
+# filtered_repos.close()
+# to_clone.close()
+# to_process.close()
+
+# GET INFO THAT I WAS MISSING
+# all repos
+all_repos = open("repo_links_all.csv", "r")
+# file where ill put missing info
+missing_info = open("size_description.csv", "w",encoding="utf-8")
 for line in all_repos.readlines():
-    path, languages, stars = line.strip().split(",")
-    percentage = calculate_java_percentage(get(languages).json())
-    p.write(str(percentage) + "\n")
-    if percentage >= 90:
-        name = path.split("/")[-1]
-        filtered_repos.write("{0},{1},{2}\n".format(path, percentage, stars))
-        to_clone.write("{}\n".format(path))
-        to_process.write("{}\n".format(name))
+    path = line.strip().split("/")
+    link = "{0}/{1}".format(path[-2], path[-1])
+    api_path = 'https://api.github.com/repos/{}'.format(link)
+    j = get(api_path).json()
+    missing_info.write("{0}\t{1}\t{2}\n".format(
+        link, j["size"], j["description"]))
 all_repos.close()
-filtered_repos.close()
-to_clone.close()
-to_process.close()
-
-
+missing_info.close()

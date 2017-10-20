@@ -22,3 +22,6 @@ target/
 repos/
 repos_with_branches/
 repos_all/
+
+# password
+password.py

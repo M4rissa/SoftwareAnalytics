@@ -10,6 +10,7 @@ import org.repodriller.scm.CommitVisitor;
 import org.repodriller.scm.RepositoryFile;
 import org.repodriller.scm.SCMRepository;
 
+//Alternative method that didnt work
 public class ModificationsVisitorNew implements CommitVisitor {
 
     private Parse parser;

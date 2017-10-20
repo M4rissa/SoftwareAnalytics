@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+//Counts lambda on current state of repo
 public class MainBroadMining {
 	private FileWriter fw;
 	private BufferedWriter bw;

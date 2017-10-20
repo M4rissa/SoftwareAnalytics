@@ -7,14 +7,14 @@ import java.io.IOException;
 
 import org.repodriller.RepoDriller;
 
-
+//Uses ModificationMain, ModificationVisitor to preprocess all the repos from the start
 public class Main {
 	   
 		public static void main(String[] args) {
 			List<String> repos = new ArrayList<>();
 
 			try {
-				File file = new File("repo_names.csv");
+				File file = new File("repos_names_all.csv");
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
 				String line;
@@ -27,7 +27,8 @@ public class Main {
 			}
 			
 			for (String repo_path : repos) {
-				new RepoDriller().start(new ModificationsMain("./repos/" + repo_path, "./preprocess/" + repo_path + "_mod.csv"));
+				System.out.println(repo_path);
+				new RepoDriller().start(new ModificationsMain("./repos_all/" + repo_path, "./preprocess/" + repo_path + "_mod.csv"));
 			}			
 		}
 
