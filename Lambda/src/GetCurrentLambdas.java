@@ -49,10 +49,22 @@ public class GetCurrentLambdas {
 	static String reposDir;
 	static String repoName;
 
-	public static void curLambdasRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	public static void curLambdasAllRepos(String reposDir) throws RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
+		File dir = new File(reposDir);
+		if(dir.isDirectory()) {
+			for(File file : dir.listFiles()) {
+				if(file.isDirectory()) {
+					curLambdasRepo(reposDir,file.getName());
+				}
+			}
+		}
+	}
+
+	private static void curLambdasRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		GetCurrentLambdas.reposDir = reposDir;
-		GetCurrentLambdas.repoName = repoName;
-		try (Repository repository = getRepository(reposDir+repoName)) {
+		GetCurrentLambdas.repoName = repoName+"/";
+		System.out.println(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName);
+		try (Repository repository = getRepository(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName)) {
 			walkCommit(repository,repoName);
 		}
 	}
@@ -115,7 +127,7 @@ public class GetCurrentLambdas {
 				for(int i = 0; i<lambdas.size();i++) {
 					pw.write(lambdas.get(i) + "#" + k + "\n");
 				}
-				
+
 			}
 			git.close();
 			pw.close();
