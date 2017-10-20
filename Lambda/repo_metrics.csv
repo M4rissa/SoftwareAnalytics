@@ -1,0 +1,821 @@
+RxJava	0	False	https://github.com/ReactiveX/RxJava	99.9	27911	44705	False	False	RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM.
+elasticsearch	6296	False	https://github.com/elastic/elasticsearch	98.87	25765	372729	False	False	Open Source, Distributed, RESTful Search Engine
+java-design-patterns	118	False	https://github.com/iluwatar/java-design-patterns	98.63	25400	16274	False	False	Design patterns implemented in Java
+retrofit	0	True	https://github.com/square/retrofit	97.35	24327	4544	False	True	Type-safe HTTP client for Android and Java by Square, Inc.
+okhttp	0	True	https://github.com/square/okhttp	99.39	22869	16410	False	True	An HTTP+HTTP/2 client for Android and Java applications.
+guava	282	False	https://github.com/google/guava	99.95	19538	174511	False	False	Google Core Libraries for Java
+butterknife	0	True	https://github.com/JakeWharton/butterknife	94.57	18542	3541	False	True	Bind Android views and callbacks to fields and methods.
+MPAndroidChart	0	True	https://github.com/PhilJay/MPAndroidChart	100.0	18538	20544	True	True	A powerful Android chart view / graph view library, supporting line- bar- pie- radar- bubble- and candlestick charts as well as scaling, dragging and animations.
+glide	0	True	https://github.com/bumptech/glide	99.88	18212	31578	False	True	An image loading and caching library for Android focused on smooth scrolling
+leakcanary	0	True	https://github.com/square/leakcanary	99.56	17083	24637	False	True	A memory leak detection library for Android and Java.
+spring-framework	1795	False	https://github.com/spring-projects/spring-framework	99.03	16837	106336	False	False	The Spring Framework
+spring-boot	1215	False	https://github.com/spring-projects/spring-boot	97.93	16694	63823	False	False	Spring Boot
+EventBus	0	True	https://github.com/greenrobot/EventBus	95.47	16177	1485	False	True	Android optimized event bus that simplifies communication between Activities, Fragments, Threads, Services, etc. Less code, better quality.
+zxing	0	True	https://github.com/zxing/zxing	95.83	15747	238436	False	True	ZXing ("Zebra Crossing") barcode scanning library for Java, Android
+Android-Universal-Image-Loader	0	True	https://github.com/nostra13/Android-Universal-Image-Loader	100.0	15724	25335	True	True	Powerful and flexible library for loading, caching and displaying images on Android.
+interviews	0	False	https://github.com/kdn251/interviews	100.0	15138	19358	False	False	Everything you need to know to get the job.
+picasso	0	True	https://github.com/square/picasso	96.81	14322	9167	False	True	A powerful image downloading and caching library for Android
+RxAndroid	0	True	https://github.com/ReactiveX/RxAndroid	98.17	13945	782	True	True	RxJava bindings for Android
+fresco	0	True	https://github.com/facebook/fresco	91.66	13565	64822	False	True	An Android library for managing images and the memory they use.
+AndroidUtilCode	0	True	https://github.com/Blankj/AndroidUtilCode	100.0	13492	8193	True	True	:fire: Android developers should collect the following utils(updating)
+dubbo	0	False	https://github.com/alibaba/dubbo	97.87	11964	7478	False	False	Dubbo is a high-performance, java based, open source RPC framework
+chrisbanes/PhotoView	0	True	https://github.com/chrisbanes/PhotoView	100.0	11519	16759	False	True	Implementation of ImageView for Android that supports zooming, by various touch gestures.
+netty	0	False	https://github.com/netty/netty	98.82	11484	49425	False	False	Netty project - an event-driven asynchronous network application framework
+material-dialogs	34	False	https://github.com/afollestad/material-dialogs	100.0	11333	153983	False	False	A beautiful, fluid, and customizable dialogs API.
+Hystrix	0	False	https://github.com/Netflix/Hystrix	96.45	11300	9518	False	False	Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.
+fastjson	0	False	https://github.com/alibaba/fastjson	99.93	10993	11173	False	False	:bullettrain_side: A fast JSON parser/generator for Java
+SlidingMenu	0	True	https://github.com/jfeinstein10/SlidingMenu	99.49	10737	32085	False	True	An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android apps provided that you cite this project and include the license in your app. Thanks!
+BaseRecyclerViewAdapterHelper	0	False	https://github.com/CymChad/BaseRecyclerViewAdapterHelper	100.0	10273	61823	False	False	BRVAH:Powerful and flexible RecyclerAdapter
+Material-Animations	0	True	https://github.com/lgvalle/Material-Animations	100.0	10265	8730	False	True	Android Transition animations explanation with examples.
+tinker	0	True	https://github.com/Tencent/tinker	93.92	10185	3920	False	True	Tinker is a hot-fix solution library for Android, it supports dex, library and resources update without reinstall apk.
+android-async-http	0	True	https://github.com/loopj/android-async-http	100.0	10014	4077	True	True	An Asynchronous HTTP Library for Android
+Android-CleanArchitecture	4	True	https://github.com/android10/Android-CleanArchitecture	100.0	9896	5176	True	True	This is a sample app that is part of a series of blog posts I have written about how to architect an android application using Uncle Bob's clean architecture approach.
+plaid	0	True	https://github.com/nickbutcher/plaid	98.17	9865	27584	False	True	An Android app which provides design news & inspiration as well as being an example of implementing material design.
+androidannotations	0	True	https://github.com/androidannotations/androidannotations	99.47	9771	21581	True	True	Fast Android Development. Easy maintainance.
+JakeWharton/ViewPagerIndicator	0	True	https://github.com/JakeWharton/ViewPagerIndicator	100.0	9375	8657	False	True	Paging indicator widgets compatible with the ViewPager from the Android Support Library and ActionBarSherlock.
+PocketHub	229	True	https://github.com/pockethub/PocketHub	98.8	9004	10586	False	True	PocketHub Android App
+AndroidSwipeLayout	0	True	https://github.com/daimajia/AndroidSwipeLayout	100.0	8942	399	True	False	The Most Powerful Swipe Layout!
+greenDAO	0	True	https://github.com/greenrobot/greenDAO	93.65	8792	7145	False	True	greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases.
+stetho	0	True	https://github.com/facebook/stetho	97.89	8606	2052	False	True	Stetho is a debug bridge for Android applications, enabling the powerful Chrome Developer Tools and much more.
+android-UniversalMusicPlayer	0	True	https://github.com/googlesamples/android-UniversalMusicPlayer	100.0	8508	7836	True	True	This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices
+android-Ultra-Pull-To-Refresh	0	True	https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh	99.53	8460	3474	True	True	Ultra Pull to Refresh for Android. Support all the views.
+chrisbanes/Android-PullToRefresh	0	True	https://github.com/chrisbanes/Android-PullToRefresh	100.0	8448	4286	True	False	DEPRECATED
+AndroidViewAnimations	0	True	https://github.com/daimajia/AndroidViewAnimations	100.0	8331	288	True	False	Cute view animation collection.
+Signal-Android	51	True	https://github.com/WhisperSystems/Signal-Android	99.57	8296	120429	True	True	A private messenger for Android.
+MaterialDrawer	0	True	https://github.com/mikepenz/MaterialDrawer	100.0	8264	20337	False	True	The flexible, easy to use, all in one drawer library for your Android project.
+CircleImageView	0	True	https://github.com/hdodenhof/CircleImageView	100.0	8208	965	False	True	A circular ImageView for Android
+alibaba/druid	0	False	https://github.com/alibaba/druid	98.7	8144	50485	False	False	:hotsprings: 为监控而生的数据库连接池！阿里云DRDS(https://www.aliyun.com/product/drds )、阿里巴巴TDDL 连接池powered by Druid
+Android-ObservableScrollView	0	True	https://github.com/ksoichiro/Android-ObservableScrollView	91.43	8136	13780	True	True	Android library to observe scroll events on scrollable views.
+FizzBuzzEnterpriseEdition	0	False	https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition	100.0	8086	284	False	False	FizzBuzz Enterprise Edition is a no-nonsense implementation of FizzBuzz made by serious businessmen for serious business purposes.
+java8-tutorial	171	False	https://github.com/winterbe/java8-tutorial	92.08	8051	152	False	False	Modern Java - A Guide to Java 8
+ExoPlayer	0	True	https://github.com/google/ExoPlayer	98.35	8033	54128	False	True	An extensible media player for Android
+HomeMirror	0	True	https://github.com/HannahMitt/HomeMirror	99.46	7709	5989	False	True	Android application powering the mirror in my house
+logger	0	True	https://github.com/orhanobut/logger	100.0	7634	1790	False	True	✔️ Simple, pretty and powerful logger for android
+ActionBarSherlock	0	True	https://github.com/JakeWharton/ActionBarSherlock	97.54	7351	21244	False	True	[DEPRECATED] Action bar implementation which uses the native action bar on Android 4.0+ and a custom implementation on pre-4.0 through a single API and theme.
+bazel	583	False	https://github.com/bazelbuild/bazel	90.59	7315	412866	False	False	a fast, scalable, multi-language and extensible build system
+BottomBar	0	False	https://github.com/roughike/BottomBar	100.0	7139	40792	False	False	A custom view component that mimics the new Material Design Bottom Navigation pattern.
+cheesesquare	0	True	https://github.com/chrisbanes/cheesesquare	100.0	7084	1322	False	True	Demos the new Android Design library.
+recyclerview-animators	0	True	https://github.com/wasabeef/recyclerview-animators	100.0	6946	67459	False	True	An Android Animation library which easily add itemanimator to RecyclerView items.
+Calligraphy	0	True	https://github.com/chrisjenx/Calligraphy	100.0	6945	1536	False	True	Custom fonts in Android the easy way...
+platform_frameworks_base	1774	False	https://github.com/aosp-mirror/platform_frameworks_base	91.2	6865	2585428	False	False	None
+AndroidSlidingUpPanel	0	True	https://github.com/umano/AndroidSlidingUpPanel	100.0	6823	2861	True	True	This library provides a simple way to add a draggable sliding up panel (popularized by Google Music and Google Maps) to your Android application. Brought to you by Umano.
+SmartRefreshLayout	0	True	https://github.com/scwang90/SmartRefreshLayout	99.99	6814	180351	False	True	🔥下拉刷新、上拉加载、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。
+agera	15	True	https://github.com/google/agera	100.0	6797	966	False	True	Reactive Programming for Android
+vert.x	3253	False	https://github.com/eclipse/vert.x	99.27	6736	99128	False	False	Vert.x is a tool-kit for building reactive applications on the JVM
+spark	154	False	https://github.com/perwendel/spark	98.18	6696	2284	False	False	A simple expressive web framework for java. News: Spark now has a kotlin DSL https://github.com/perwendel/spark-kotlin
+Android_Data	0	True	https://github.com/Freelander/Android_Data	100.0	6633	153	True	True	Some Android learning materials, hoping to help you learn Android development.
+MaterialViewPager	0	False	https://github.com/florent37/MaterialViewPager	99.89	6617	19531	False	False	A Material Design ViewPager easy to use library
+presto	2833	False	https://github.com/prestodb/presto	98.63	6574	81392	False	False	Distributed SQL query engine for big data
+disruptor	0	False	https://github.com/LMAX-Exchange/disruptor	98.12	6553	7686	False	False	High Performance Inter-Thread Messaging Library
+junit4	0	False	https://github.com/junit-team/junit4	99.06	6491	22341	False	False	A programmer-oriented testing framework for Java.
+dagger	0	True	https://github.com/square/dagger	93.29	6464	7033	False	True	A fast dependency injector for Android and Java.
+Bearded-Hen/Android-Bootstrap	0	True	https://github.com/Bearded-Hen/Android-Bootstrap	100.0	6266	11507	True	True	Bootstrap style widgets for Android, with Glyph Icons
+vlayout	0	False	https://github.com/alibaba/vlayout	100.0	6143	699	False	False	Project vlayout is a powerfull LayoutManager extension for RecyclerView, it provides a group of layouts for RecyclerView. Make it able to handle a complicate situation when grid, list and other layouts in the same recyclerview. 
+AndroidInterview-Q-A	0	True	https://github.com/JackyAndroid/AndroidInterview-Q-A	100.0	6105	61664	True	True	The top Internet companies android interview questions and answers
+dropwizard	128	False	https://github.com/dropwizard/dropwizard	99.06	6059	54389	False	False	A damn simple library for building production-ready RESTful web services.
+UltimateRecyclerView	0	True	https://github.com/cymcsg/UltimateRecyclerView	100.0	6016	7066	False	True	A RecyclerView(advanced and flexible version of ListView in Android) with refreshing,loading more,animation and many other features.
+uCrop	0	True	https://github.com/Yalantis/uCrop	97.88	6013	63703	False	True	Image Cropping Library for Android
+DanmakuFlameMaster	0	True	https://github.com/Bilibili/DanmakuFlameMaster	100.0	5971	3545	False	True	Android开源弹幕引擎·烈焰弹幕使 ～
+AVLoadingIndicatorView	0	True	https://github.com/81813780/AVLoadingIndicatorView	100.0	5968	14396	False	True	Nice loading animations for Android
+Luban	0	False	https://github.com/Curzibn/Luban	100.0	5958	223	False	False	Luban(鲁班)—Image compression with efficiency very close to WeChat Moments/可能是最接近微信朋友圈的图片压缩算法
+okhttp-OkGo	0	False	https://github.com/jeasonlzy/okhttp-OkGo	100.0	5956	84860	False	False	OkGo - 3.0 震撼来袭，该库是基于 Http 协议，封装了 OkHttp 的网络请求框架，比 Retrofit 更简单易用，支持 RxJava，RxJava2，支持自定义缓存，支持批量断点下载管理和批量上传管理功能
+mybatis-3	0	False	https://github.com/mybatis/mybatis-3	99.05	5940	77896	False	False	MyBatis SQL mapper framework for Java
+SimianArmy	0	False	https://github.com/Netflix/SimianArmy	99.51	5853	15292	False	False	Tools for keeping your cloud operating in top form. Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.
+okhttputils	0	True	https://github.com/hongyangAndroid/okhttputils	100.0	5840	17152	True	False	[停止维护]okhttp的辅助类
+jadx	0	False	https://github.com/skylot/jadx	98.69	5785	5410	False	False	Dex to Java decompiler
+jedis	0	False	https://github.com/xetorthio/jedis	98.35	5782	6153	False	False	A blazingly small and sane redis java client
+guice	5	False	https://github.com/google/guice	99.84	5748	62797	False	False	Guice (pronounced 'juice') is a lightweight dependency injection framework for Java 6 and above, brought to you by Google.
+auto	25	False	https://github.com/google/auto	99.73	5716	2198	False	False	A collection of source code generators for Java.
+ListViewAnimations	0	True	https://github.com/nhaarman/ListViewAnimations	100.0	5627	25513	False	True	[DEPRECATED] An Android library which allows developers to easily add animations to ListView items
+AndroidAutoLayout	0	True	https://github.com/hongyangAndroid/AndroidAutoLayout	100.0	5608	7449	True	True	[停止维护]Android屏幕适配方案，直接填写设计图上的像素尺寸即可完成适配，最大限度解决适配问题。
+druid-io/druid	562	False	https://github.com/druid-io/druid	95.79	5545	128283	False	False	Column oriented distributed data store ideal for powering interactive applications
+ion	0	True	https://github.com/koush/ion	95.98	5458	11702	False	True	Android Asynchronous Networking and Image Loading
+mockito	0	False	https://github.com/mockito/mockito	99.5	5431	43797	False	False	Most popular Mocking framework for unit tests written in Java
+Android-PickerView	0	True	https://github.com/Bigkoo/Android-PickerView	100.0	5404	5691	True	True	This is a picker view for android , support linkage effect, timepicker and optionspicker.（时间选择器、省市区三级联动）
+HikariCP	25	False	https://github.com/brettwooldridge/HikariCP	100.0	5357	4703	False	False	光 HikariCP・A solid high-performance JDBC connection pool at last.
+WeChatLuckyMoney	0	True	https://github.com/geeeeeeeeek/WeChatLuckyMoney	100.0	5276	561	False	True	:money_with_wings: WeChat's lucky money helper (微信抢红包插件). An Android app that helps you snatch red packets in WeChat groups. 
+UltimateAndroidReference	0	True	https://github.com/aritraroy/UltimateAndroidReference	100.0	5275	409	True	True	:rocket: Ultimate Android Reference - Your Road to Become a Better Android Developer
+EffectiveAndroidUI	0	True	https://github.com/pedrovgs/EffectiveAndroidUI	100.0	5248	989	True	True	Sample project created to show some of the best Android practices to work in the Android UI Layer. The UI layer of this project has been implemented using MVP or MVVM (without binding engine) to show how this patterns works. This project is used during the talk "EffectiveAndroidUI".
+Matisse	0	True	https://github.com/zhihu/Matisse	100.0	5235	1829	False	True	:fireworks: A well-designed local image and video selector for Android
+metrics	109	False	https://github.com/dropwizard/metrics	99.96	5229	7757	False	False	:chart_with_upwards_trend: Capturing JVM- and application-level metrics. So you know what's going on.
+DroidPlugin	0	True	https://github.com/DroidPluginTeam/DroidPlugin	98.02	5214	1794	False	True	A plugin framework on android,Run any third-party apk without installation, modification or repackage
+FileDownloader	0	False	https://github.com/lingochamp/FileDownloader	99.96	5190	40370	False	False	Multitask、MultiThread(MultiConnection)、Breakpoint-resume、High-concurrency、Simple to use、Single/NotSingle-process
+material	0	True	https://github.com/rey5137/material	100.0	5163	3842	False	True	A library to bring fully animated Material Design components to pre-Lolipop Android. 
+sweet-alert-dialog	0	True	https://github.com/pedant/sweet-alert-dialog	100.0	5112	1694	False	True	SweetAlert for Android, a beautiful and clever alert dialog
+Apktool	0	True	https://github.com/iBotPeaches/Apktool	98.8	5098	82595	False	True	A tool for reverse engineering Android apk files
+u2020	58	True	https://github.com/JakeWharton/u2020	99.91	5081	9384	False	True	A sample Android app which showcases advanced usage of Dagger among other open source libraries.
+StickyListHeaders	0	True	https://github.com/emilsjolander/StickyListHeaders	100.0	5063	3866	False	True	An android library for section headers that stick to the top
+JiaoZiVideoPlayer	0	True	https://github.com/lipangit/JiaoZiVideoPlayer	99.62	5062	142811	False	True	Android VideoPlayer MediaPlayer VideoView MediaView Float View And Fullscreen
+android-floating-action-button	0	True	https://github.com/futuresimple/android-floating-action-button	100.0	5058	2191	True	True	Floating Action Button for Android based on Material Design specification
+springside4	0	False	https://github.com/springside/springside4	99.9	5021	4780	False	False	A Spring Framework based, pragmatic style JavaEE application reference architecture.
+twoway-view	0	False	https://github.com/lucasr/twoway-view	100.0	5009	2554	False	False	RecyclerView made simple
+lombok	37	False	https://github.com/rzwitserloot/lombok	94.28	4994	72870	False	False	Very spicy additions to the Java programming language.
+ShowcaseView	0	False	https://github.com/amlcurran/ShowcaseView	100.0	4991	15237	False	False	Highlight the best bits of your app to users quickly, simply, and cool...ly
+FlycoTabLayout	0	True	https://github.com/H07000223/FlycoTabLayout	100.0	4981	2603	False	True	An Android TabLayout Lib
+hellocharts-android	0	True	https://github.com/lecho/hellocharts-android	100.0	4960	6124	True	True	Charts/graphs library for Android compatible with API 8+, several chart types with support for scaling, scrolling and animations
+xUtils	0	True	https://github.com/wyouflf/xUtils	100.0	4959	34986	False	True	android orm, bitmap, http, view inject...  已转至 https://github.com/wyouflf/xUtils3
+j2objc	461	False	https://github.com/google/j2objc	91.64	4903	45313	False	False	A Java to iOS Objective-C translation tool and runtime.
+dynamic-load-apk	0	True	https://github.com/singwhatiwanna/dynamic-load-apk	100.0	4874	8956	False	True	DL : dynamic load framework in android
+SmartTabLayout	0	False	https://github.com/ogaclejapan/SmartTabLayout	100.0	4845	14915	False	False	A custom ViewPager title strip which gives continuous feedback to the user when scrolling
+glide-transformations	0	True	https://github.com/wasabeef/glide-transformations	100.0	4838	26228	False	True	An Android transformation library providing a variety of image transformations for Glide.
+JakeWharton/timber	0	True	https://github.com/JakeWharton/timber	98.29	4792	985	False	True	A logger with a small, extensible API which provides utility on top of Android's normal Log class.
+rebound	0	False	https://github.com/facebook/rebound	98.81	4756	23621	False	False	A Java library that models spring dynamics and adds real world physics to your app. 
+cardslib	0	True	https://github.com/gabrielemariotti/cardslib	100.0	4725	30628	False	True	Android Library to build a UI Card
+RxPermissions	0	True	https://github.com/tbruyelle/RxPermissions	100.0	4705	541	False	True	Android runtime permissions powered by RxJava
+MaterialEditText	0	False	https://github.com/rengwuxian/MaterialEditText	100.0	4659	1260	False	False	EditText in Material Design
+AndroidAsync	0	True	https://github.com/koush/AndroidAsync	99.9	4655	3410	True	True	Asynchronous socket, http (client+server), websocket, and socket.io library for android. Based on nio, not threads.
+AndroidImageSlider	0	True	https://github.com/daimajia/AndroidImageSlider	100.0	4641	2165	True	True	An amazing and convenient Android image slider.
+androidmvp	0	True	https://github.com/antoniolg/androidmvp	100.0	4630	274	True	True	MVP Android Example
+android-testing	0	True	https://github.com/googlesamples/android-testing	97.28	4620	11037	True	False	A collection of samples demonstrating different frameworks and techniques for automated testing
+AndroidStaggeredGrid	0	True	https://github.com/etsy/AndroidStaggeredGrid	100.0	4595	878	True	True	An Android staggered grid view which supports multiple columns with rows of varying sizes.
+Trinea/android-common	0	True	https://github.com/Trinea/android-common	100.0	4513	1400	True	True	Android common lib, include ImageCache, HttpCache, DropDownListView, DownloadManager, Utils and so on,  Dev Tools Pro:
+SystemBarTint	0	True	https://github.com/jgilfelt/SystemBarTint	92.7	4511	1099	False	True	[DEPRECATED] Apply background tinting to the Android system UI when using KitKat translucent modes
+RxLifecycle	0	True	https://github.com/trello/RxLifecycle	94.95	4497	569	False	True	Lifecycle handling APIs for Android apps using RxJava
+SwipeBackLayout	0	True	https://github.com/ikew0ng/SwipeBackLayout	100.0	4497	3482	False	True	An Android library that help you to build app with swipe back gesture.
+ActiveAndroid	0	True	https://github.com/pardom/ActiveAndroid	98.08	4480	18083	True	True	Active record style SQLite persistence for Android
+xUtils3	0	True	https://github.com/wyouflf/xUtils3	100.0	4476	8733	False	True	android orm, bitmap, http, view inject... 
+swagger-core	0	False	https://github.com/swagger-api/swagger-core	99.17	4470	10515	False	False	Examples and server integrations for generating the Swagger API Specification, which enables easy access to your REST API
+circular-progress-button	0	True	https://github.com/dmytrodanylyk/circular-progress-button	100.0	4459	1372	False	True	Android Circular Progress Button
+RippleEffect	0	True	https://github.com/traex/RippleEffect	100.0	4447	833	False	True	Implementation of Ripple effect from Material Design for Android API 9+
+easypermissions	0	True	https://github.com/googlesamples/easypermissions	100.0	4419	401	False	True	Simplify Android M system permissions
+NumberProgressBar	0	True	https://github.com/daimajia/NumberProgressBar	100.0	4414	158	False	True	A beautiful, slim Android ProgressBar.
+android-volley	0	True	https://github.com/mcxiaoke/android-volley	99.67	4413	952	True	False	DEPRECATED
+InstaMaterial	0	False	https://github.com/frogermcs/InstaMaterial	100.0	4368	4531	False	False	Implementation of Instagram with Material Design (originally based on Emmanuel Pacamalan's concept)
+che	1713	False	https://github.com/eclipse/che	90.2	4359	71216	False	False	Eclipse Che: Next-generation Eclipse IDE.  Open source workspace server and cloud IDE.
+AndroidNote	0	True	https://github.com/GcsSloop/AndroidNote	100.0	4353	6642	True	False	安卓学习笔记
+RoundedImageView	0	False	https://github.com/vinc3m1/RoundedImageView	100.0	4321	8728	False	False	A fast ImageView that supports rounded corners, ovals, and circles.
+VitamioBundle	0	True	https://github.com/yixia/VitamioBundle	100.0	4314	186316	False	True	Vitamio for Android
+android-architecture-components	61	True	https://github.com/googlesamples/android-architecture-components	90.39	4306	660	True	True	Samples for Android Architecture Components. 
+sqlbrite	0	False	https://github.com/square/sqlbrite	96.94	4302	686	False	False	A lightweight wrapper around SQLiteOpenHelper which introduces reactive stream semantics to SQL operations.
+AndroidBootstrap/android-bootstrap	0	True	https://github.com/AndroidBootstrap/android-bootstrap	99.53	4301	1917	True	False	A template/bootstrap/boilerplate application that includes tons of great open source tools and frameworks. 
+coursera-android	0	True	https://github.com/aporter/coursera-android	100.0	4300	19404	True	True	Source Code for Android Course Example Applications
+okio	0	False	https://github.com/square/okio	99.62	4295	1715	False	False	A modern I/O API for Java
+facebook-android-sdk	0	True	https://github.com/facebook/facebook-android-sdk	99.69	4280	21880	True	True	Used to integrate Android apps with Facebook Platform.
+Fragmentation	0	True	https://github.com/YoKeyword/Fragmentation	100.0	4278	29024	False	True	A powerful library that manage Fragment for Android!
+NineOldAndroids	0	True	https://github.com/JakeWharton/NineOldAndroids	100.0	4264	1207	True	True	[DEPRECATED] Android library for using the Honeycomb animation API on all versions of the platform back to 1.0!
+Side-Menu.Android	0	True	https://github.com/Yalantis/Side-Menu.Android	100.0	4245	1037	True	False	Side menu with some categories to choose.
+android-gpuimage	0	True	https://github.com/CyberAgent/android-gpuimage	98.89	4240	1165	True	True	Android filters based on OpenGL (idea from GPUImage for iOS)
+InfiniteCycleViewPager	0	False	https://github.com/Devlight/InfiniteCycleViewPager	100.0	4240	275	False	False	Infinite cycle ViewPager with two-way orientation and interactive effect.
+javapoet	0	False	https://github.com/square/javapoet	99.73	4240	1575	False	False	A Java API for generating .java source files.
+StatusBarUtil	0	True	https://github.com/laobie/StatusBarUtil	100.0	4165	6782	False	True	A util for setting status bar style on Android App.
+scribejava	16	False	https://github.com/scribejava/scribejava	100.0	4152	2693	False	False	Simple OAuth library for Java
+android-classyshark	0	True	https://github.com/google/android-classyshark	100.0	4145	24535	True	True	Executables (apk, multi-dex, jar) browser for Android, Java and Kotlin
+Depth-LIB-Android-	0	True	https://github.com/danielzeller/Depth-LIB-Android-	100.0	4108	3573	True	False	A library that gives depth to Views.
+android-oss	538	True	https://github.com/kickstarter/android-oss	97.23	4101	17820	True	True	Kickstarter for Android. Bring new ideas to life, anywhere.
+ZhihuDailyPurify	16	False	https://github.com/izzyleung/ZhihuDailyPurify	100.0	4076	31362	False	False	Purified version of Zhihu Daily - 更纯净的知乎日报
+SimplifyReader	0	True	https://github.com/chentao0707/SimplifyReader	99.09	4028	62804	False	True	一款基于Google Material Design设计开发的Android客户端，包括新闻简读，图片浏览，视频爽看 ，音乐轻听以及二维码扫描五个子模块。项目采取的是MVP架构开发，由于还是摸索阶段，可能不是很规范。但基本上应该是这么个套路，至少我个人认为是这样的~恩，就是这样的！
+BoomMenu	0	True	https://github.com/Nightonke/BoomMenu	100.0	4017	103934	False	True	A menu which can ... BOOM! - Android
+LitePal	0	True	https://github.com/LitePalFramework/LitePal	100.0	3999	4185	False	True	An Android library that makes developers use SQLite database extremely easy.
+banner	0	True	https://github.com/youth5201314/banner	100.0	3998	3059	False	True	Android广告图片轮播控件，支持无限循环和多种主题，可以灵活设置轮播样式、动画、轮播和切换时间、位置、图片加载框架等！
+async-http-client	157	False	https://github.com/AsyncHttpClient/async-http-client	99.92	3977	16854	False	False	Asynchronous Http and WebSocket Client library for Java 
+AndResGuard	0	True	https://github.com/shwenzhang/AndResGuard	96.41	3955	7152	False	True	proguard resource for Android  by wechat team
+acra	6	True	https://github.com/ACRA/acra	100.0	3951	2983	False	True	Application Crash Reports for Android
+android-times-square	0	True	https://github.com/square/android-times-square	99.01	3932	1508	True	True	Standalone Android widget for picking a single date from a calendar view.
+hadoop	85	False	https://github.com/apache/hadoop	93.1	3926	411562	False	False	Mirror of Apache Hadoop
+DiskLruCache	0	True	https://github.com/JakeWharton/DiskLruCache	97.69	3908	416	False	True	Java implementation of a Disk-based LRU cache which specifically targets Android compatibility.
+mosby	79	True	https://github.com/sockeqwe/mosby	99.71	3891	26290	False	True	A Model-View-Presenter / Model-View-Intent library for modern Android apps
+cassandra	1046	False	https://github.com/apache/cassandra	96.16	3888	253594	False	False	Mirror of Apache Cassandra
+makovkastar/FloatingActionButton	0	True	https://github.com/makovkastar/FloatingActionButton	100.0	3873	11228	False	True	[DEPRECATED] Android floating action button
+wechat	0	False	https://github.com/motianhuo/wechat	100.0	3828	95107	False	False	A High Copy WeChat ,SNS APP (高仿微信)
+CoreNLP	615	False	https://github.com/stanfordnlp/CoreNLP	97.15	3823	273831	False	False	Stanford CoreNLP: A Java suite of core NLP tools.
+android-crop	0	True	https://github.com/jdamcd/android-crop	100.0	3815	3136	True	True	Android library project for cropping images
+SmoothProgressBar	0	True	https://github.com/castorflex/SmoothProgressBar	100.0	3803	15669	False	True	A small Android library allowing you to have a smooth and customizable horizontal indeterminate ProgressBar
+Android-SpinKit	0	True	https://github.com/ybq/Android-SpinKit	100.0	3797	8569	True	True	Android  loading animations
+TakePhoto	0	True	https://github.com/crazycodeboy/TakePhoto	100.0	3794	11387	False	True	一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库
+ShortcutBadger	0	True	https://github.com/leolin310148/ShortcutBadger	100.0	3786	1071	False	True	An Android library supports badge notification like iOS in Samsung, LG, Sony and HTC launchers.
+processing	75	False	https://github.com/processing/processing	96.43	3766	1637546	False	False	Source code for the Processing Development Environment (PDE)
+HanLP	0	False	https://github.com/hankcs/HanLP	100.0	3741	47283	False	False	自然语言处理 中文分词 词性标注 命名实体识别 依存句法分析 关键词提取 自动摘要 短语提取 拼音 简繁转换
+RePlugin	0	True	https://github.com/Qihoo360/RePlugin	91.61	3721	7591	False	True	RePlugin - A flexible, stable, easy-to-use Android Plug-in Framework
+dex2jar	0	True	https://github.com/pxb1988/dex2jar	92.45	3705	7576	False	True	Tools to work with android .dex and java .class files
+Clans/FloatingActionButton	0	True	https://github.com/Clans/FloatingActionButton	100.0	3618	3389	False	True	Android Floating Action Button based on Material Design specification
+android-advancedrecyclerview	0	True	https://github.com/h6ah4i/android-advancedrecyclerview	90.27	3607	5799	True	False	RecyclerView extension library which provides advanced features. (ex. Google's Inbox app like swiping, Play Music app like drag and drop sorting)
+robolectric	0	True	https://github.com/robolectric/robolectric	98.71	3548	34685	False	True	Android Unit Testing Framework
+naman14/Timber	0	False	https://github.com/naman14/Timber	100.0	3541	16440	False	False	Material Design Music Player
+Phoenix	0	False	https://github.com/Yalantis/Phoenix	100.0	3532	656	False	False	Phoenix Pull-to-Refresh
+remusic	0	True	https://github.com/aa112901/remusic	100.0	3495	115952	False	True	仿网易云音乐 安卓版，netease  android，音乐播放器 在线 下载
+HTextView	0	False	https://github.com/hanks-zyh/HTextView	100.0	3473	9755	False	False	Animation effects to text, not really textview
+dbeaver	3	False	https://github.com/serge-rider/dbeaver	99.39	3471	227113	False	False	Free universal database manager and SQL client
+dialogplus	0	True	https://github.com/orhanobut/dialogplus	100.0	3468	6590	False	True	Advanced dialog solution for android
+material-calendarview	0	True	https://github.com/prolificinteractive/material-calendarview	100.0	3465	4546	False	True	A Material design back port of Android's CalendarView
+android-job	0	True	https://github.com/evernote/android-job	100.0	3463	1336	True	True	Android library to handle jobs in the background.
+XRecyclerView	0	False	https://github.com/jianghejie/XRecyclerView	100.0	3461	6450	False	False	a RecyclerView that implements pullrefresh and loadingmore featrues.you can use it like a standard RecyclerView
+redisson	157	False	https://github.com/redisson/redisson	100.0	3459	7310	False	False	Redisson - distributed Java objects and services (Set, Multimap, SortedSet, Map, List, Queue, BlockingQueue, Deque, BlockingDeque, Semaphore, Lock, AtomicLong, Map Reduce, Publish / Subscribe, Bloom filter, Spring Cache, Executor service, Tomcat Session Manager, Scheduler service, JCache API) on top of Redis server. Rich Redis client
+openhab1-addons	7	False	https://github.com/openhab/openhab1-addons	99.27	3456	224668	False	False	Add-ons for openHAB 1.x
+WilliamChart	0	True	https://github.com/diogobernardino/WilliamChart	100.0	3449	31759	False	True	Android library to create charts.
+ansj_seg	0	False	https://github.com/NLPchina/ansj_seg	99.42	3446	341682	False	False	ansj分词.ict的真正java实现.分词效果速度都超过开源版的ict. 中文分词,人名识别,词性标注,用户自定义词典
+NavigationTabBar	0	False	https://github.com/Devlight/NavigationTabBar	100.0	3439	366	False	False	Navigation tab bar with colorful interactions.
+AndroidPerformanceMonitor	0	True	https://github.com/markzhai/AndroidPerformanceMonitor	100.0	3429	1077	True	True	A transparent ui-block detection library for Android. (known as BlockCanary)
+Meizhi	30	True	https://github.com/drakeet/Meizhi	99.6	3399	9949	False	True	gank.io unofficial client, RxJava & Retrofit. (The project is no longer actively maintained, we have a better project: https://github.com/drakeet/rebase-android)
+Flipboard/bottomsheet	0	True	https://github.com/Flipboard/bottomsheet	100.0	3397	360	False	True	Android component which presents a dismissible view from the bottom of the screen
+BookReader	0	False	https://github.com/JustWayward/BookReader	97.72	3393	31877	False	False	:closed_book:  "任阅" 网络小说阅读器，实现追书推荐收藏、书籍/标签检索、模拟翻书的翻页效果、缓存书籍、日夜间模式、书签、txt/pdf/epub书籍阅读、字体/主题/亮度设置、Wifi传书等功能~
+k-9	0	True	https://github.com/k9mail/k-9	99.75	3358	53682	False	True	K-9 Mail – Advanced Email for Android 📧
+subsampling-scale-image-view	0	False	https://github.com/davemorrissey/subsampling-scale-image-view	100.0	3332	45222	False	False	Highly configurable, easily extendable view with pan and zoom gestures for displaying huge images without loss of detail. Perfect for photo galleries, maps, building plans etc.
+barcodescanner	0	True	https://github.com/dm77/barcodescanner	100.0	3329	10946	False	True	Barcode Scanner Libraries for Android
+ARouter	0	True	https://github.com/alibaba/ARouter	98.92	3318	20212	False	True	A android router middleware that help app navigating to activities and custom services.
+ActionBar-PullToRefresh	0	False	https://github.com/chrisbanes/ActionBar-PullToRefresh	97.7	3304	3628	False	False	DEPRECATED
+Bolts-Android	0	True	https://github.com/BoltsFramework/Bolts-Android	99.7	3303	390	True	False	Bolts is a collection of low-level libraries designed to make developing mobile apps easier.
+retrolambda	47	False	https://github.com/orfjackal/retrolambda	98.14	3301	942	False	False	Backport of Java 8's lambda expressions to Java 7, 6 and 5
+BGARefreshLayout-Android	0	True	https://github.com/bingoogolapple/BGARefreshLayout-Android	100.0	3299	22595	True	False	多种下拉刷新效果、上拉加载更多、可配置自定义头部广告位
+canal	0	False	https://github.com/alibaba/canal	98.54	3299	1640	False	False	阿里巴巴mysql数据库binlog的增量订阅&消费组件 。阿里云DRDS( https://www.aliyun.com/product/drds )、阿里巴巴TDDL 二级索引、小表复制powerd by canal.
+Douya	0	False	https://github.com/DreaminginCodeZH/Douya	99.86	3283	22691	False	False	开源的 Material Design 豆瓣客户端（A Material Design app for douban.com）
+MVPArms	10	True	https://github.com/JessYanCoding/MVPArms	100.0	3273	4631	False	True	A common architecture for Android applications developing based on MVP,integrates many open source projects( like Dagger2,Rxjava,Retrofit... ),to make your developing quicker and easier. 
+Toasty	0	False	https://github.com/GrenderG/Toasty	100.0	3270	860	False	False	The usual Toast, but with steroids 💪
+grpc-java	0	False	https://github.com/grpc/grpc-java	96.31	3269	18785	False	False	The Java gRPC implementation. HTTP/2 based RPC
+useful-java-links	164	False	https://github.com/Vedenin/useful-java-links	99.96	3269	1634	False	False	A list of useful Java frameworks, libraries, software and hello worlds examples
+Transitions-Everywhere	0	True	https://github.com/andkulikov/Transitions-Everywhere	100.0	3253	1173	False	True	Backport of Android Transitions API for animations. Animations backported to Android 4.0+. API compatible with Android 2.2+
+GSYVideoPlayer	0	False	https://github.com/CarGuo/GSYVideoPlayer	95.76	3221	247502	False	False	视频播放器（IJKplayer），HTTPS支持，支持弹幕，支持滤镜、水印、gif截图，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频本身自带rotation的旋转（90,270之类），重力旋转与手动旋转的同步支持，支持列表播放 ，直接添加控件为封面，列表全屏动画，视频加载速度，列表小窗口支持拖动，5.0的过场效果，调整比例，多分辨率切换，支持切换播放器，进度条小窗口预览，其他一些小动画效果，rtsp、concat、mpeg。简书:
+android-iconify	0	True	https://github.com/JoanZapata/android-iconify	100.0	3214	3796	True	True	Android integration of multiple icon providers such as FontAwesome, Entypo, Typicons,...
+baseAdapter	0	True	https://github.com/hongyangAndroid/baseAdapter	100.0	3213	724	True	True	Android 万能的Adapter for ListView,RecyclerView,GridView等，支持多种Item类型的情况。
+moshi	0	True	https://github.com/square/moshi	94.53	3209	989	False	True	A modern JSON library for Android and Java.
+orientdb	441	False	https://github.com/orientechnologies/orientdb	99.29	3202	222142	False	False	OrientDB is the most versatile DBMS supporting Graph, Document, Reactive, Full-Text, Geospatial and Key-Value models in one Multi-Model product. OrientDB can run distributed (Multi-Master), supports SQL, ACID Transactions, Full-Text indexing and Reactive Queries. OrientDB Community Edition is Open Source using a liberal Apache 2 license.
+SwitchButton	0	False	https://github.com/kyleduo/SwitchButton	100.0	3193	10775	False	False	A cute widget of Switch Button for  you to create beautiful and friendly UI.
+joda-time	0	False	https://github.com/JodaOrg/joda-time	99.7	3171	10539	False	False	Joda-Time is the widely used replacement for the Java date and time classes prior to Java SE 8.
+jstorm	0	False	https://github.com/alibaba/jstorm	98.63	3170	107767	False	False	Enterprise Stream Process Engine
+alluxio	0	False	https://github.com/Alluxio/alluxio	96.8	3168	82477	False	False	Alluxio, formerly Tachyon, Unify Data at Memory Speed
+AndroidWiFiADB	0	True	https://github.com/pedrovgs/AndroidWiFiADB	100.0	3166	3168	True	True	IntelliJ/AndroidStudio plugin which provides a button to connect your Android device over WiFi to install, run and debug your applications without a USB connected.
+drag-sort-listview	0	True	https://github.com/bauerca/drag-sort-listview	100.0	3153	2461	False	True	Android ListView with drag and drop reordering.
+Alerter	0	True	https://github.com/Tapadoo/Alerter	100.0	3153	23424	False	True	An Android Alerting Library
+nanohttpd	0	False	https://github.com/NanoHttpd/nanohttpd	98.42	3147	1342	False	False	Tiny, easily embeddable HTTP server in Java.
+caffeine	725	False	https://github.com/ben-manes/caffeine	96.5	3138	16924	False	False	A high performance caching library for Java 8
+Mycat-Server	0	False	https://github.com/MyCATApache/Mycat-Server	99.0	3134	7077	False	False	None
+Context-Menu.Android	0	True	https://github.com/Yalantis/Context-Menu.Android	100.0	3124	3407	True	False	You can easily add awesome animated context menu to your app.
+MagicIndicator	0	False	https://github.com/hackware1993/MagicIndicator	100.0	3121	54764	False	False	A powerful, customizable and extensible ViewPager indicator framework. As the best alternative of ViewPagerIndicator, TabLayout and PagerSlidingTabStrip   ——   强大、可定制、易扩展的 ViewPager 指示器框架。是ViewPagerIndicator、TabLayout、PagerSlidingTabStrip的最佳替代品。支持角标，更支持在非ViewPager场景下使用（使用hide()、show()切换Fragment或使用setVisibility切换FrameLayout里的View等），http://www.jianshu.com/p/f3022211821c
+SwipeMenuListView	0	False	https://github.com/baoyongzhang/SwipeMenuListView	100.0	3115	1854	False	False	[DEPRECATED] A swipe menu for ListView.
+Android-ConvenientBanner	0	True	https://github.com/saiwu-bigkoo/Android-ConvenientBanner	100.0	3101	12367	True	False	Simple and convenient banner, loop viewpager with 3D effects
+android-autofittextview	0	True	https://github.com/grantland/android-autofittextview	100.0	3084	1190	True	False	A TextView that automatically resizes text to fit perfectly within its bounds.
+android-butterknife-zelezny	0	True	https://github.com/avast/android-butterknife-zelezny	100.0	3077	748	True	True	Android Studio plug-in for generating ButterKnife injections from selected layout XML.
+parceler	0	True	https://github.com/johncarl81/parceler	100.0	3074	1514	False	True	:package: Android Parcelables made easy through code generation.
+elasticsearch-analysis-ik	0	False	https://github.com/medcl/elasticsearch-analysis-ik	100.0	3074	7531	False	False	The IK Analysis plugin integrates Lucene IK analyzer into elasticsearch, support customized dictionary.
+afinal	0	True	https://github.com/yangfuhai/afinal	100.0	3068	4234	False	True	Afinal是一个android的ioc，orm框架，内置了四大模块功能：FinalAcitivity,FinalBitmap,FinalDb,FinalHttp。通过finalActivity，我们可以通过注解的方式进行绑定ui和事件。通过finalBitmap，我们可以方便的加载bitmap图片，而无需考虑oom等问题。通过finalDB模块，我们一行代码就可以对android的sqlite数据库进行增删改查。通过FinalHttp模块，我们可以以ajax形式请求http数据。详情请通过以下网址查看。
+Sunshine-Version-2	0	True	https://github.com/udacity/Sunshine-Version-2	100.0	3051	3040	False	True	The official repository for Developing Android Apps
+NoHttp	0	True	https://github.com/yanzhenjie/NoHttp	100.0	3035	54254	False	True	Android实现Http标准协议框架，支持缓存（提供五种缓存模式）、代理、重定向，底层可动态切换OkHttp、URLConnection。
+robospice	0	True	https://github.com/stephanenicolas/robospice	99.96	3030	135636	False	True	Repo of the Open Source Android library : RoboSpice. RoboSpice is a modular android library that makes writing asynchronous long running tasks easy. It is specialized in network requests, supports caching and offers REST requests out-of-the box using extension modules.
+Crouton	0	True	https://github.com/keyboardsurfer/Crouton	100.0	3027	3934	False	True	Context sensitive notifications for Android  
+LoganSquare	0	True	https://github.com/bluelinelabs/LoganSquare	100.0	3016	1017	False	True	Screaming fast JSON parsing and serialization library for Android.
+TapTargetView	0	False	https://github.com/KeepSafe/TapTargetView	100.0	3011	4261	False	False	An implementation of tap targets from the Material Design guidelines for feature discovery
+archi	0	True	https://github.com/ivacf/archi	100.0	3002	1454	False	True	Repository that showcases 3 Android app architectures: "Standard Android", MVP and MVVM. The exact same app is built 3 times following the different patterns.
+atmosphere	0	False	https://github.com/Atmosphere/atmosphere	99.98	3002	108142	False	False	Realtime Client Server Framework for the JVM, supporting WebSockets with Cross-Browser Fallbacks
+error-prone	408	False	https://github.com/google/error-prone	99.73	3001	48360	False	False	Catch common Java mistakes as compile-time errors
+sticky-headers-recyclerview	0	True	https://github.com/timehop/sticky-headers-recyclerview	100.0	3001	337	False	True	[UNMAINTAINED] Sticky Headers decorator for Android's RecyclerView
+folding-cell-android	0	True	https://github.com/Ramotion/folding-cell-android	100.0	2993	26272	True	False	:octocat: FoldingCell is a material design expanding content cell inspired by folding paper material made by @Ramotion
+emojicon	0	True	https://github.com/rockerhieu/emojicon	100.0	2990	9709	False	True	A library to show emoji in TextView, EditText (like WhatsApp) for Android
+Android-Tips	0	True	https://github.com/tangqi92/Android-Tips	100.0	2985	224	True	True	An awesome list of tips for android.
+bilibili-android-client	209	True	https://github.com/HotBitmapGG/bilibili-android-client	100.0	2958	113163	True	True	An unofficial bilibili client for android  http://www.jianshu.com/p/f69a55b94c05
+Android-IMSI-Catcher-Detector	0	True	https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector	100.0	2957	10590	True	False	AIMSICD • Fight IMSI-Catcher, StingRay and silent SMS!
+DiscreteScrollView	0	False	https://github.com/yarolegovich/DiscreteScrollView	100.0	2954	33276	False	False	Scrollable list of items, where current item is centered and can be changed using swipes
+ExplosionField	0	False	https://github.com/tyrantgit/ExplosionField	100.0	2946	1570	False	False	explosive dust effect for views
+sharding-jdbc	0	False	https://github.com/shardingjdbc/sharding-jdbc	99.94	2941	14380	False	False	A JDBC driver for shard databases and tables
+RxJavaSamples	0	False	https://github.com/rengwuxian/RxJavaSamples	100.0	2941	4613	False	False	RxJava 2 和 Retrofit 结合使用的几个最常见使用方式举例
+AndEngine	0	True	https://github.com/nicolasgramlich/AndEngine	99.75	2936	23510	False	True	Free Android 2D OpenGL Game Engine
+GalleryFinal	0	False	https://github.com/pengjianbo/GalleryFinal	100.0	2922	55339	False	False	[DEPRECATED] 项目迁移至:https://github.com/FinalTeam/RxGalleryFinal
+FlowLayout	0	True	https://github.com/hongyangAndroid/FlowLayout	100.0	2917	906	True	True	Android流式布局，支持单选、多选等，适合用于产品标签等。
+SeeWeather	68	False	https://github.com/xcc3641/SeeWeather	100.0	2901	16071	False	False	:partly_sunny: RxJava+RxBus+Retrofit+Glide+Material Design Weather App
+anthelion	0	False	https://github.com/yahoo/anthelion	96.64	2894	35326	False	False	Anthelion is a plugin for Apache Nutch to crawl semantic annotations within HTML pages
+ideavim	0	False	https://github.com/JetBrains/ideavim	100.0	2892	5863	False	False	Vim emulation plug-in for IDEs based on the IntelliJ platform.
+FadingActionBar	0	True	https://github.com/ManuelPeinado/FadingActionBar	93.28	2882	15076	False	True	Android library implementing a fading effect for the action bar, similar to the one found in the Play Music app
+Blurry	0	True	https://github.com/wasabeef/Blurry	100.0	2880	2127	False	True	Blurry is an easy blur library for Android
+android-viewbadger	0	True	https://github.com/jgilfelt/android-viewbadger	100.0	2880	297	True	True	[DEPRECATED] A simple way to "badge" any given Android view at runtime without having to cater for it in layout
+Android-Material-Examples	0	True	https://github.com/saulmm/Android-Material-Examples	100.0	2867	1194	True	False	[Deprecated] Little bites of Material Design
+MaterialDateTimePicker	0	True	https://github.com/wdullaer/MaterialDateTimePicker	100.0	2859	1557	False	True	Pick a date or time on Android in style
+RxTools	0	True	https://github.com/vondear/RxTools	100.0	2859	81921	False	True	Android开发人员不得不收集的工具类集合 | 支付宝支付 | 微信支付（统一下单） | 微信分享 | 一键集成UCrop选择圆形头像 | 一键集成二维码和条形码的扫描与生成 | 常用Dialog | WebView的封装可播放视频 | 仿斗鱼滑动验证码 | Toast封装 | 震动 | GPS | Location定位 | 压缩与加密 | 图片缩放 | Exif 图片添加地理位置信息（经纬度） | 蛛网等级 | 颜色选择器 | 编译运行一下说不定会找到惊喜
+StylishMusicPlayer	0	True	https://github.com/ryanhoo/StylishMusicPlayer	100.0	2858	2929	False	True	A stylish music player for android device 16+
+LoadingDrawable	0	True	https://github.com/dinuscxj/LoadingDrawable	100.0	2854	13846	False	True	Some beautiful android loading drawable, can be combined with any view as the LoadingView or the ProgressBar. Besides, some Drawable can customize the loading progress too.
+PLDroidPlayer	0	True	https://github.com/pili-engineering/PLDroidPlayer	100.0	2834	52361	False	True	PLDroidPlayer 是七牛推出的一款适用于 Android 平台的播放器 SDK，采用全自研的跨平台播放内核，拥有丰富的功能和优异的性能，可高度定制化和二次开发。
+UltraViewPager	0	False	https://github.com/alibaba/UltraViewPager	100.0	2832	8849	False	False	UltraViewPager is an extension for ViewPager to provide multiple features in a single ViewPager.
+FlyRefresh	0	False	https://github.com/race604/FlyRefresh	100.0	2824	2178	False	False	The implementation of https://dribbble.com/shots/2067564-Replace
+xxl-job	0	False	https://github.com/xuxueli/xxl-job	100.0	2816	23705	False	False	A lightweight distributed task scheduling framework.（分布式任务调度平台XXL-JOB）
+quasar	5	False	https://github.com/puniverse/quasar	98.22	2807	79494	False	False	Fibers, Channels and Actors for the JVM
+elasticsearch-sql	2	False	https://github.com/NLPchina/elasticsearch-sql	93.68	2807	5552	False	False	Use SQL to query Elasticsearch
+ShineButton	0	True	https://github.com/ChadCSong/ShineButton	100.0	2801	2490	False	True	This is a UI lib for Android. Effects like shining.
+hibernate-orm	2044	False	https://github.com/hibernate/hibernate-orm	99.55	2789	155765	False	False	Hibernate's core Object/Relational Mapping functionality
+RecyclerViewItemAnimators	0	True	https://github.com/gabrielemariotti/RecyclerViewItemAnimators	100.0	2781	716	False	True	An Android library which provides simple Item animations to RecyclerView items
+BGAQRCode-Android	0	True	https://github.com/bingoogolapple/BGAQRCode-Android	100.0	2775	20254	True	False	QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信 QQ 二维码扫描样式
+RecyclerViewSnap	0	False	https://github.com/rubensousa/RecyclerViewSnap	100.0	2774	56607	False	False	RecyclerView snapping example with SnapHelper
+StepView	0	False	https://github.com/baoyachi/StepView	100.0	2772	16297	False	False	Step by step，just use HorizontalStepView，VerticalStepView. step indicator，flow indicator，timeline，order process，express status
+android-interview-questions	0	True	https://github.com/MindorksOpenSource/android-interview-questions	100.0	2771	255	True	True	Your Cheat Sheet For Android Interview - Android Interview Questions
+Mybatis-PageHelper	0	False	https://github.com/pagehelper/Mybatis-PageHelper	100.0	2770	4188	False	False	Mybatis通用分页插件
+Android-Image-Cropper	0	True	https://github.com/ArthurHub/Android-Image-Cropper	99.96	2767	25912	True	True	Image Cropping Library for Android, optimized for Camera / Gallery.
+opentsdb	0	False	https://github.com/OpenTSDB/opentsdb	98.67	2754	31894	False	False	A scalable, distributed Time Series Database.
+Nuwa	0	True	https://github.com/jasonross/Nuwa	100.0	2751	0	False	True	Nuwa, pure java implementation, can hotfix your android application.
+AndroidViewHover	0	True	https://github.com/daimajia/AndroidViewHover	100.0	2747	7103	True	False	An elegant way to show your menu or messages.
+quickstart-android	0	True	https://github.com/firebase/quickstart-android	97.91	2745	6303	True	True	Firebase Quickstart Samples for Android
+Dexter	0	True	https://github.com/Karumi/Dexter	100.0	2739	2860	False	True	Android library that simplifies the process of requesting permissions at runtime.
+Compressor	0	True	https://github.com/zetbaitsu/Compressor	100.0	2737	840	False	True	An android image compression library.
+litesuits/android-common	0	True	https://github.com/litesuits/android-common	100.0	2731	594	True	True	Android Common Utils or Helper. Such as Log, Averager, Base64, Check, FlashLight, KeyguardLock, LogReader, Network, SilentInstaller, TimeAverager, TimeCounter, Toastor, WakeLock, ScreenReceiver, SmsReceiver, PhoneReceiver, NotificationService, AndroidUtil, AppUtil, BitmapUtil, ByteUtil, ClassUtil, DialogUtil, FieldUtil, FileUtil, HexUtil, MD5Util, NotificationUtil, NumberUtil, PackageUtil, RandomUtil, ShellUtil, TelephoneUtil, VibrateUtil, IOUtils, FileUtils, AsyncExecutor, etc.  通用性强，纯洁简单，体积不到50K！其中包括bitmap处理，文件操作，加密存储器，shell命令，静默安装，计数器，均值器，吐司，日志，校验，提示，网络监测等基础功能，以及一些Base64、MD5、Hex、Byte、Number、Dialog、Filed、Class、Package、Telephone、Random等工具类。
+DraggablePanel	0	True	https://github.com/pedrovgs/DraggablePanel	100.0	2725	107837	False	True	Android library used to create an awesome Android UI based on a draggable element similar to the last YouTube graphic component.
+TwinklingRefreshLayout	0	False	https://github.com/lcodecorex/TwinklingRefreshLayout	100.0	2724	82613	False	False	RefreshLayout that support for OverScroll and better than iOS.  支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果，支持RecyclerView,AbsListView,ScrollView,WebView
+AndroidPicker	0	True	https://github.com/gzu-liyujiang/AndroidPicker	99.83	2715	13491	True	True	 安卓选择器类库，包括日期选择器、时间选择器、单项选择器、双项选择器、城市地址选择器、车牌号选择器、数字选择器、星座选择器、生肖选择器、颜色选择器、文件选择器、目录选择器等，可自定义顶部及底部界面，可自定义窗口动画……Picker for android, include date&time/option/number/address/city/color/file&directory. 
+from-java-to-kotlin	0	False	https://github.com/MindorksOpenSource/from-java-to-kotlin	93.59	2705	83	False	False	From Java To Kotlin - Your Cheat Sheet For Java To Kotlin
+Music-Player	0	False	https://github.com/andremion/Music-Player	100.0	2690	24402	False	False	From UI Proposal to Code :notes::arrow_forward:
+android-menudrawer	0	True	https://github.com/SimonVT/android-menudrawer	98.73	2686	5057	True	False	*DEPRECATED* A slide-out menu implementation, which allows users to navigate between views in your app.
+chuck	0	True	https://github.com/jgilfelt/chuck	100.0	2684	1899	False	True	An in-app HTTP inspector for Android OkHttp clients
+ViewPagerCards	0	False	https://github.com/rubensousa/ViewPagerCards	100.0	2676	105	False	False	ViewPager cards inspired by Duolingo
+ASimpleCache	0	True	https://github.com/yangfuhai/ASimpleCache	100.0	2668	719	False	True	a simple cache for android and java
+Activiti	0	False	https://github.com/Activiti/Activiti	99.64	2657	92287	False	False	Activiti is a light-weight workflow and Business Process Management (BPM) Platform targeted at business people, developers and system admins. Its core is a super-fast and rock-solid BPMN 2 process engine for Java. It's open-source and distributed under the Apache license. Activiti runs in any Java application, on a server, on a cluster or in the cloud. It integrates perfectly with Spring, it is extremely lightweight and based on simple concepts. 
+JamsMusicPlayer	0	True	https://github.com/psaravan/JamsMusicPlayer	99.78	2647	26813	False	True	A free, powerful and elegant music player for Android.
+weiciyuan	0	True	https://github.com/qii/weiciyuan	98.61	2646	114562	False	True	Sina Weibo Android Client
+Android-Week-View	0	True	https://github.com/alamkanak/Android-Week-View	100.0	2643	820	True	True	Android Week View is an android library to display calendars (week view or day view) within the app. It supports custom styling.
+CircleProgress	0	False	https://github.com/lzyzsd/CircleProgress	100.0	2642	2478	False	False	CircleProgress, DonutProgress, ArcProgress
+ticker	0	True	https://github.com/robinhood/ticker	100.0	2640	1595	False	True	An Android text view with scrolling text change animation
+yigit/android-priority-jobqueue	0	True	https://github.com/yigit/android-priority-jobqueue	100.0	2639	14635	True	True	A Job Queue specifically written for Android to easily schedule jobs (tasks) that run in the background, improving UX and application stability.
+MaterialSearchView	0	False	https://github.com/MiguelCatalan/MaterialSearchView	100.0	2636	4665	False	False	Cute library to implement SearchView in a Material Design Approach
+android-percent-support-lib-sample	0	True	https://github.com/JulienGenoud/android-percent-support-lib-sample	100.0	2610	332	True	True	[Deprecated] Just a sample of the android percent support lib
+android-flip	0	True	https://github.com/openaphid/android-flip	100.0	2609	6795	True	True	A component for flip animation on Android, which is similar to the effect in Flipboard iPhone/Android
+CtCI-6th-Edition	15	False	https://github.com/careercup/CtCI-6th-Edition	99.87	2601	21422	False	False	Cracking the Coding Interview 6th Ed. Solutions
+VirtualApp	37	False	https://github.com/asLody/VirtualApp	93.16	2600	33174	False	False	An open source implementation of MultiAccount.(Support 4.0 - 8.0).
+JSON-java	0	False	https://github.com/stleary/JSON-java	100.0	2597	691	False	False	A reference implementation of a JSON package in Java.
+android-process-button	0	True	https://github.com/dmytrodanylyk/android-process-button	100.0	2593	3491	True	True	Android Buttons With Built-in Progress Meters.
+RecyclerViewPager	0	False	https://github.com/lsjwzh/RecyclerViewPager	100.0	2591	3210	False	False	A ViewPager implemention base on RecyclerView's code. Support fling operation like gallary.
+AndroidResideMenu	0	True	https://github.com/SpecialCyCi/AndroidResideMenu	100.0	2577	7008	True	True	The idea of ResideMenu is from Dribbble 1 and 2. It has come true and run in iOS devices. iOS ResideMenu This project is the RefsideMenu Android version. The visual effect is partly referred to iOS version of ResideMenu. And thanks to the authors for the above idea and contribution. 
+android-betterpickers	0	True	https://github.com/code-troopers/android-betterpickers	100.0	2577	16799	True	True	Android library for better Picker DialogFragments
+blade	122	False	https://github.com/biezhi/blade	99.97	2576	4197	False	False	:rocket: Lightning Fast and Elegant Mvc Framework for Java8
+JazzyViewPager	0	False	https://github.com/jfeinstein10/JazzyViewPager	100.0	2573	995	False	False	An easy to use ViewPager that adds an awesome set of custom swiping animations. Just change your ViewPagers to JazzyViewPagers, two more steps, and you're good to go!
+Conversations	0	True	https://github.com/siacs/Conversations	99.64	2573	21022	False	True	Conversations is an open source XMPP/Jabber client for the Android platform
+animate	0	True	https://github.com/hitherejoe/animate	100.0	2572	19836	False	True	An application demoing meaningful motion on Android
+DataX	0	False	https://github.com/alibaba/DataX	96.59	2568	11385	False	False	DataX 是阿里巴巴集团内被广泛使用的离线数据同步工具/平台，实现包括 MySQL、Oracle、HDFS、Hive、OceanBase、HBase、OTS、ODPS 等各种异构数据源之间高效的数据同步功能。
+CircleIndicator	0	False	https://github.com/ongakuer/CircleIndicator	100.0	2567	2537	False	False	A lightweight viewpager indicator like in nexus 5 launcher
+johannilsson/android-pulltorefresh	0	True	https://github.com/johannilsson/android-pulltorefresh	100.0	2558	1491	True	True	DEPRECATED This project aims to provide a reusable pull to refresh widget for Android.
+ExpandableTextView	0	True	https://github.com/Manabu-GT/ExpandableTextView	100.0	2558	8038	False	True	Android's TextView that can expand/collapse like the Google Play's app description
+storio	0	False	https://github.com/pushtorefresh/storio	94.85	2538	3913	False	False	Reactive API for SQLiteDatabase and ContentResolver.
+MultiImageSelector	0	True	https://github.com/lovetuzitong/MultiImageSelector	100.0	2536	4004	False	True	Deprecated -- Image selector for Android device. Support single choice and multi-choice.
+XCL-Charts	0	True	https://github.com/xcltapestry/XCL-Charts	100.0	2533	127035	False	True	Android图表库(XCL-Charts is a free charting library for Android platform.),基于Android Canvas来绘制各种图表,使用简便,定制灵活。目前支持3D/非3D/背向式/横向/竖向柱形图(Bar Chart)、3D/非3D饼图(Pie Chart)、堆叠图(Stacked Bar Chart)、面积图(Area Chart)、 折线图(Line Chart)、曲线图(Spline Chart)、环形图(Dount Chart)、南丁格尔玫瑰图(Rose Chart)、仪表盘(Dial Chart)、刻度盘(Gauge Chart)、雷达图(Radar Chart)、漏斗图(Funnel Chart)、圆形图(Circle Chart)、弧线比较图、散点图(Scatter Chart)、气泡图(Bubble Chart)、范围条形图(RangeBar Chart)等图表。其它特性还包括支持图表缩放、手势移动、点击响应、动画效果、多轴显示、图表参考线、混合图表及同数据源不同图表类型切换等。
+SuperRecyclerView	0	False	https://github.com/Malinskiy/SuperRecyclerView	100.0	2531	207	False	False	Pumped up RecyclerView
+AndPermission	0	True	https://github.com/yanzhenjie/AndPermission	100.0	2528	242	False	True	Android Runtime Permission，support the right to apply for permission at any place.
+yuicompressor	0	False	https://github.com/yui/yuicompressor	91.97	2525	5743	False	False	YUI Compressor
+AlgoDS	25	False	https://github.com/sherxon/AlgoDS	100.0	2519	1248	False	False	Implementation of Algorithms and Data Structures, Problems and Solutions
+TextDrawable	0	False	https://github.com/amulyakhare/TextDrawable	100.0	2511	1148	False	False	This light-weight library provides images with letter/text like the Gmail app. It extends the Drawable class thus can be used with existing/custom/network ImageView classes. Also included is a fluent interface for creating drawables and a customizable ColorGenerator.
+android-saripaar	0	True	https://github.com/ragunathjawahar/android-saripaar	100.0	2508	3307	True	True	UI form validation library for Android
+MultiType	0	True	https://github.com/drakeet/MultiType	100.0	2505	8236	False	True	An Android library to create multiple item types list views easily and flexibly
+pinned-section-listview	0	True	https://github.com/beworker/pinned-section-listview	100.0	2496	825	False	True	Easy to use ListView with pinned sections for Android.
+cropper	0	True	https://github.com/edmodo/cropper	100.0	2495	13316	False	True	Android widget for cropping and rotating an image.
+StickerCamera	22	True	https://github.com/Skykai521/StickerCamera	100.0	2494	9695	False	True	This is an Android application with camera,picture cropping,collage sticking and tagging.贴纸标签相机,功能:拍照,相片裁剪,给图片贴贴纸,打标签。
+DeepLinkDispatch	0	True	https://github.com/airbnb/DeepLinkDispatch	99.24	2494	1731	False	True	A simple, annotation-based library for making deep link handling better on Android
+GeekNews	0	False	https://github.com/codeestX/GeekNews	100.0	2493	83835	False	False	:books:A pure reading App based on Material Design + MVP + RxJava2 + Retrofit + Dagger2 + Realm + Glide
+AndroidPdfViewer	0	True	https://github.com/barteksc/AndroidPdfViewer	100.0	2489	2436	True	True	Android view for displaying PDFs rendered with PdfiumAndroid
+rocketmq	0	False	https://github.com/apache/rocketmq	98.21	2488	3103	False	False	Mirror of Apache RocketMQ
+cameraview	0	True	https://github.com/google/cameraview	100.0	2481	248	False	True	Easily integrate Camera features into your Android app
+grafika	0	False	https://github.com/google/grafika	100.0	2481	1051	False	False	Grafika test app
+Conductor	0	True	https://github.com/bluelinelabs/Conductor	99.78	2462	3187	False	True	A small, yet full-featured framework that allows building View-based Android applications
+QMUI_Android	0	True	https://github.com/QMUI/QMUI_Android	100.0	2461	14108	True	True	提高 Android UI 开发效率的 UI 库
+BottomNavigation	0	False	https://github.com/Ashok-Varma/BottomNavigation	100.0	2456	3902	False	False	This Library helps users to use Bottom Navigation Bar (A new pattern from google) with ease and allows ton of customizations
+android-tips-tricks	0	True	https://github.com/nisrulz/android-tips-tricks	100.0	2451	1051	True	True	:ballot_box_with_check: [Cheatsheet] Tips and tricks for Android Development
+CoordinatorTabLayout	0	False	https://github.com/hugeterry/CoordinatorTabLayout	100.0	2446	11462	False	False	Combination of TabLayout and CoordinatorLayout./TabLayout和CoordinatorLayout相结合的折叠控件
+hawk	0	True	https://github.com/orhanobut/hawk	100.0	2439	953	False	True	✔️ Secure, simple key-value storage for Android
+Material-Movies	0	False	https://github.com/saulmm/Material-Movies	100.0	2438	1629	False	False	[Deprecated] An application about movies with material design
+Fast-Android-Networking	0	True	https://github.com/amitshekhariitbhu/Fast-Android-Networking	100.0	2436	2696	True	True	🚀 A Complete Fast Android Networking Library that also supports HTTP/2 🚀
+FreeFlow	0	True	https://github.com/Comcast/FreeFlow	100.0	2435	2307	False	True	A layout engine for Android that decouples layouts from the View containers that manage scrolling and view recycling. FreeFlow makes it really easy to create custom layouts and beautiful transition animations as data and layouts change
+ahbottomnavigation	0	False	https://github.com/aurelhubert/ahbottomnavigation	100.0	2425	5510	False	False	A library to reproduce the behavior of the Bottom Navigation guidelines from Material Design.
+JKeyboardPanelSwitch	0	True	https://github.com/Jacksgong/JKeyboardPanelSwitch	100.0	2423	24054	False	True	For resolve the layout conflict when keybord & panel are switching (Android键盘面板冲突 布局闪动处理方案)
+SuperToasts	0	True	https://github.com/JohnPersano/SuperToasts	100.0	2422	7109	False	True	A library that extends the Android toast framework.
+sugar	0	True	https://github.com/chennaione/sugar	100.0	2418	9679	False	True	Insanely easy way to work with Android Database.  
+Store	42	True	https://github.com/NYTimes/Store	95.32	2418	2336	False	True	Android Library for Async Data Loading and Caching
+checkstyle	395	False	https://github.com/checkstyle/checkstyle	99.13	2416	54049	False	False	Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly configurable. It can be invoked with an ANT task and a command line program.
+material-camera	0	True	https://github.com/afollestad/material-camera	100.0	2411	7081	False	True	One of the most difficult APIs on Android, made easy in a small library.
+jersey	444	False	https://github.com/jersey/jersey	99.12	2405	36811	False	False	This is the main, active Jersey development repository. Forks and pull requests are welcome! For more information about Jersey, please visit the Jersey website:
+path/android-priority-jobqueue	0	True	https://github.com/path/android-priority-jobqueue	100.0	2397	13597	True	True	A Job Queue specifically written for Android to easily schedule jobs (tasks) that run in the background, improving UX and application stability.
+network-connection-class	0	False	https://github.com/facebook/network-connection-class	100.0	2397	849	False	False	Listen to current network traffic in the app and categorize the quality of the network.
+GuillotineMenu-Android	0	True	https://github.com/Yalantis/GuillotineMenu-Android	100.0	2391	3923	True	False	Neat library, that provides a simple way to implement guillotine-styled animation
+socket.io-client-java	0	False	https://github.com/socketio/socket.io-client-java	97.85	2390	1400	False	False	Full-featured Socket.IO Client Library for Java, which is compatible with Socket.IO v1.0 and later.
+floatingsearchview	0	False	https://github.com/arimorty/floatingsearchview	99.72	2386	7915	False	False	A search view that implements a floating search bar also known as persistent search
+flow	0	False	https://github.com/square/flow	99.49	2383	965	False	False	Name UI states, navigate between them, remember where you've been.
+SwipeRecyclerView	0	False	https://github.com/yanzhenjie/SwipeRecyclerView	100.0	2382	29098	False	False	RecyclerView侧滑菜单，Item拖拽，滑动删除Item，自动加载更多，HeaderView，FooterView，Item分组黏贴。
+GsonFormat	0	False	https://github.com/zzz40500/GsonFormat	100.0	2374	4207	False	False	根据Gson库使用的要求,将JSONObject格式的String  解析成实体
+otter	0	False	https://github.com/alibaba/otter	91.0	2371	7057	False	False	阿里巴巴分布式数据库同步系统(解决中美异地机房)
+FastDev4Android	0	True	https://github.com/jiangqqlmj/FastDev4Android	99.89	2366	52071	True	True	本项目是Android快速开发框架，采用AndroidStudio进行开发。 预想集成工具包,采用MVP开发模式,EventBus数据分发,沉浸式状态栏,ORM,网络请求(HTTPClint,Volley,OkHttps),数据解析,依赖注入(AndroidAnnotations),xutils,图片异步加载，二维码扫描等等，后续会进行逐步添加
+dex-method-counts	0	True	https://github.com/mihaip/dex-method-counts	94.28	2365	195	False	True	Command-line tool to count per-package methods in Android .dex files
+android-zxingLibrary	0	True	https://github.com/yipianfengye/android-zxingLibrary	100.0	2363	10170	True	False	几行代码快速集成二维码扫描功能
+ProgressWheel	0	True	https://github.com/Todd-Davies/ProgressWheel	100.0	2357	371	False	True	A progress wheel for android, intended for use instead of the standard progress bar.
+crawler4j	0	False	https://github.com/yasserg/crawler4j	92.59	2357	767	False	False	Open Source Web Crawler for Java
+material-menu	0	True	https://github.com/balysv/material-menu	100.0	2355	1298	False	True	Animations for Android L drawer, back, dismiss and check icons
+RxJava2-Android-Samples	0	True	https://github.com/amitshekhariitbhu/RxJava2-Android-Samples	100.0	2346	366	True	True	RxJava 2 Android Examples - Migration From RxJava 1 to RxJava 2 - How to use RxJava 2 in Android
+AgentWeb	0	True	https://github.com/Justson/AgentWeb	100.0	2345	15491	False	True	 AgentWeb 是基于 Android  WebView 一个轻量级浏览器库 ， 使用很方便 ， 集成进你应用 ，只需几行代码 。
+PictureSelector	0	True	https://github.com/LuckSiege/PictureSelector	100.0	2341	11698	False	True	Picture Selector Library for Android  or 多图片选择器
+material-components-android	0	True	https://github.com/material-components/material-components-android	99.85	2332	2275	True	True	Modular and customizable Material Design UI components for Android
+DropDownMenu	0	False	https://github.com/dongjunkun/DropDownMenu	100.0	2314	14892	False	False	一个实用的多条件筛选菜单
+MasteringAndroidDataBinding	0	True	https://github.com/LyndonChin/MasteringAndroidDataBinding	100.0	2308	5509	True	True	A comprehensive tutorial for Android Data Binding
+facebook/shimmer-android	0	True	https://github.com/facebook/shimmer-android	91.56	2307	5016	True	True	An easy, flexible way to add a shimmering effect to any view in an Android app.
+spring-security-oauth	0	False	https://github.com/spring-projects/spring-security-oauth	98.94	2304	5697	False	False	Support for adding OAuth1(a) and OAuth2 features (consumer and provider) for Spring web applications.
+spruce-android	0	True	https://github.com/willowtreeapps/spruce-android	100.0	2286	8070	True	False	Spruce Animation Library
+owncloud/android	0	True	https://github.com/owncloud/android	98.96	2285	166682	True	True	:phone: The ownCloud Android App
+PageIndicatorView	0	True	https://github.com/romandanylyk/PageIndicatorView	100.0	2280	19067	False	True	An page indicator for Android ViewPager
+hsweb-framework	267	False	https://github.com/hs-web/hsweb-framework	96.14	2267	8515	False	False	hsweb (haʊs wɛb) 是一个用于快速搭建企业后台管理系统的基础项目,集成一揽子便捷功能如:通用增删改查，在线代码生成，权限管理(可控制到列和行)，动态多数据源分布式事务，动态脚本，动态定时任务，在线数据库维护等等. 基于 spring-boot,mybaits 
+HoloEverywhere	0	False	https://github.com/Prototik/HoloEverywhere	99.84	2266	25505	False	False	NO LONGER MAINTAINED. DEVELOP FOR 4.X+ DUDE.
+gephi	0	False	https://github.com/gephi/gephi	99.25	2265	518692	False	False	Gephi - The Open Graph Viz Platform
+MagicaSakura	0	True	https://github.com/Bilibili/MagicaSakura	100.0	2265	3018	False	True	MagicaSakura 是 Android 多主题框架。~ is an Android multi theme library which supporting both daily colorful theme and night theme. 
+hazelcast	0	False	https://github.com/hazelcast/hazelcast	99.96	2264	117113	False	False	Open Source In-Memory Data Grid
+VideoPlayerManager	0	True	https://github.com/danylovolokh/VideoPlayerManager	100.0	2258	236445	False	True	This is a project designed to help controlling Android MediaPlayer class. It makes it easier to use MediaPlayer ListView and RecyclerView. Also it tracks the most visible item in scrolling list. When new item in the list become the most visible, this library gives an API to track it.
+droidicon	0	True	https://github.com/theDazzler/droidicon	99.48	2256	9121	False	True	Over 1600 customizable icons for Android including 750+ Google Material Design icons, 25 ready-made social badges, and more!
+robotium	0	True	https://github.com/RobotiumTech/robotium	98.1	2250	2372	False	True	Android UI Testing
+TourGuide	0	True	https://github.com/worker8/TourGuide	99.57	2247	475	False	True	TourGuide is an Android library that aims to provide an easy way to add pointers with animations over a desired Android View
+android-maps-utils	0	True	https://github.com/googlemaps/android-maps-utils	100.0	2219	2096	True	True	Handy extensions to the Google Maps Android API.
+materialish-progress	0	False	https://github.com/pnikosis/materialish-progress	100.0	2217	1039	False	False	A material style progress wheel compatible with 2.3
+android-ui	0	True	https://github.com/markushi/android-ui	100.0	2209	776	True	True	Android UI library.
+PreviewSeekBar	0	False	https://github.com/rubensousa/PreviewSeekBar	100.0	2206	4811	False	False	A SeekBar suited for showing a preview of something. As seen in Google Play Movies.
+CoordinatorBehaviorExample	0	False	https://github.com/saulmm/CoordinatorBehaviorExample	100.0	2203	42018	False	False	None
+PhotoPicker	0	False	https://github.com/donglua/PhotoPicker	99.62	2194	603	False	False	Image Picker like Wechat
+feign	8	False	https://github.com/OpenFeign/feign	97.14	2192	1859	False	False	Feign makes writing java http clients easier
+CloudReader	0	True	https://github.com/youlookwhat/CloudReader	100.0	2192	68584	False	True	云阅：一款基于网易云音乐UI，使用Gank.Io及豆瓣api开发的符合Google Material Design的Android客户端。项目采取的是MVVM-DataBinding架构开发，现主要包括：干货区、电影区和书籍区三个子模块。DIY网易云音乐原来是如此Cool~
+ExpectAnim	0	False	https://github.com/florent37/ExpectAnim	99.94	2188	3345	False	False	Describe your animation and run !
+requery	112	True	https://github.com/requery/requery	94.26	2178	2644	False	True	requery - modern SQL based query & persistence for Java / Kotlin / Android
+distributedlog	0	False	https://github.com/twitter/distributedlog	97.27	2177	9749	False	False	A high performance replicated log service. (The development is moved to Apache Incubator)
+Algorithms	0	False	https://github.com/pedrovgs/Algorithms	100.0	2175	456	False	False	Solutions for some common algorithm problems written in Java.
+ImagePicker	0	False	https://github.com/jeasonlzy/ImagePicker	100.0	2170	21059	False	False	完全仿微信的图片选择，并且提供了多种图片加载接口，选择图片后可以旋转，可以裁剪成矩形或圆形，可以配置各种其他的参数
+ViewServer	0	True	https://github.com/romainguy/ViewServer	100.0	2170	195	False	True	Local server for Android's HierarchyViewer
+aws-sdk-java	44	False	https://github.com/aws/aws-sdk-java	99.9	2166	692492	False	False	The official AWS SDK for Java.
+hover	0	True	https://github.com/google/hover	97.79	2164	1997	False	True	A floating menu library for Android.
+9GAG	0	True	https://github.com/stormzhang/9GAG	100.0	2164	8933	False	True	Android unofficial REST Client of 9GAG.
+NiftyDialogEffects	0	False	https://github.com/sd6352051/NiftyDialogEffects	100.0	2163	313	False	False	Nifty Modal Dialog Effects
+CircularReveal	0	False	https://github.com/ozodrukh/CircularReveal	100.0	2162	1334	False	False	Lollipop ViewAnimationUtils.createCircularReveal for everyone 4.0+
+Terasology	462	False	https://github.com/MovingBlocks/Terasology	98.13	2158	279983	False	False	Terasology - open source voxel world
+hmkcode/Android	0	True	https://github.com/hmkcode/Android	95.42	2157	1761	True	True	Android related examples
+CircularFloatingActionMenu	0	True	https://github.com/oguzbilgener/CircularFloatingActionMenu	100.0	2152	3127	False	True	an animated circular menu for Android
+zxing-android-embedded	0	True	https://github.com/journeyapps/zxing-android-embedded	100.0	2151	8162	True	True	Port of the ZXing Android application as an Android library project, for embedding in an Android application.
+wire	0	True	https://github.com/square/wire	95.76	2147	5546	False	True	Clean, lightweight protocol buffers for Android and Java.
+BlurKit-Android	0	True	https://github.com/wonderkiln/BlurKit-Android	100.0	2147	6140	True	True	The missing Android blurring library. Fast blur-behind layout that parallels iOS.
+Android-skin-support	0	True	https://github.com/ximsfei/Android-skin-support	100.0	2145	50935	True	True	Android-skin-support: 一款用心去做的Android 换肤框架, 极低的学习成本, 极好的用户体验. 一行代码就可以实现换肤, 你值得拥有!!!
+FirebaseUI-Android	0	True	https://github.com/firebase/FirebaseUI-Android	98.75	2143	18828	True	False	UI bindings for Firebase
+android-pdfview	0	True	https://github.com/JoanZapata/android-pdfview	100.0	2143	14319	True	True	[DEPRECATED] A fast PDF reader component for Android development
+WoWoViewPager	0	False	https://github.com/Nightonke/WoWoViewPager	100.0	2129	55505	False	False	Combine ViewPager and Animations to provide a simple way to create applications' guide pages. 
+android-styled-dialogs	0	True	https://github.com/avast/android-styled-dialogs	100.0	2120	1846	True	False	Backport of Material dialogs with easy-to-use API based on DialogFragment
+FlexibleAdapter	0	False	https://github.com/davideas/FlexibleAdapter	100.0	2114	10194	False	False	Fast and versatile Adapter for RecyclerView which regroups several features into one library to considerably improve the user experience :-)
+SlidingTutorial-Android	0	True	https://github.com/Cleveroad/SlidingTutorial-Android	100.0	2112	6258	True	True	Android Library for making animated tutorials inside your app
+jfinal	0	False	https://github.com/jfinal/jfinal	100.0	2109	1329	False	False	JAVA WEB + ORM Framework
+Highlight	0	True	https://github.com/hongyangAndroid/Highlight	100.0	2106	2985	True	False	一个用于app指向性功能高亮的库
+netty-socketio	0	False	https://github.com/mrniko/netty-socketio	100.0	2102	1789	False	False	Socket.IO server implemented on Java. Realtime java framework
+Telecine	0	True	https://github.com/JakeWharton/Telecine	98.8	2100	1413	False	True	Record full-resolution video on your Android devices.
+android-pathview	0	True	https://github.com/geftimov/android-pathview	100.0	2099	1480	True	True	Android view with both path from constructed path or from svg.
+StickyHeaderListView	0	False	https://github.com/sfsheng0322/StickyHeaderListView	97.53	2099	7399	False	False	打造炫酷列表之 StickyHeaderListView：标题渐变、吸附悬浮、筛选分类、动态头部等
+twitter4j	3	False	https://github.com/yusuke/twitter4j	97.97	2097	10729	False	False	Twitter4J is an open-sourced, mavenized and Google App Engine safe Java library for the Twitter API which is released under the Apache License 2.0.
+LookLook	0	False	https://github.com/xinghongfei/LookLook	100.0	2091	31129	False	False	A amazing reading app
+javacpp	0	False	https://github.com/bytedeco/javacpp	99.83	2091	4396	False	False	The missing bridge between Java and native C++
+500px-android-blur	0	True	https://github.com/500px/500px-android-blur	100.0	2089	17014	True	True	Android Blurring View
+XhsEmoticonsKeyboard	0	True	https://github.com/w446108264/XhsEmoticonsKeyboard	100.0	2085	28220	False	True	android emoticonsKeyboard support emoji and user-defined emoticon. easy to integrated into your project 
+MusicDNA	0	True	https://github.com/harjot-oberai/MusicDNA	100.0	2083	37860	False	True	A Music Player for android that renders beautiful DNA(Visualization) of the currently playing music.
+sensey	0	True	https://github.com/nisrulz/sensey	100.0	2076	963	False	True	:zap: [Android Library] Play with sensor events & detect gestures in a snap.
+vavr	3266	False	https://github.com/vavr-io/vavr	94.91	2075	16220	False	False	Vavr (formerly called Javaslang) is an object-functional language extension to Java 8+, which aims to reduce the lines of code and increase code quality.
+reark	75	True	https://github.com/reark/reark	100.0	2075	1556	False	True	RxJava architecture library for Android
+JJSearchViewAnim	0	True	https://github.com/android-cjj/JJSearchViewAnim	100.0	2073	1112	True	False	A cool search view animation library 
+Android-ItemTouchHelper-Demo	0	True	https://github.com/iPaulPro/Android-ItemTouchHelper-Demo	100.0	2070	284	True	False	Basic example of using ItemTouchHelper to add drag & drop and swipe-to-dismiss to RecyclerView.
+philm	0	True	https://github.com/chrisbanes/philm	99.19	2069	7139	False	True	Movie collection and information app for Android.
+mortar	0	False	https://github.com/square/mortar	100.0	2067	879	False	False	A simple library that makes it easy to pair thin views with dedicated controllers, isolated from most of the vagaries of the Activity life cycle.
+walle	0	True	https://github.com/Meituan-Dianping/walle	94.75	2066	1824	False	True	Android Signature V2 Scheme签名下的新一代渠道包打包神器
+CameraKit-Android	0	True	https://github.com/wonderkiln/CameraKit-Android	99.84	2060	17723	True	True	One of the hardest Android APIs made into a high level and easy to use library that solves all of your problems.
+Genius-Android	0	True	https://github.com/qiujuer/Genius-Android	92.45	2059	58498	True	True	Android Material Design Theme UI and Tool Library. Support: 4.0.3~O
+PullZoomView	0	True	https://github.com/Frank-Zhu/PullZoomView	100.0	2051	22742	False	True	An Android custom ListView and ScrollView with pull to zoom-in.
+material-intro-screen	0	False	https://github.com/TangoAgency/material-intro-screen	100.0	2046	27780	False	False	Inspired by Heinrich Reimer Material Intro and developed with love from scratch 
+CustomActivityOnCrash	0	True	https://github.com/Ereza/CustomActivityOnCrash	100.0	2044	573	False	True	Android library that allows launching a custom activity when your app crashes, instead of showing the hated "Unfortunately, X has stopped" dialog.
+joda-time-android	0	True	https://github.com/dlew/joda-time-android	92.77	2040	2503	True	True	Joda-Time library with Android specialization
+material-icon-lib	0	False	https://github.com/code-mc/material-icon-lib	98.7	2035	1200	False	False	Library containing over 2000 material vector icons that can be easily used as Drawable or as a standalone View.
+boxing	0	True	https://github.com/Bilibili/boxing	100.0	2033	1583	False	True	Android multi-media selector based on MVP mode.
+DiagonalLayout	0	False	https://github.com/florent37/DiagonalLayout	99.77	2032	25073	False	False	With Diagonal Layout explore new styles and approaches on material design
+androidquery	0	True	https://github.com/androidquery/androidquery	100.0	2024	17080	True	True	AndroidQuery
+MinecraftForge	133	False	https://github.com/MinecraftForge/MinecraftForge	100.0	2024	91042	False	False	Modifications to the Minecraft base files to assist in compatibility between mods.
+LikeButton	0	True	https://github.com/jd-alexander/LikeButton	100.0	2022	260	False	True	Twitter's heart animation for Android
+jvm-serializers	0	False	https://github.com/eishay/jvm-serializers	94.52	2021	143549	False	False	Benchmark comparing serialization libraries on the JVM 
+android-material-design-icon-generator-plugin	0	True	https://github.com/konifar/android-material-design-icon-generator-plugin	95.48	2009	177671	True	False	This plugin help you to set material design icon to your project.
+android-shape-imageview	0	True	https://github.com/siyamed/android-shape-imageview	100.0	2007	5246	True	True	Custom shaped android imageview components
+UltimateAndroid	0	True	https://github.com/cymcsg/UltimateAndroid	99.94	2004	108648	True	True	UltimateAndroid is a rapid development framework for developing your apps
+BGABanner-Android	0	True	https://github.com/bingoogolapple/BGABanner-Android	100.0	2004	40547	True	False	引导界面滑动导航 + 大于等于1页时无限轮播 + 各种切换动画轮播效果
+GuideView	0	False	https://github.com/binIoter/GuideView	100.0	2000	5343	False	False	最最轻量级的新手引导库，能够快速为任何一个View创建一个遮罩层，支持单个页面，多个引导提示，支持为高亮区域设置不同的图形，支持引导动画，方便扩展,良好支持fragment
+android-adDialog	0	True	https://github.com/yipianfengye/android-adDialog	100.0	1993	9064	True	False	一个简单，强大的广告活动弹窗控件
+frontend-maven-plugin	0	False	https://github.com/eirslett/frontend-maven-plugin	95.92	1992	673	False	False	Maven-node-grunt-gulp-npm-node-plugin to end all maven-node-grunt-gulp-npm-plugins. A Maven plugin that downloads/installs Node and NPM locally, runs NPM install, Grunt, Gulp and/or Karma.
+JsonPath	0	False	https://github.com/json-path/JsonPath	96.52	1989	2241	False	False	Java JsonPath implementation
+ZoomHeader	0	False	https://github.com/githubwing/ZoomHeader	100.0	1988	5661	False	False	A demo of animation show how turn viewpager into detail.神交互。模仿饿了么详情页可以跟随手指移动 viewpager变详情页
+BeautifulRefreshLayout	0	True	https://github.com/android-cjj/BeautifulRefreshLayout	100.0	1987	3753	True	False	A bueautiful RefreshLayout
+Euclid	0	False	https://github.com/Yalantis/Euclid	100.0	1986	590	False	False	User Profile Interface Animation
+KenBurnsView	0	True	https://github.com/flavioarfaria/KenBurnsView	100.0	1982	13498	False	True	Android ImageViews animated by Ken Burns Effect
+SpringIndicator	0	False	https://github.com/chenupt/SpringIndicator	100.0	1981	5829	False	False	A spring indicator like Morning Routine guide.
+ActivityRouter	0	True	https://github.com/mzule/ActivityRouter	100.0	1978	7050	False	True	Router activities and methods with url for android
+AndroidProcess	0	True	https://github.com/wenmingvs/AndroidProcess	100.0	1974	11122	True	False	判断App位于前台或者后台的6种方法
+jOOQ	89	False	https://github.com/jOOQ/jOOQ	95.24	1973	128865	False	False	jOOQ is the best way to write SQL in Java
+MaterialDialog	0	True	https://github.com/drakeet/MaterialDialog	100.0	1966	8514	False	True	(Deprecated: This library is deprecated and you should use android.support.v7.app.AlertDialog instead. ) An Android dialog library, has strong extensibility, customizability, and for conveniently building Material Design Dialog in Android version 2.2 ~ L. 
+Android-SlideExpandableListView	0	True	https://github.com/tjerkw/Android-SlideExpandableListView	100.0	1966	6416	True	False	A better ExpandableListView, with animated expandable views for each list item
+voldemort	0	False	https://github.com/voldemort/voldemort	94.25	1963	210658	False	False	An open source clone of Amazon's Dynamo.
+soarcn/BottomSheet	0	False	https://github.com/soarcn/BottomSheet	100.0	1963	997	False	False	One way to present a set of actions to a user is with bottom sheets, a sheet of paper that slides up from the bottom edge of the screen. Bottom sheets offer flexibility in the display of clear and simple actions that do not need explanation.
+ChipsLayoutManager	23	True	https://github.com/BelooS/ChipsLayoutManager	100.0	1953	29436	False	True	ANDROID. ChipsLayoutManager (SpanLayoutManager, FlowLayoutManager). A custom layout manager for RecyclerView which mimicric TextView span behaviour, flow layouts behaviour with support of amazing recyclerView features
+javacv	2	False	https://github.com/bytedeco/javacv	97.45	1953	3547	False	False	Java interface to OpenCV and more
+bytecode-viewer	0	True	https://github.com/Konloch/bytecode-viewer	99.48	1953	551279	False	True	A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
+BlurEffectForAndroidDesign	0	True	https://github.com/PomepuyN/BlurEffectForAndroidDesign	100.0	1949	1570	True	False	Sample to show how to implement blur graphical tricks
+Grav	0	False	https://github.com/glomadrian/Grav	100.0	1947	33995	False	False	Configurable animations based on points
+AnimationEasingFunctions	0	True	https://github.com/daimajia/AnimationEasingFunctions	100.0	1947	135	False	True	Android Animation Easing Functions. Let's make animation more real!
+MaterialShowcaseView	0	True	https://github.com/deano2390/MaterialShowcaseView	100.0	1945	197	False	True	A Material Design themed ShowcaseView for Android
+cobar	0	False	https://github.com/alibaba/cobar	95.39	1935	9011	False	False	a proxy for sharding databases and tables
+material-ripple	0	True	https://github.com/balysv/material-ripple	100.0	1934	2821	False	True	Android L Ripple effect wrapper for Views
+KJFrameForAndroid	0	True	https://github.com/kymjs/KJFrameForAndroid	98.08	1931	40781	True	True	An Android library and includes ActivityFrame, KJHttp, KJBitmap, KJDataBase. KJFrameForAndroid is designed to wrap complexity of the Android native SDK and keep things simple.
+LeafPic	73	True	https://github.com/HoraApps/LeafPic	99.86	1931	9766	False	True	LeafPic is an ad-free, open-source and material-designed android gallery alternative
+AndroidTagGroup	0	True	https://github.com/2dxgujun/AndroidTagGroup	100.0	1926	812	True	True	:four_leaf_clover:A beautiful android tag group widget.
+reactive-streams-jvm	0	False	https://github.com/reactive-streams/reactive-streams-jvm	100.0	1922	1431	False	False	Reactive Streams Specification for the JVM
+ViewpagerTransition	0	False	https://github.com/xmuSistone/ViewpagerTransition	100.0	1917	30297	False	False	viewpager with parallax pages, together with vertical sliding (or click) and activity transition
+CardSlidePanel	0	False	https://github.com/xmuSistone/CardSlidePanel	100.0	1913	29897	False	False	enable users to slide card to the left or right smoothly and continuously
+spring-cloud-microservice-example	3	False	https://github.com/kbastani/spring-cloud-microservice-example	100.0	1911	3233	False	False	An example project that demonstrates an end-to-end cloud native application using Spring Cloud for building a practical microservices architecture.
+Android-MaterialRefreshLayout	0	True	https://github.com/android-cjj/Android-MaterialRefreshLayout	100.0	1909	19486	True	False	This is a drop-down control, it is more beautiful and powerful than SwipeRefreshLayout
+MaterialIntroView	0	True	https://github.com/iammert/MaterialIntroView	100.0	1909	3102	False	True	Material Intro View is a showcase android library.
+vectalign	0	False	https://github.com/bonnyfone/vectalign	100.0	1908	121	False	False	Tool for create complex morphing animations using VectorDrawables (allows morphing between any pair of SVG images)
+android_design_patterns_analysis	0	True	https://github.com/simple-android-framework/android_design_patterns_analysis	100.0	1908	1954	True	True	Android源码设计模式分析项目
+Swipecards	0	True	https://github.com/Diolor/Swipecards	100.0	1908	19383	False	True	A Tinder-like Android library to create the swipe cards effect. You can swipe left or right to like or dislike the content.
+libstreaming	0	True	https://github.com/fyhertz/libstreaming	100.0	1905	1428	False	True	A solution for streaming H.264, H.263, AMR, AAC using RTP on Android
+SlidingRootNav	0	False	https://github.com/yarolegovich/SlidingRootNav	100.0	1905	10848	False	False	DrawerLayout-like ViewGroup, where a "drawer" is hidden under the content view, which can be shifted to make the drawer visible.
+device-year-class	0	True	https://github.com/facebook/device-year-class	100.0	1904	489	False	True	A library that analyzes an Android device's specifications and calculates which year the device would be considered "high end”.
+FlowingDrawer	0	False	https://github.com/mxn21/FlowingDrawer	100.0	1904	7495	False	False	swipe display drawer with flowing & bouncing effects.
+moco	0	False	https://github.com/dreamhead/moco	98.61	1900	3784	False	False	Easy Setup Stub Server
+MarqueeView	0	False	https://github.com/sfsheng0322/MarqueeView	100.0	1899	736	False	False	俗名：可垂直跑、可水平跑的跑马灯；学名：可垂直翻、可水平翻的翻页公告
+SublimePicker	0	True	https://github.com/vikramkakkar/SublimePicker	100.0	1896	18641	False	True	A material-styled android view that provisions picking of a date, time & recurrence option, all from a single user-interface. 
+spring-security	158	False	https://github.com/spring-projects/spring-security	90.16	1894	28101	False	False	Spring Security
+Fotoapparat	0	True	https://github.com/Fotoapparat/Fotoapparat	100.0	1891	987	False	True	Making Camera for Android more friendly. 📸
+wildfly	987	False	https://github.com/wildfly/wildfly	98.99	1888	170143	False	False	WildFly Application Server
+failsafe	229	False	https://github.com/jhalterman/failsafe	99.88	1885	1645	False	False	Simple, sophisticated failure handling
+GCViewer	6	False	https://github.com/chewiebug/GCViewer	100.0	1881	6214	False	False	Fork of tagtraum industries' GCViewer. Tagtraum stopped development in 2008, I aim to improve support for Sun's / Oracle's java 1.6+ garbage collector logs (including G1 collector)
+disunity	42	False	https://github.com/ata4/disunity	99.95	1881	14217	False	False	An experimental toolset for Unity asset and asset bundle files.
+ImmersionBar	0	True	https://github.com/gyf-dev/ImmersionBar	100.0	1880	172349	False	True	android 4.4以上沉浸式状态栏和沉浸式导航栏管理，包括状态栏字体颜色，一句代码轻松实现，以及对bar的其他设置，详见README，http://www.jianshu.com/p/2a884e211a62
+MaterialChipsInput	16	True	https://github.com/pchmn/MaterialChipsInput	100.0	1876	49128	False	True	Implementation of Material Design Chips component for Android
+android-mvp-architecture	0	True	https://github.com/MindorksOpenSource/android-mvp-architecture	100.0	1876	1156	True	True	This repository contains a detailed sample app that implements MVP architecture using Dagger2,  GreenDao, RxJava2, FastAndroidNetworking and PlaceholderView
+android-sqlite-asset-helper	0	True	https://github.com/jgilfelt/android-sqlite-asset-helper	100.0	1869	2361	True	True	An Android helper class to manage database creation and version management using an application's raw asset files
+datetimepicker	0	False	https://github.com/flavienlaurent/datetimepicker	98.95	1866	3365	False	False	DateTimePicker is a library which contains the beautiful DatePicker that can be seen in the new Google Agenda app.
+ToggleButton	0	True	https://github.com/zcweng/ToggleButton	100.0	1866	959	False	True	ToggleButton Widget For Android Dev
+BadgeView	0	True	https://github.com/qstumn/BadgeView	100.0	1865	9322	False	True	支持自由定制外观、拖拽消除的MaterialDesign风格Android BadgeView
+weixin-java-tools	0	False	https://github.com/chanjarster/weixin-java-tools	100.0	1864	1727	False	False	微信公众号、企业号Java SDK
+discreteSeekBar	0	False	https://github.com/AnderWeb/discreteSeekBar	100.0	1864	281	False	False	None
+BigImageViewer	0	False	https://github.com/Piasy/BigImageViewer	93.8	1859	45812	False	False	Big image viewer supporting pan and zoom, with very little memory usage and full featured image loading choices. Powered by Subsampling Scale Image View, Fresco, Glide, and Picasso.
+LoadingView	0	True	https://github.com/ldoublem/LoadingView	100.0	1854	56113	False	True	a simple loadingview for android with animation
+springboot-learning-example	5	False	https://github.com/JeffLi1993/springboot-learning-example	92.69	1853	197	False	False	spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。
+nucleus	10	True	https://github.com/konmik/nucleus	100.0	1848	537	False	True	Nucleus is an Android library, which utilizes the Model-View-Presenter pattern to properly connect background tasks with visual parts of an application.
+android-viewflow	0	True	https://github.com/pakerfeldt/android-viewflow	100.0	1848	1062	True	True	A horizontal view scroller library for Android
+AndroidTreeView	0	True	https://github.com/bmelnychuk/AndroidTreeView	100.0	1846	261	True	True	AndroidTreeView. TreeView implementation for android
+helios	68	False	https://github.com/spotify/helios	98.14	1843	7932	False	False	Docker container orchestration platform
+Bukkit	0	False	https://github.com/Bukkit/Bukkit	100.0	1838	19858	False	False	The Minecraft Mod API
+Launcher3	0	False	https://github.com/amirzaidi/Launcher3	99.22	1833	119320	False	False	Launcher3 with Pixel Launcher features
+spring-loaded	30	False	https://github.com/spring-projects/spring-loaded	98.89	1830	35082	False	False	Java agent that enables class reloading in a running JVM
+android-parcelable-intellij-plugin	0	True	https://github.com/mcharmas/android-parcelable-intellij-plugin	100.0	1829	691	True	True	IntelliJ Plugin for Android Parcelable boilerplate code generation.
+android-PullRefreshLayout	0	True	https://github.com/baoyongzhang/android-PullRefreshLayout	100.0	1826	2757	True	False	This component like SwipeRefreshLayout, it is more beautiful than SwipeRefreshLayout.
+AndroidTVLauncher	0	True	https://github.com/JackyAndroid/AndroidTVLauncher	100.0	1826	20574	True	False	This is a leanback style tv launcher(minSdkVersion 17)
+Android-ReactiveLocation	0	True	https://github.com/mcharmas/Android-ReactiveLocation	100.0	1825	628	True	False	Small library that wraps Google Play Service API in brilliant RxJava Observables reducing boilerplate to minimum.
+FastAdapter	0	False	https://github.com/mikepenz/FastAdapter	100.0	1824	17625	False	False	The bullet proof, fast and easy to use adapter library, which minimizes developing time to a fraction...
+keywhiz	93	False	https://github.com/square/keywhiz	98.43	1813	4098	False	False	A system for distributing and managing secrets
+BGABadgeView-Android	0	True	https://github.com/bingoogolapple/BGABadgeView-Android	100.0	1809	1322	True	True	Android 徽章控件
+ThinkAndroid	0	True	https://github.com/white-cat/ThinkAndroid	100.0	1807	1974	True	True	ThinkAndroid是一个免费的开源的、简易的、遵循Apache2开源协议发布的Android开发框架，其开发宗旨是简单、快速的进行 Android应用程序的开发，包含Android mvc、简易sqlite orm、ioc模块、封装Android httpclitent的http模块, 具有快速构建文件缓存功能，无需考虑缓存文件的格式，都可以非常轻松的实现缓存，它还基于文件缓存模块实现了图片缓存功能， 在android中加载的图片的时候，对oom的问题，和对加载图片错位的问题都轻易解决。他还包括了一个手机开发中经常应用的实用工具类， 如日志管理，配置文件管理，android下载器模块，网络切换检测等等工具。
+crate	910	False	https://github.com/crate/crate	98.88	1804	80811	False	False	CrateDB is a distributed SQL database that makes it simple to store and analyze massive amounts of machine data in real-time.
+LollipopShowcase	0	True	https://github.com/mikepenz/LollipopShowcase	100.0	1799	9176	False	True	A simple app to showcase Androids Material Design and some of the cool new cool stuff in Android Lollipop. RecyclerView, CardView, ActionBarDrawerToggle, DrawerLayout, Animations, Android Compat Design, Toolbar
+Rosie	0	True	https://github.com/Karumi/Rosie	100.0	1797	13904	False	True	Rosie is an Android framework to create applications following the principles of Clean Architecture.
+TouchImageView	0	True	https://github.com/MikeOrtiz/TouchImageView	97.4	1792	5189	False	True	Adds touch functionality to Android ImageView.
+AndroidSweetSheet	0	True	https://github.com/zzz40500/AndroidSweetSheet	100.0	1791	4332	True	False	一个富有动感的Sheet(选择器)
+SuperTextView	0	True	https://github.com/lygttpod/SuperTextView	100.0	1790	24976	False	True	a super textview for android
+fqrouter	0	False	https://github.com/fqrouter/fqrouter	91.23	1789	5716	False	False	anti-GFW router
+Carbon	199	True	https://github.com/ZieIony/Carbon	100.0	1786	8532	False	True	Material Design implementation for Android 4.0+. Shadows, ripples, vectors, fonts, animations, widgets, rounded corners and more.
+LuckyJayce/ViewPagerIndicator	0	False	https://github.com/LuckyJayce/ViewPagerIndicator	100.0	1785	36214	False	False	Indicator 取代 tabhost，实现网易顶部tab，新浪微博主页底部tab，引导页，无限轮播banner等效果，高度自定义tab和特效
+RecyclerView-FlexibleDivider	0	True	https://github.com/yqritc/RecyclerView-FlexibleDivider	100.0	1781	3797	False	True	Android library providing simple way to control divider items (ItemDecoration) of RecyclerView
+AndroidChromium	0	True	https://github.com/JackyAndroid/AndroidChromium	99.99	1779	92737	True	True	chrome browser of android version from chromium open project
+tomcat	34	False	https://github.com/apache/tomcat	97.33	1779	57512	False	False	Mirror of Apache Tomcat
+BlurView	0	True	https://github.com/Dimezis/BlurView	100.0	1767	13300	False	True	Dynamic iOS-like blur of underlying Views for Android
+YCSB	0	False	https://github.com/brianfrankcooper/YCSB	97.51	1762	31423	False	False	Yahoo! Cloud Serving Benchmark
+tray	0	True	https://github.com/grandcentrix/tray	100.0	1761	673	False	True	a SharedPreferences replacement for Android with multiprocess support
+Android-Boilerplate	0	True	https://github.com/hitherejoe/Android-Boilerplate	100.0	1761	523	True	True	Android Boilerplate project using RxJava, Dagger 2, Espresso, Mockito + more!
+algs4	0	False	https://github.com/kevin-wayne/algs4	100.0	1752	937	False	False	Algorithms, 4th edition textbook code and libraries
+SimpleCropView	0	True	https://github.com/IsseiAoki/SimpleCropView	100.0	1751	8166	False	True	A simple image cropping library for Android.
+GraphView	0	True	https://github.com/appsthatmatter/GraphView	100.0	1750	2519	False	True	Android Graph Library for creating zoomable and scrollable line and bar graphs.
+RomainPiel/Shimmer-android	0	True	https://github.com/RomainPiel/Shimmer-android	100.0	1744	311	True	True	(DEPRECATED) An Android TextView with a shimmering effect
+curator	0	False	https://github.com/Netflix/curator	100.0	1743	7545	False	False	ZooKeeper client wrapper and rich ZooKeeper framework
+android-flowlayout	0	True	https://github.com/ApmeM/android-flowlayout	100.0	1742	965	True	False	Linear layout, that wrap its content to the next line if there is no space in the current line.
+JFoenix	521	False	https://github.com/jfoenixadmin/JFoenix	94.99	1742	21641	False	False	JavaFX Material Design Library
+ninja	26	False	https://github.com/ninjaframework/ninja	96.73	1738	39979	False	False	Ninja is a full stack web framework for Java. Rock solid, fast and super productive.
+TextSurface	0	False	https://github.com/elevenetc/TextSurface	100.0	1735	2341	False	False	A little animation framework which could help you to show message in a nice looking way
+PersistentSearch	0	False	https://github.com/KieronQuinn/PersistentSearch	100.0	1734	2134	False	False	A clone of the Google Now/Maps/Play persistent search bar
+EffectiveAndroid	0	True	https://github.com/rallat/EffectiveAndroid	100.0	1731	649	True	True	This sample project shows how to apply MVP and Clean architecture on an Android app
+RichText	0	True	https://github.com/zzhoujay/RichText	100.0	1731	2127	False	True	Android平台下的富文本解析器，支持Html和Markdown
+LQRWeChat	149	False	https://github.com/GitLqr/LQRWeChat	100.0	1724	120729	False	False	本项目仿最新版微信6.5.7（除图片选择器外），基于融云SDK，使用目前较火的 Rxjava+Retrofit+MVP+Glide 技术开发。相比上个版本，加入发送位置消息，红包消息等功能。
+NotBoringActionBar	0	False	https://github.com/flavienlaurent/NotBoringActionBar	94.79	1723	5604	False	False	News Stand app makes the ActionBar not boring!
+ViewPagerTransforms	0	True	https://github.com/ToxicBakery/ViewPagerTransforms	100.0	1722	1274	False	True	Library containing common animations needed for transforming ViewPager scrolling for Android v13+.
+FlipViewPager.Draco	0	False	https://github.com/Yalantis/FlipViewPager.Draco	100.0	1722	1252	False	False	This project aims to provide a working page flip implementation for usage in ListView.
+ViewAnimator	0	True	https://github.com/florent37/ViewAnimator	100.0	1717	7453	False	True	A fluent Android animation library
+android-beacon-library	0	True	https://github.com/AltBeacon/android-beacon-library	100.0	1715	6356	True	True	Allows Android apps to interact with BLE beacons
+Android-Clean-Boilerplate	0	True	https://github.com/dmilicic/Android-Clean-Boilerplate	100.0	1714	125	True	True	This is starter template for writing Android apps using Clean architecture
+byte-buddy	6	False	https://github.com/raphw/byte-buddy	100.0	1713	468349	False	False	Runtime code generation for the Java virtual machine.
+pixel-dungeon	0	False	https://github.com/watabou/pixel-dungeon	100.0	1712	8161	False	False	Traditional roguelike game with pixel-art graphics and simple interface
+ListenerMusicPlayer	0	False	https://github.com/hefuyicoder/ListenerMusicPlayer	100.0	1710	11166	False	False	A Grace Material Design Music Player
+undertow	8	False	https://github.com/undertow-io/undertow	99.97	1708	20157	False	False	High performance non-blocking webserver
+android-vision	0	True	https://github.com/googlesamples/android-vision	100.0	1707	717	True	True	Sample code for the Android Mobile Vision API.
+generator	0	False	https://github.com/mybatis/generator	92.93	1706	35728	False	False	A code generator for MyBatis and iBATIS.
+immutables	8	False	https://github.com/immutables/immutables	100.0	1704	8626	False	False	Annotation processor to create immutable objects and builders. Feels like Guava's immutable collections but for regular value objects. JSON, Jackson, Gson, JAX-RS integrations included
+ProductTour	0	True	https://github.com/matrixxun/ProductTour	100.0	1703	33462	False	True	ProductTour is android sample project implementing a parallax effect welcome page using ViewPager and PageTransformer, similar to the one found in Google's app like Sheet, Drive, Docs...
+Android-Studio-Plugins	0	True	https://github.com/balsikandar/Android-Studio-Plugins	100.0	1699	69	True	True	This is a list of all awesome and useful android studio plugins.
+PatternLockView	0	True	https://github.com/aritraroy/PatternLockView	100.0	1698	1454	False	True	An easy-to-use, customizable and Material Design ready Pattern Lock view for Android
+scissors	0	True	https://github.com/lyft/scissors	98.98	1696	4491	False	True	✂ Android image cropping library
+gs-collections	3155	False	https://github.com/goldmansachs/gs-collections	98.72	1691	15275	False	False	GS Collections has been migrated to the Eclipse Foundation, re-branded as Eclipse Collections.  https://www.eclipse.org/collections/
+condom	0	True	https://github.com/oasisfeng/condom	100.0	1691	252	False	True	一个超轻超薄的Android工具库，阻止三方SDK中常见的有害行为，而不影响应用自身的功能。（例如严重影响用户体验的『链式唤醒』）
+AndroidVideoCache	0	True	https://github.com/danikula/AndroidVideoCache	100.0	1689	116051	True	False	Cache support for any video player with help of single line
+WheelPicker	0	True	https://github.com/AigeStudio/WheelPicker	100.0	1688	11455	False	True	Simple and fantastic wheel view in realistic effect for android.
+SearchView	0	False	https://github.com/lapism/SearchView	100.0	1686	4592	False	False	Persistent SearchView Library in Material Design.
+stream-lib	0	False	https://github.com/addthis/stream-lib	99.48	1678	1970	False	False	Stream summarizer and cardinality estimator.
+AisenWeiBo	0	True	https://github.com/wangdan/AisenWeiBo	94.07	1678	82559	False	True	新浪微博第三方Android客户端
+reflections	0	False	https://github.com/ronmamo/reflections	100.0	1674	348	False	False	Java runtime metadata analysis
+Tiny	0	False	https://github.com/Sunzxyong/Tiny	100.0	1672	51868	False	False	an image compression framework.
+AntennaPod	457	True	https://github.com/AntennaPod/AntennaPod	99.15	1670	27746	False	True	A podcast manager for Android
+Android-ZBLibrary	0	True	https://github.com/TommyLemon/Android-ZBLibrary	100.0	1668	30510	True	True	Android快速开发框架，MVP架构，丰富的功能、简单的实现、详细的注释、规范的风格。OKHttp、UIL图片加载、ZXing二维码、沉浸状态栏、下载安装、自动缓存以及各种Base、Demo、UI、Util直接用。全新的手势，侧滑返回、全局右滑返回都OUT啦！BaseHttpListActivity，几行代码搞定http请求列表 加载和缓存；BaseView，自定义View竟然如此简单；万能的Entry<K, V>，两个变量的Model/JavaBean再也不用写了；100多个常用style，一行搞定View属性，一键统一配置UI...[详情请看图文介绍]
+databus	0	False	https://github.com/linkedin/databus	99.05	1667	51181	False	False	Source-agnostic distributed change data capture system
+XPrivacy	0	False	https://github.com/M66B/XPrivacy	96.82	1664	43479	False	False	XPrivacy - The ultimate, yet easy to use, privacy manager
+base-adapter-helper	0	False	https://github.com/JoanZapata/base-adapter-helper	100.0	1664	1081	False	False	Abstraction for the usual BaseAdapter "ViewHolder" pattern
+PanoramaImageView	0	False	https://github.com/gjiazhe/PanoramaImageView	100.0	1662	2399	False	False	An imageView can auto scroll with device rotating.
+AndroidFillableLoaders	0	True	https://github.com/JorgeCastilloPrz/AndroidFillableLoaders	100.0	1660	1519	True	True	Android fillable progress view working with SVG paths. This is a nice option too if you want to create an interesting branding logo for your app. Based on the iOS project: https://github.com/poolqf/FillableLoaders
+rest.li	307	False	https://github.com/linkedin/rest.li	98.65	1660	13784	False	False	Rest.li is a REST+JSON framework for building robust, scalable service architectures using dynamic discovery and simple asynchronous APIs.
+WaveSwipeRefreshLayout	0	False	https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout	100.0	1658	7512	False	False	None
+loaderviewlibrary	0	False	https://github.com/elye/loaderviewlibrary	100.0	1658	161	False	False	Library that enables TextView of ImageView to show loading animation while waiting for the text and image get loaded
+MaterialLogin	0	False	https://github.com/fanrunqi/MaterialLogin	100.0	1655	3214	False	False	Amazing Material Login effect
+XposedInstaller	0	False	https://github.com/rovo89/XposedInstaller	100.0	1655	18928	False	False	None
+BlurDialogFragment	0	False	https://github.com/tvbarthel/BlurDialogFragment	100.0	1653	50538	False	False	Library project to display DialogFragment with a blur effect.
+tiger	0	False	https://github.com/google/tiger	100.0	1653	210	False	False	None
+StaggeredGridView	0	True	https://github.com/maurycyw/StaggeredGridView	99.05	1652	808	False	True	A modified version of Android's experimental StaggeredGridView. Includes own OnItemClickListener and OnItemLongClickListener, selector, and fixed position restore.
+Android-Terminal-Emulator	0	True	https://github.com/jackpal/Android-Terminal-Emulator	96.59	1651	6230	True	True	A VT-100 terminal emulator for the Android OS
+LRecyclerView	0	False	https://github.com/jdsjlzx/LRecyclerView	100.0	1646	36232	False	False	RecyclerView下拉刷新，自动加载更多；仿IOS侧滑Item删除菜单
+FlycoDialog_Master	0	True	https://github.com/H07000223/FlycoDialog_Master	100.0	1645	11093	False	True	An Android Dialog Lib simplify customization.
+Android-SwitchIcon	0	True	https://github.com/zagum/Android-SwitchIcon	100.0	1643	458	True	False	Google launcher-style implementation of switch (enable/disable) icon
+stampede	21	False	https://github.com/torodb/stampede	96.92	1638	14022	False	False	The ToroDB solution to provide better analytics on top of MongoDB and make it easier to migrate from MongoDB to SQL 
+EasyRecyclerView	0	False	https://github.com/Jude95/EasyRecyclerView	100.0	1637	11336	False	False	ArrayAdapter,pull to refresh,auto load more,Header/Footer,EmptyView,ProgressView,ErrorView
+ScalingLayout	0	False	https://github.com/iammert/ScalingLayout	100.0	1635	8356	False	False	With Scaling Layout scale your layout on user interaction.
+jetty.project	432	False	https://github.com/eclipse/jetty.project	98.24	1634	104477	False	False	Eclipse Jetty® - Web Container & Clients - supports HTTP/2, HTTP/1.1, HTTP/1.0, websocket, servlets, and more
+ribbon	0	False	https://github.com/Netflix/ribbon	99.84	1630	3062	False	False	Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.
+cropiwa	0	True	https://github.com/steelkiwi/cropiwa	100.0	1629	8071	False	True	📐 Configurable Custom Crop widget for Android
+StarWars.Android	0	True	https://github.com/Yalantis/StarWars.Android	96.68	1629	18281	True	False	This component implements transition animation to crumble view into tiny pieces.
+qksms	86	True	https://github.com/moezbhatti/qksms	100.0	1624	8321	False	True	The most beautiful SMS messenger app for Android
+AppMethodOrder	0	True	https://github.com/zjw-swun/AppMethodOrder	100.0	1624	784	False	True	一个能让你了解所有函数调用顺序以及函数耗时的Android库（无需侵入式代码）
+Colorful	0	True	https://github.com/garretyoder/Colorful	100.0	1620	211	False	True	Android runtime theme library
+nutz	0	False	https://github.com/nutzam/nutz	99.68	1619	41297	False	False	Nutz -- Web Framework(Mvc/Ioc/Aop/Dao/Json) for ALL Java developer
+android-testing-templates	0	True	https://github.com/googlesamples/android-testing-templates	97.48	1616	154	True	False	None
+AndroidFire	0	True	https://github.com/jaydenxiao2016/AndroidFire	100.0	1614	9819	True	True	AndroidFire，一款新闻阅读 App框架，基于 Material Design + MVP + RxJava + Retrofit + Glide，基本涵盖了当前 Android 端开发最常用的主流框架，基于此框架可以快速开发一个app。
+CoCoin	0	False	https://github.com/Nightonke/CoCoin	100.0	1612	73657	False	False	CoCoin, Multi-view Accounting Application
+RecyclerViewCardGallery	0	False	https://github.com/huazhiyuan2008/RecyclerViewCardGallery	100.0	1611	14435	False	False	@Deprecated RecyclerView实现Card Gallery效果，替代ViewPager方案
+TastyToast	0	True	https://github.com/yadav-rahul/TastyToast	100.0	1610	903	False	True	:bread: Make your native android Toasts Tasty
+Talon-for-Twitter	0	True	https://github.com/klinker24/Talon-for-Twitter	99.83	1610	45450	False	True	100% open source version of my popular Talon for Twitter app on Android.
+Slidr	0	False	https://github.com/r0adkll/Slidr	100.0	1609	15523	False	False	Easily add slide to dismiss functionality to an Activity 
+ECTranslation	0	True	https://github.com/Skykai521/ECTranslation	100.0	1607	159	False	True	Android Studio Plugin,Translate English to Chinese. Android Studio 翻译插件,可以将英文翻译为中文.
+spring-boot-starter-dubbo	0	False	https://github.com/teaey/spring-boot-starter-dubbo	100.0	1604	23	False	False	spring boot集成dubbo
+ShimmerRecyclerView	0	False	https://github.com/sharish/ShimmerRecyclerView	100.0	1600	2358	False	False	None
+Horizon	0	True	https://github.com/Yalantis/Horizon	95.45	1598	4499	False	True	Horizon - Simple visual equaliser for Android
+gifsockets	0	False	https://github.com/videlalvaro/gifsockets	91.68	1598	1174	False	False	Real Time communication library using Animated Gifs as a transport™
+AnimeTaste	0	False	https://github.com/daimajia/AnimeTaste	100.0	1598	14416	False	False	Taste global original animation
+FanLayoutManager	0	False	https://github.com/Cleveroad/FanLayoutManager	100.0	1595	13262	False	False	Using Fan Layout Manager you can implement the horizontal list, the items of which move like fan blades 
+FinestWebView-Android	0	True	https://github.com/TheFinestArtist/FinestWebView-Android	100.0	1593	63978	True	True	Beautiful and customizable Android Activity that shows web pages within an app.
+ExpandingPager	0	False	https://github.com/qs-lll/ExpandingPager	100.0	1592	21799	False	False	ExpandingPager is a card peek/pop controller
+CircularAnim	0	True	https://github.com/XunMengWinter/CircularAnim	100.0	1590	198	False	True	Android ripple animation helper, easy to create Circular Reveal. | Android水波动画帮助类，轻松实现View show/hide/startActivity()特效。(0.3.3)
+android-ocr	0	True	https://github.com/rmtheis/android-ocr	97.5	1588	17127	True	False	Experimental optical character recognition app
+MaterialNavigationDrawer	0	False	https://github.com/neokree/MaterialNavigationDrawer	100.0	1588	19761	False	False	Navigation Drawer Activity with material design style and simplified methods
+cglib	0	False	https://github.com/cglib/cglib	100.0	1587	4853	False	False	cglib - Byte Code Generation Library is high level API to generate and transform Java byte code. It is used by AOP, testing, data access frameworks to generate dynamic proxy objects and intercept field access.
+RxCache	0	True	https://github.com/VictorAlbertos/RxCache	100.0	1585	6723	False	True	Reactive caching library for Android and Java
+qualitymatters	15	True	https://github.com/artem-zinnatullin/qualitymatters	99.72	1584	7183	False	True	Android Development Culture
+CountdownView	0	True	https://github.com/iwgang/CountdownView	100.0	1584	10604	False	True	Android Countdown View
+MaterialList	0	True	https://github.com/dexafree/MaterialList	100.0	1581	5012	False	True	An Android library aimed to get the beautiful CardViews that Google shows at its official design specifications
+termux-app	0	True	https://github.com/termux/termux-app	98.42	1580	1010	False	True	Android terminal and Linux environment - app repository.
+Gadgetbridge	0	True	https://github.com/Freeyourgadget/Gadgetbridge	98.97	1577	8612	False	True	A free and cloudless replacement for your gadget vendors' closed source Android applications. Supports Pebble, Mi Band, Liveview, HPlus and more.
+excelPanel	0	True	https://github.com/zhouchaoyuan/excelPanel	100.0	1577	7838	False	True	An Android's two-dimensional RecyclerView. Not only can load historical data, but also can load future data.
+AdapterDelegates	0	False	https://github.com/sockeqwe/AdapterDelegates	99.1	1576	760	False	False	Favor composition over inheritance for RecyclerView Adapters
+java-apns	0	False	https://github.com/notnoop/java-apns	99.98	1572	1585	False	False	Java Apple Push Notification Service Provider
+CircleRefreshLayout	0	False	https://github.com/tuesda/CircleRefreshLayout	100.0	1572	4357	False	False	a custom pull-to-refresh layout which contains a interesting animation
+Knife	0	True	https://github.com/mthli/Knife	100.0	1569	1151	False	True	Knife is a rich text editor component for writing documents in Android.
+MovieGuide	4	False	https://github.com/esoxjem/MovieGuide	100.0	1567	313	False	False	Movie discovery app showcasing MVP, RxJava, Dagger 2 and Clean Architecture. Popcorn?
+NavigationTabStrip	0	False	https://github.com/Devlight/NavigationTabStrip	100.0	1566	205	False	False	Navigation tab strip with smooth interaction.
+CommonUtilLibrary	0	False	https://github.com/AbrahamCaiJin/CommonUtilLibrary	100.0	1565	564	False	False	快速开发工具类收集，史上最全的开发工具类，欢迎Follow、Fork、Star
+FlatUI	0	True	https://github.com/eluleci/FlatUI	94.96	1564	1719	False	True	CengaLabs - Android FlatUI Kit
+exchange	1600	False	https://github.com/bisq-network/exchange	98.33	1564	170433	False	False	The decentralized bitcoin exchange
+TextJustify-Android	0	True	https://github.com/bluejamesbond/TextJustify-Android	100.0	1561	4316	True	True	:page_facing_up: Android Text Full Jusiftication / Wrapping / Justify / Hyphenate - V2.0
+PagerBottomTabStrip	0	True	https://github.com/tyzlmjj/PagerBottomTabStrip	100.0	1557	2352	False	True	An bottom navigation bar for Android
+android-percent-support-extend	0	True	https://github.com/hongyangAndroid/android-percent-support-extend	100.0	1555	2542	True	True	a extends lib for android-percent-support(Google百分比布局库的扩展)
+java-algorithms-implementation	0	False	https://github.com/phishman3579/java-algorithms-implementation	100.0	1554	1434	False	False	Algorithms and Data Structures implemented in Java
+cucumber-jvm	18	False	https://github.com/cucumber/cucumber-jvm	98.28	1554	17661	False	False	Cucumber for the JVM
+ImageViewZoom	0	True	https://github.com/sephiroth74/ImageViewZoom	100.0	1553	601	False	True	Android ImageView widget with zoom and pan capabilities
+DatePicker	0	True	https://github.com/AigeStudio/DatePicker	100.0	1553	5366	False	True	Useful and powerful date picker for android
+powermock	1	False	https://github.com/powermock/powermock	100.0	1551	5547	False	False	PowerMock is a Java framework that allows you to unit test code normally regarded as untestable.
+android-selector-chapek	0	True	https://github.com/inmite/android-selector-chapek	100.0	1546	836	True	True	Android Studio plugin which automatically generates drawable selectors from appropriately named resources.
+CircleDemo	0	False	https://github.com/Naoki2015/CircleDemo	100.0	1546	17971	False	False	仿微信(weixin wechat)实现的朋友圈，模拟与后台交互实现了点赞、评论、删除等功能，RecyclerView可以根据键盘的显示或隐藏实现联动。增加短视频拍摄功能，与后台交互采用mvp模式。关键字：wechat  weixin  微信朋友圈
+WordPress-Android	0	True	https://github.com/wordpress-mobile/WordPress-Android	94.29	1545	180808	True	True	WordPress for Android
+Backboard	0	True	https://github.com/tumblr/Backboard	100.0	1545	738	False	True	A motion-driven animation framework for Android.
+ENViews	0	False	https://github.com/codeestX/ENViews	100.0	1544	1192	False	False	:star2:A cool dynamic view library
+smooth-app-bar-layout	0	False	https://github.com/henrytao-me/smooth-app-bar-layout	100.0	1543	1154	False	False	Smooth version of Google Support Design AppBarLayout
+hive	65	False	https://github.com/apache/hive	95.19	1539	352411	False	False	Mirror of Apache Hive
+SopCastComponent	0	True	https://github.com/LaiFeng-Android/SopCastComponent	99.73	1539	430	True	False	来疯直播安卓控件，支持flv，支持rtmp，支持添加视频特效等等
+snackbar	0	True	https://github.com/nispok/snackbar	100.0	1538	3375	False	True	[DEPRECATED] Android Library that implements Snackbars from Google's Material Design documentation.
+jmonkeyengine	0	False	https://github.com/jMonkeyEngine/jmonkeyengine	95.58	1535	761946	False	False	A complete 3D game development suite written purely in Java.
+Rajawali	0	True	https://github.com/Rajawali/Rajawali	92.44	1531	47753	False	True	Android OpenGL ES 2.0/3.0 Engine
+SuperCalendar	0	True	https://github.com/MagicMashRoom/SuperCalendar	100.0	1528	2123	False	True	android 自定义日历控件  支持左右无限滑动 周月切换 标记日期显示 自定义显示效果跳转到指定日期
+aFileChooser	0	True	https://github.com/iPaulPro/aFileChooser	100.0	1527	5386	False	True	Android library that provides a file explorer to let users select files on external storage.
+bm-x/PhotoView	0	False	https://github.com/bm-x/PhotoView	100.0	1525	41587	False	False	图片浏览缩放控件
+Titanic	0	True	https://github.com/RomainPiel/Titanic	100.0	1524	267	False	True	(DEPRECATED) Android experiment showing a sinking TextView
+WebCollector	0	False	https://github.com/CrawlScript/WebCollector	99.53	1524	218053	False	False	WebCollector is an open source web crawler framework based on Java.It provides some simple interfaces for crawling the Web,you can setup a multi-threaded web crawler in less than 5 minutes.
+chromeview	0	True	https://github.com/pwnall/chromeview	99.44	1519	90005	False	True	Proof of concept Android WebView implementation based on Chromium code
+android-auto-scroll-view-pager	0	True	https://github.com/Trinea/android-auto-scroll-view-pager	100.0	1519	439	True	True	Android auto scroll viewpager or viewpager in viewpager, Dev Tools Pro:
+killbill	0	False	https://github.com/killbill/killbill	95.05	1517	663704	False	False	Open-Source Subscription Billing & Payment Platform
+assertj-android	0	True	https://github.com/square/assertj-android	98.11	1517	3225	True	True	A set of AssertJ helpers geared toward testing Android.
+Timeline-View	0	True	https://github.com/vipulasri/Timeline-View	100.0	1517	18574	False	True	Android Timeline View  is used to display views like Tracking of shipment/order, steppers etc. 
+android-parallax-recyclerview	0	True	https://github.com/kanytu/android-parallax-recyclerview	100.0	1516	7332	True	False	 An adapter which could be used to achieve a parallax effect on RecyclerView.
+Taurus	0	False	https://github.com/Yalantis/Taurus	100.0	1515	9533	False	False	A little more fun for the pull-to-refresh interaction. 
+bitcoinj	35	False	https://github.com/bitcoinj/bitcoinj	98.95	1515	16733	False	False	A library for working with Bitcoin
+hbase	747	False	https://github.com/apache/hbase	94.33	1511	272241	False	False	Mirror of Apache HBase
+paper-onboarding-android	0	True	https://github.com/Ramotion/paper-onboarding-android	100.0	1510	13264	True	False	:octocat: PaperOnboarding is a material design slider
+xabber-android	0	True	https://github.com/redsolution/xabber-android	99.96	1508	26509	True	True	Open-source XMPP client for Android
+jjdxm_ijkplayer	0	True	https://github.com/jjdxmashl/jjdxm_ijkplayer	100.0	1508	87344	False	True	基于ijkplayer简单的UI界面 当前项目是基于ijkplayer项目进行的播放器界面UI封装。 是一个适用于 Android 的 RTMP 播放界面 SDK，可高度定制化和二次开发。特色是同时支持 H.264 软编／硬编和 AAC 软编／硬编。主要是支持RIMP、HLS、MP4、M4A等视频格式的播放。
+FoldableLayout	0	True	https://github.com/alexvasilkov/FoldableLayout	100.0	1505	2128	False	True	Android widgets to implement folding animation
+junit5	1583	False	https://github.com/junit-team/junit5	98.16	1503	311694	False	False	The next generation of JUnit.
+awesome-android-complete-reference	0	True	https://github.com/amitshekhariitbhu/awesome-android-complete-reference	100.0	1499	105	True	True	Awesome Android references for everything like best practices, performance optimization, etc.
+Smack	0	True	https://github.com/igniterealtime/Smack	98.7	1499	25836	False	True	A highly modular and portable open source XMPP client library written in Java for JVMs (JavaSE) and Android
+qianghongbao	0	False	https://github.com/lendylongli/qianghongbao	100.0	1499	26359	False	False	微信抢红包外挂源码
+RxGalleryFinal	20	True	https://github.com/FinalTeam/RxGalleryFinal	100.0	1497	21655	False	True	Android图片单选/多选、拍照、裁剪、压缩。视频选择和录制。
+AmazeFileManager	0	True	https://github.com/TeamAmaze/AmazeFileManager	100.0	1495	41566	False	True	Material design file manager for Android
+material-design-data	0	False	https://github.com/Luosunce/material-design-data	100.0	1492	15	False	False	关于 Material Design 的一切资料都在这里
+ssm	0	False	https://github.com/liyifeng1994/ssm	100.0	1489	12366	False	False	手把手教你整合最优雅SSM框架：SpringMVC + Spring + MyBatis
+spring-data-examples	82	False	https://github.com/spring-projects/spring-data-examples	98.17	1487	10267	False	False	Spring Data Example Projects
+camel	1423	False	https://github.com/apache/camel	98.5	1487	187247	False	False	Apache Camel
+ElasticDownload	0	False	https://github.com/Tibolte/ElasticDownload	100.0	1487	347	False	False	We are not Gif makers, We are developers
+spring-cloud-netflix	13	False	https://github.com/spring-cloud/spring-cloud-netflix	93.95	1484	10003	False	False	Integration with Netflix OSS components
+android-segmented-control	0	True	https://github.com/Kaopiz/android-segmented-control	100.0	1479	1485	True	True	ios UISegmentedControl for android
+JavaVerbalExpressions	0	False	https://github.com/VerbalExpressions/JavaVerbalExpressions	100.0	1479	119	False	False	Java regular expressions made easy.
+Android-Skin-Loader	0	True	https://github.com/fengjundev/Android-Skin-Loader	100.0	1478	29241	True	False	一个通过动态加载本地皮肤包进行换肤的皮肤框架
+querydsl	0	False	https://github.com/querydsl/querydsl	97.02	1475	48989	False	False	Unified Queries for Java
+QuickReturn	0	False	https://github.com/lawloretienne/QuickReturn	96.98	1475	151483	False	False	Showcases QuickReturn UI Pattern as either a header, footer, or both header and footer
+SpringBoot-Learning	0	False	https://github.com/dyc87112/SpringBoot-Learning	98.5	1472	32648	False	False	Spring Boot教程
+Aria	0	False	https://github.com/AriaLyy/Aria	100.0	1465	13729	False	False	下载可以很简单
+CustomShapeImageView	0	False	https://github.com/MostafaGazar/CustomShapeImageView	100.0	1464	1240	False	False	A library for supporting custom shaped ImageView(s) using SVGs and paint shapes
+AsymmetricGridView	0	True	https://github.com/felipecsl/AsymmetricGridView	98.25	1464	4935	False	True	Android ListView that mimics a GridView with asymmetric items. Supports items with row span and column span
+RecyclerRefreshLayout	0	True	https://github.com/dinuscxj/RecyclerRefreshLayout	100.0	1462	37395	False	True	A pull to refresh layout for android, the RecyclerRefreshLayout is based on the SwipeRefreshLayout. support all the views, highly customizable, code simplicity, etc
+labelview	0	False	https://github.com/linger1216/labelview	100.0	1461	4044	False	False	Sometimes, we need to show a label above an ImageView or any other views. Well, LabelView will be able to help you. It's easy to implement as well!
+CameraFragment	0	True	https://github.com/florent37/CameraFragment	99.97	1460	35445	False	True	A simple easy-to-integrate Camera Fragment for Android
+AnimatedSvgView	0	True	https://github.com/jaredrummler/AnimatedSvgView	100.0	1459	599	False	True	Animated SVG Drawing for Android
+LikeAnimation	0	True	https://github.com/frogermcs/LikeAnimation	100.0	1457	86	False	True	Android like button with delightful star animation inspired by Twitter's heart. See blog post for description.
+jvm-tools	0	False	https://github.com/aragozin/jvm-tools	98.45	1454	2941	False	False	Small set of tools for JVM troublshooting, monitoring and profiling.
+RxRelay	0	False	https://github.com/JakeWharton/RxRelay	98.2	1454	120	False	False	RxJava types that are both an Observable and a Consumer.
+MvpApp	0	True	https://github.com/Rukey7/MvpApp	100.0	1453	2685	False	True	Android MVP Architecture Study
+StatusBarCompat	0	False	https://github.com/niorgai/StatusBarCompat	100.0	1453	426	False	False	Status Bar Utils ----  Change Status Bar Mode Simply
+PhotoNoter	324	False	https://github.com/yydcdut/PhotoNoter	99.1	1445	81588	False	False	:notebook:Material Design风格的开源照片笔记。(MVP+Dagger2+RxJava+AspectJ+Dex处理)      
+Lazy	0	True	https://github.com/l123456789jy/Lazy	100.0	1443	1271	False	True	The android tools           自己整理的常用的工具类   
+Onboarding	0	False	https://github.com/eoinfogarty/Onboarding	100.0	1442	48293	False	False	A beautiful way to introduce users to your app
+AndroidRubberIndicator	0	True	https://github.com/LyndonChin/AndroidRubberIndicator	100.0	1441	168	True	False	A rubber indicator
+android_page_curl	0	True	https://github.com/harism/android_page_curl	100.0	1438	4748	True	True	An example application for creating page curl/flip effect on Android using OpenGL ES.
+cw-advandroid	0	True	https://github.com/commonsguy/cw-advandroid	97.37	1438	8411	True	True	Source Code to _The Busy Coder's Guide To Advanced Android Development_
+skywalking	37	False	https://github.com/OpenSkywalking/skywalking	99.56	1434	143568	False	False	A distributed tracing system, and APM ( Application Performance Monitoring )
+TransitionHelper	0	False	https://github.com/ImmortalZ/TransitionHelper	100.0	1433	5803	False	False	This is a simple util to create Activity transition animation
+GestureViews	0	False	https://github.com/alexvasilkov/GestureViews	100.0	1428	19793	False	False	ImageView and FrameLayout with gestures control and position animation
+AndroidPileLayout	0	True	https://github.com/xmuSistone/AndroidPileLayout	100.0	1427	16101	True	False	An abnormal horizontal ListView-like pile layout with stretch and contraction effects.
+StickyGridHeaders	0	False	https://github.com/TonicArtos/StickyGridHeaders	100.0	1426	2298	False	False	This project has been superseded by SuperSLiM, a layout manager for RecyclerView. I strongly recommend using SuperSLiM and not StickyGridHeaders.
+android-shapeLoadingView	0	True	https://github.com/zzz40500/android-shapeLoadingView	100.0	1426	123	True	False	高仿新版58 加载动画
+jackson-databind	24	False	https://github.com/FasterXML/jackson-databind	98.43	1426	60309	False	False	General data-binding package for Jackson (2.x): works on streaming API (core) implementation(s)
+ScrollablePanel	0	False	https://github.com/Kelin-Hong/ScrollablePanel	100.0	1424	3578	False	False	A flexible view for providing a limited rect window into a large data set,just like a two-dimensional RecyclerView.  It different from RecyclerView is that it's two-dimensional(just like a Panel) and it pin the itemView of first row and first column in their original location.
+Shuttle	589	False	https://github.com/timusus/Shuttle	94.94	1422	5471	False	False	Shuttle Music Player
+SmartCropper	0	False	https://github.com/pqpo/SmartCropper	98.16	1422	56304	False	False	🔥 A library for cropping image in a smart way that can identify the border and correct the cropped image.    智能图片裁剪框架。自动识别边框，手动调节选区，使用透视变换裁剪并矫正选区；适用于身份证，名片，文档等照片的裁剪。
+KLog	0	True	https://github.com/ZhaoKaiQiang/KLog	100.0	1417	1172	False	True	这是一个Android专用的LogCat工具，主要功能为打印行号、函数调用、Json解析、XML解析、点击跳转、Log信息保存等功能
+Notes	0	False	https://github.com/MiCode/Notes	100.0	1416	3490	False	False	小米便签社区开源版（Community edition of XM notepad/MIUI notes)
+VerticalSlideFragment	0	False	https://github.com/xmuSistone/VerticalSlideFragment	100.0	1415	2790	False	False	vertical slide to switch to the next fragment page,  looks like vertical viewpager
+Space-Navigation-View	0	False	https://github.com/armcha/Space-Navigation-View	100.0	1410	8671	False	False	Space Navigation is a library allowing easily integrate fully customizable Google Spaces like navigation to your app.
+understand-plugin-framework	0	False	https://github.com/tiann/understand-plugin-framework	100.0	1406	329	False	False	demos to help understand plugin framwork
+Swipeable-Cards	0	False	https://github.com/kikoso/Swipeable-Cards	100.0	1405	1574	False	False	A native library providing a Tinder-like cards effect. A card can be constructed using an image and displayed with animation effects, dismiss-to-like and dismiss-to-unlike, and use different sorting mechanisms.
+SwipeDelMenuLayout	0	False	https://github.com/mcxtzhang/SwipeDelMenuLayout	100.0	1404	5660	False	False	The most simple SwipeMenu in the history, 0 coupling, support any ViewGroup. Step integration swipe (delete) menu, high imitation QQ, iOS. ~史上最简单侧滑菜单，0耦合，支持任意ViewGroup。一步集成侧滑(删除)菜单，高仿QQ、IOS。~
+FlexLayout	0	True	https://github.com/mmin18/FlexLayout	100.0	1402	510	False	True	A powerful Android layout view that use java expression in layout params to describe relative positions.
+ReactiveNetwork	2	True	https://github.com/pwittchen/ReactiveNetwork	98.08	1402	802	False	True	 Android library listening network connection state and Internet connectivity with RxJava Observables
+android-satellite-menu	0	True	https://github.com/siyamed/android-satellite-menu	100.0	1401	2520	True	True	Android Satellite Menu
+Phonograph	0	True	https://github.com/kabouzeid/Phonograph	97.63	1401	16224	False	True	A material designed music player for Android
+SlantedTextView	0	True	https://github.com/HeZaiJin/SlantedTextView	100.0	1401	760	False	True	Android slanted TextView .
+android-upload-service	0	True	https://github.com/gotev/android-upload-service	96.64	1399	15529	True	False	Easily upload files (FTP / Multipart / Binary) in the background with progress indication notification
+MetaballLoading	0	False	https://github.com/dodola/MetaballLoading	100.0	1398	1216	False	False	A 2d metaball loading
+Parse-SDK-Android	0	True	https://github.com/parse-community/Parse-SDK-Android	99.97	1398	1374	True	True	Parse SDK for Android
+cSploit/android	0	True	https://github.com/cSploit/android	99.61	1398	39572	True	True	cSploit - The most complete and advanced IT security professional toolkit on Android.
+MultipleTheme	0	True	https://github.com/dersoncheng/MultipleTheme	100.0	1395	1648	False	True	Android换肤／夜间模式的Android框架，配合theme和换肤控件框架可以做到无缝切换换肤（无需重启应用和当前页面）。         This framework of Android app support multiple theme(such as day/night mode) and needn’t finish current application or current activity when you switch theme-mode.
+superCleanMaster	0	False	https://github.com/joyoyao/superCleanMaster	100.0	1392	11734	False	False	[DEPRECATED] 一键清理 开源版，包括内存加速，缓存清理，自启管理，软件管理等。
+materialistic	164	True	https://github.com/hidroh/materialistic	99.76	1392	45172	False	True	A material-design Hacker News Android reader
+StereoView	0	True	https://github.com/ImmortalZ/StereoView	100.0	1391	4363	False	True	Android 3D立体无限旋转容器。This is a stereo view(3D) for Android.
+SlideUp-Android	0	True	https://github.com/mancj/SlideUp-Android	100.0	1391	50405	True	False	SlideUp is a small library that allows you to add sweet slide effect to any view.
+android-actionbar	0	True	https://github.com/johannilsson/android-actionbar	100.0	1390	607	True	True	DEPRECATED Android Action Bar Implementation
+nutch	9	False	https://github.com/apache/nutch	96.52	1381	132283	False	False	Mirror of Apache Nutch
+jitsi	0	False	https://github.com/jitsi/jitsi	94.92	1377	498700	False	False	Jitsi is an audio/video and chat communicator that supports protocols such as SIP, XMPP/Jabber, AIM/ICQ, IRC and many other useful features.
+Android-Download-Manager-Pro	0	True	https://github.com/majidgolshadi/Android-Download-Manager-Pro	100.0	1374	210	True	True	Android/Java download manager library help you to download files in parallel mechanism in some chunks.
+FloatingView	0	False	https://github.com/UFreedom/FloatingView	100.0	1372	1669	False	False	FloatingView can make the target view floating above the anchor view with cool animation
+Intro-To-RxJava	618	False	https://github.com/Froussios/Intro-To-RxJava	100.0	1371	471	False	False	An extensive tutorial on RxJava
+Lawnchair	0	False	https://github.com/Deletescape-Media/Lawnchair	95.01	1370	124946	False	False	No clever tagline needed - Pixel style launcher
+ChatKit	0	True	https://github.com/stfalcon-studio/ChatKit	100.0	1370	5895	False	True	Android library. Flexible components for chat UI implementation with flexible possibilities for styling, customizing and data management
+light-task-scheduler	0	False	https://github.com/ltsopensource/light-task-scheduler	99.63	1368	99908	False	False	Distributed Scheduled Job Framework
+Paper	0	True	https://github.com/pilgr/Paper	95.7	1368	309	False	True	Paper is a fast NoSQL-like storage for Java/Kotlin objects on Android with automatic schema migration support.
+shortbread	0	True	https://github.com/MatthiasRobbers/shortbread	100.0	1367	404	False	True	Android library that generates app shortcuts from Shortcut annotations
+ZLayoutManager	0	False	https://github.com/mcxtzhang/ZLayoutManager	100.0	1364	21007	False	False	Some custom LayoutManager .Such as SwipeCard、FLowLayout。一些自定义的LayoutManager，仿探探、人人影视 炫动滑动 卡片层叠 和流式布局等。
+MaterialProgressBar	0	False	https://github.com/DreaminginCodeZH/MaterialProgressBar	99.88	1364	4044	False	False	Material Design ProgressBar with consistent appearance
+FastBle	0	True	https://github.com/Jasonchenlijian/FastBle	100.0	1364	13150	False	True	Android Bluetooth Low Energy 蓝牙快速开发框架。  使用简单的方式进行搜索、连接、读写、通知的订阅与取消等一系列蓝牙操作，并实时地得到操作反馈。
+ExpandableLayout	0	False	https://github.com/traex/ExpandableLayout	100.0	1362	723	False	False	Implementation of ExpandableListview with custom header and custom content.
+welcome-android	0	True	https://github.com/stephentuso/welcome-android	98.78	1361	6913	True	False	A customizable welcome screen
+road-trip	0	True	https://github.com/romainguy/road-trip	100.0	1360	2249	False	True	A sample Android application that demonstrates how to implement various visual effects.
+GifView	0	True	https://github.com/Cutta/GifView	100.0	1358	16728	False	True	Library for playing gifs on Android
+Android-AppMsg	0	True	https://github.com/johnkil/Android-AppMsg	100.0	1357	960	True	True	In-layout notifications. Based on Toast notifications and article by Cyril Mottier (http://android.cyrilmottier.com/?p=773).
+Android-RoundCornerProgressBar	0	True	https://github.com/akexorcist/Android-RoundCornerProgressBar	100.0	1354	1629	True	True	Round Corner Progress Bar Library for Android
+MaterialStepperView	0	True	https://github.com/fython/MaterialStepperView	100.0	1353	499	False	True	Steppers - Material Design Components for Android
+BubbleSeekBar	0	True	https://github.com/woxingxiao/BubbleSeekBar	100.0	1353	33918	False	True	A beautiful Android custom seekbar, which has a bubble view with progress appearing upon when seeking. 自定义SeekBar，进度变化由可视化气泡样式呈现
+ArcMenu	0	True	https://github.com/daCapricorn/ArcMenu	100.0	1353	466	False	True	An android custom view which looks like the menu in Path 2.0 (for iOS).
+jeromq	0	False	https://github.com/zeromq/jeromq	99.98	1353	2473	False	False	Pure Java ZeroMQ 
+java-string-similarity	0	False	https://github.com/tdebatty/java-string-similarity	100.0	1352	648	False	False	Implementation of various string similarity and distance algorithms: Levenshtein, Jaro-winkler, n-Gram, Q-Gram, Jaccard index, Longest Common Subsequence edit distance, cosine similarity ...
+android-circlebutton	0	True	https://github.com/markushi/android-circlebutton	100.0	1352	1669	True	True	Circle button widget for Android
+aesthetic	0	True	https://github.com/afollestad/aesthetic	100.0	1351	11996	False	True	[BETA] A fast and easy to use plug-and-play dynamic theme engine. Powered by Rx, for Android apps.
+syncany	2	False	https://github.com/syncany/syncany	97.31	1349	17952	False	False	Syncany is a cloud storage and filesharing application with a focus on security and abstraction of storage.
+GridPasswordView	0	True	https://github.com/Jungerr/GridPasswordView	100.0	1348	2555	False	True	An android password view that looks like the pay password view in wechat app and alipay app.
+Leonids	0	True	https://github.com/plattysoft/Leonids	100.0	1347	3288	False	True	A Particle System for standard Android UI: http://plattysoft.github.io/Leonids/
+netty-learning	0	False	https://github.com/code4craft/netty-learning	99.9	1345	3362	False	False	Netty learning.
+SimpleNews	0	False	https://github.com/liuling07/SimpleNews	100.0	1344	27833	False	False	基于Material Design和MVP的新闻客户端
+CarouselLayoutManager	0	True	https://github.com/Azoft/CarouselLayoutManager	100.0	1343	10854	False	True	Android Carousel LayoutManager for RecyclerView
+Android-ParallaxHeaderViewPager	0	True	https://github.com/kmshack/Android-ParallaxHeaderViewPager	100.0	1342	2859	True	True	NewsStand Application for Android's view of play, such as a pager function that implements the code.
+ShadowImageView	0	False	https://github.com/yingLanNull/ShadowImageView	100.0	1341	8388	False	False	🔥可以根据图片内容变阴影颜色，更加细腻的阴影效果  It can change color according to the picture, more delicate shadow effect
+android-pluginmgr	0	True	https://github.com/houkx/android-pluginmgr	100.0	1340	2282	True	False	apk plug apkplug apk load
+javaparser	589	False	https://github.com/javaparser/javaparser	99.97	1338	7445	False	False	 Java 9 Parser and Abstract Syntax Tree for Java –
+FabulousFilter	0	True	https://github.com/Krupen/FabulousFilter	100.0	1336	13967	False	True	Android library to animate Floating Action Button to Bottom Sheet Dialog and vice-versa
+MarqueeViewLibrary	0	False	https://github.com/gongwen/MarqueeViewLibrary	100.0	1335	1844	False	False	一个帮您快速实现跑马灯效果的library
+material-sheet-fab	0	False	https://github.com/gowong/material-sheet-fab	100.0	1334	5346	False	False	Library that provides the floating action button to sheet transition from Google's Material Design.
+XChange	0	False	https://github.com/timmolter/XChange	100.0	1333	25210	False	False	XChange is a Java library providing a streamlined API for interacting with 60+ Bitcoin and Altcoin exchanges providing a consistent interface for trading and accessing market data.
