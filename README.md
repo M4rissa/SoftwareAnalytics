@@ -1,3 +1,16 @@
+# David
+
+1. Clone:
+https://github.com/NLPchina/ansj_seg
+https://github.com/hankcs/HanLP
+https://github.com/aosp-mirror/platform_frameworks_base
+
+2. Create directory inside Lambda called repos_all and put the three repos in
+3. Create directory inside Lambda called preprocess
+4. Run Main.java
+
+[Warning: This may take forever]
+
 ### Directories
 
 Cloning has the script to clone the repos, Lambda to preprocess the data with java and then process it with python.
