@@ -14,7 +14,7 @@ public class Main {
 			List<String> repos = new ArrayList<>();
 
 			try {
-				File file = new File("repos_names_all.csv");
+				File file = new File("remaining_repos.csv");
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
 				String line;

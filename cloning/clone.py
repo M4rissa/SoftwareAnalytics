@@ -2,10 +2,6 @@ from git import Repo
 from shutil import copyfile
 from os import remove, listdir
 
-# FROM THE LIST, THERE ARE 13 THAT ARE A REPETITION SO I MANUALLY CLEANED
-# THEM, NEXT TIME USE URL AS PATH NOT NAME
-# IN THE NAMES THERE ARE 184 MATCHES TO ANDROID
-
 # names = set()
 # with open("repo_links_all.csv", "r") as f:
 #     bad = set()
@@ -17,21 +13,29 @@ from os import remove, listdir
 #             bad.add(l)
 # print(bad)
 
+# bad_names = ['chrisbanes/PhotoView', 'JakeWharton/ViewPagerIndicator', 'chrisbanes/Android-PullToRefresh', 'alibaba/druid', 'Bearded-Hen/Android-Bootstrap', 'druid-io/druid', 'JakeWharton/timber', 'Trinea/android-common', 'AndroidBootstrap/android-bootstrap', 'makovkastar/FloatingActionButton', 'Clans/FloatingActionButton', 'naman14/Timber',
+#              'Flipboard/bottomsheet', 'litesuits/android-common', 'yigit/android-priority-jobqueue', 'johannilsson/android-pulltorefresh', 'path/android-priority-jobqueue', 'facebook/shimmer-android', 'owncloud/android', 'hmkcode/Android', 'soarcn/BottomSheet', 'LuckyJayce/ViewPagerIndicator', 'RomainPiel/Shimmer-android', 'bm-x/PhotoView', 'cSploit/android']
+
+# new_names = open('new_names.csv', 'w')
 # with open("repo_links_all.csv", "r") as f:
 #     c = 0
 #     for l in f.readlines():
 #         c += 1
 #         url = l.strip()
-#         name = l.strip().split("/")[-1].lower()
-#         if name in bad:
-#             new_path = l.strip().split("/")[-2] + "/" + l.strip().split("/")[-1]
+#         name = l.strip().split("/")[-1]
+#         path = l.strip().split("/")[-2] + "/" + l.strip().split("/")[-1]
+#         new_path = l.strip().split("/")[-2] + "__" + l.strip().split("/")[-1]
+#         if path in bad_names:
 #             print(c, new_path)
 #             try:
 #                 # clones main branch
 #                 r = Repo.clone_from(url, "./repos_all/{}".format(new_path))
+#                 new_names.write(new_path + "\n")
 #             except Exception as e:
 #                 print(e)
 #                 print("error with", "./repos_all/{}".format(new_path))
+#         else:
+#             new_names.write(name + "\n")
 
 
 # CLONE MAIN BRANCH OF REPOSITORIES

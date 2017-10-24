@@ -1,5 +1,6 @@
 *.txt
 *.csv
+*.json
 
 # Eclipse
 .classpath
@@ -22,6 +23,7 @@ target/
 repos/
 repos_with_branches/
 repos_all/
+repo_cleansing/
 
 # password
 password.py
