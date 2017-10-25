@@ -38,25 +38,7 @@ public class FindNLambdas {
 
 	public static void walkRepo(String reposDir, String repoName, String input,String output,int n) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		repoLoc = reposDir;
-		try (Repository repository = getRepository(repoLoc)) {
-			walkCommits(repository, repoName, input, output,n);
-		}
-	}
-
-
-	/**
-	 * Gets repository at given fileLocation
-	 * @param repLocation The location of the repository
-	 * @return
-	 * @throws IOException
-	 */
-	private static Repository getRepository(String repLocation) throws IOException {
-		FileRepositoryBuilder builder = new FileRepositoryBuilder();
-		//        builder.setGitDir(new File("C:/Users/Justin/SA/PocketHub"));
-		return builder
-				.readEnvironment() 
-				.findGitDir(new File(repLocation))
-				.build();
+		walkCommits(repoName, input, output,n);
 	}
 
 
@@ -71,7 +53,7 @@ public class FindNLambdas {
 	 * @throws RefNotFoundException 
 	 * @throws RefAlreadyExistsException 
 	 */
-	private static void walkCommits(Repository repository, String repoName, String lambdaCountFileName, String outputFileName,int n) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	private static void walkCommits(String repoName, String lambdaCountFileName, String outputFileName,int n) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		Scanner sc = new Scanner(new File(lambdaCountFileName));
 		PrintWriter pw = new PrintWriter(new File(outputFileName));
 		pw.write("sep=,\n");
