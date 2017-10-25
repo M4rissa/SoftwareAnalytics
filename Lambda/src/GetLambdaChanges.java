@@ -51,13 +51,18 @@ public class GetLambdaChanges {
 
 	static String reposDir;
 	static String repoName;
+	static FileWriter pw;
 
 	public static void walkRepo(String reposDir,String repoName,HashMap<String,ArrayList<String>> selectedLambdas) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		GetLambdaChanges.reposDir = reposDir;
 		GetLambdaChanges.repoName = reposDir + repoName;
+		pw = new FileWriter(new File(GetLambdaChanges.repoName+"RQ2Lambdas.csv"),true);
+		pw.write("sep=#\n");
+		pw.write("Github_diffs#Github_file_after#Github_file_before#Hash_After#Hash_Before#Filename#toString\n");
 		try (Repository repository = getRepository(GetLambdaChanges.repoName)) {
 			walkFiles(repository,"GumTreeDiff/gumtree/",selectedLambdas);
 		}
+		pw.close();
 	}
 
 	public static void walkFiles(Repository repository, String githubRepoName,HashMap<String,ArrayList<String>> selectedLambdas) throws RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
@@ -95,9 +100,7 @@ public class GetLambdaChanges {
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			Git git = new Git(repository);
 			//TreeWalk treeWalk = new TreeWalk(repository);
-			PrintWriter pw = new PrintWriter(new File(repoName+"RQ2Lambdas.csv"));
-			pw.write("sep=#\n");
-			pw.write("Github_diffs#Github_file_after#Github_file_before#Hash_After#Hash_Before#Filename#toString\n");
+
 			RevCommit oldcommit = null;
 			RevCommit commit = revWalk.parseCommit(head.getObjectId());
 			boolean commitBefore = false;
@@ -107,7 +110,14 @@ public class GetLambdaChanges {
 				try {
 					lambdasInFileBefore = lambdasInFile(commit,fileName);
 				}catch(FileNotFoundException e) {
-					lambdasInFile.remove(fileName);
+					pw.write("RENAME/INSERT"
+							+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
+							+ "#" 
+							+ "#" + oldcommit.getName() 
+							+ "#" + commit.getName() 
+							+ "#" + fileName 
+							+ "#" + "\n");
+					noLambdas = true;
 				}
 				int changeCount = 0;
 				ArrayList<String> changedLambdas = new ArrayList<String>();
@@ -126,20 +136,21 @@ public class GetLambdaChanges {
 								+ "#" + commit.getName() 
 								+ "#" + fileName 
 								+ "#" + changedLambda + "\n");
-//						System.out.println("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
-//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
-//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commit.getName() + "/" + fileName + "\" )"
-//						+ "#" + oldcommit.getName() 
-//						+ "#" + commit.getName() 
-//						+ "#" + fileName 
-//						+ "#" + changedLambda + "\n");
-					}
-					if((lambdasInFile.size()-changeCount)==lambdasInFileBefore.size()) {
-						lambdasInFile = lambdasInFileBefore;
+						//						System.out.println("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
+						//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
+						//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commit.getName() + "/" + fileName + "\" )"
+						//						+ "#" + oldcommit.getName() 
+						//						+ "#" + commit.getName() 
+						//						+ "#" + fileName 
+						//						+ "#" + changedLambda + "\n");
 					}
 					if(lambdasInFileBefore.size()==0) {
 						noLambdas = true;
 					}
+					else if((lambdasInFile.size()-changeCount)==lambdasInFileBefore.size()) {
+						lambdasInFile = lambdasInFileBefore;
+					}
+
 				}
 				oldcommit = commit;
 				commit = revWalk.parseCommit(commit.getParent(0).getId());
@@ -148,29 +159,29 @@ public class GetLambdaChanges {
 				}
 			}
 			git.close();
-			pw.close();
+			
 		}
 	}
 
 
-private static ArrayList<String> lambdasInFile(RevCommit commit,String fileName) throws FileNotFoundException, MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
-	Parse parser = new Parse();
-	return parser.saveLambdas(parser.readFileToString(repoName+fileName));
-}
+	private static ArrayList<String> lambdasInFile(RevCommit commit,String fileName) throws FileNotFoundException, MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException{
+		Parse parser = new Parse();
+		return parser.saveLambdas(parser.readFileToString(repoName+fileName));
+	}
 
 
-/**
- * Gets repository at given fileLocation
- * @param repLocation The location of the repository
- * @return
- * @throws IOException
- */
-private static Repository getRepository(String repLocation) throws IOException {
-	FileRepositoryBuilder builder = new FileRepositoryBuilder();
-	//        builder.setGitDir(new File("C:/Users/Justin/SA/PocketHub"));
-	return builder
-			.readEnvironment() 
-			.findGitDir(new File(repLocation))
-			.build();
-}
+	/**
+	 * Gets repository at given fileLocation
+	 * @param repLocation The location of the repository
+	 * @return
+	 * @throws IOException
+	 */
+	private static Repository getRepository(String repLocation) throws IOException {
+		FileRepositoryBuilder builder = new FileRepositoryBuilder();
+		//        builder.setGitDir(new File("C:/Users/Justin/SA/PocketHub"));
+		return builder
+				.readEnvironment() 
+				.findGitDir(new File(repLocation))
+				.build();
+	}
 }
