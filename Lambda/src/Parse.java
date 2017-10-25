@@ -17,6 +17,20 @@ public class Parse {
 	public int count = 0;
 	public int count_total = 0;
 	
+	// counts LOC on file
+	public static int countLOC(String str) {
+		if(str == null || str.isEmpty())
+	    {
+	        return 0;
+	    }
+	    int lines = 1;
+	    int pos = 0;
+	    while ((pos = str.indexOf("\n", pos) + 1) != 0) {
+	        lines++;
+	    }
+	    return lines;
+	}
+	
 	// counts lambdas on file
 	public int countLambdas(String str) throws IOException {
 		count = 0;
@@ -66,7 +80,24 @@ public class Parse {
 			}
 			return count_total;
 		}
-
+		
+		// gives total amount of LOC
+		public int LOCInDir(String directory) throws IOException{
+			count_total = 0;
+			File dir = new File(directory);
+			String[] extensions = new String[] { "java" };
+			List<File> files = (List<File>) FileUtils.listFiles(dir, extensions, true);
+			String filePath = null;
+			for (File f : files ) {
+				filePath = f.getAbsolutePath();
+				if(f.isFile()){
+					int LOC_number = countLOC(readFileToString(filePath));
+					count_total = count_total + LOC_number;
+				}
+			}
+			return count_total;
+		}
+		
 
 }
 

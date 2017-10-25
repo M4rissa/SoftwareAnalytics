@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-//Counts lambda on current state of repo
+//Counts lambda and loc on current state of repo
 public class MainBroadMining {
 	private FileWriter fw;
 	private BufferedWriter bw;
@@ -16,7 +16,7 @@ public class MainBroadMining {
 	public MainBroadMining() {
 		try {
 	        this.parser = new Parse();
-			this.fw = new FileWriter("./lambda_count_broad_mining.csv");
+			this.fw = new FileWriter("./broad_mining.csv");
 			this.bw = new BufferedWriter(fw);
 		} 
 		catch (final IOException e) {
@@ -28,7 +28,7 @@ public class MainBroadMining {
 		MainBroadMining main = new MainBroadMining();
 		List<String> repos = new ArrayList<>();
 		try {
-			File file = new File("repos_names_all.csv");
+			File file = new File("repo_names.csv");
 			FileReader fileReader = new FileReader(file);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String line;
@@ -42,8 +42,9 @@ public class MainBroadMining {
 		
 		for (String repo_path : repos) {
 			int lambdas = main.parser.LambdasInDir("./repos_all/" + repo_path);
+			int loc = main.parser.LOCInDir("./repos_all/" + repo_path);
 			System.out.println(repo_path);
-			main.bw.write(repo_path + "," + lambdas + '\n');
+			main.bw.write(repo_path + "," + lambdas + "," + loc + '\n');
 		}
 		main.bw.close();
 		main.fw.close();
