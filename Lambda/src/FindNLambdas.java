@@ -97,10 +97,10 @@ public class FindNLambdas {
 			oldhash = hash;
 		}
 		for(String s : newestHashes){
-			pw.println("=HYPERLINK(\"https://github.com/"+ repoName + "commit/" + s + "\" )"+",new");
+			pw.println("=HYPERLINK(\"https://github.com/"+ repoName + "/commit/" + s + "\" )"+",new");
 		}
 		for(String s : oldestHashes){
-			pw.println("=HYPERLINK(\"https://github.com/"+ repoName + "commit/" + s + "\" )"+",old");
+			pw.println("=HYPERLINK(\"https://github.com/"+ repoName + "/commit/" + s + "\" )"+",old");
 		}
 		pw.close();
 		sc.close();
