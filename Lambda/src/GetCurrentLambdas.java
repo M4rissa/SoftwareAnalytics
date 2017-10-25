@@ -48,9 +48,14 @@ public class GetCurrentLambdas {
 
 	static String reposDir;
 	static String repoName;
+	static File countFile;
 
 	public static void curLambdasAllRepos(String reposDir) throws RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
 		File dir = new File(reposDir);
+		countFile = new File(reposDir+"count.txt");
+		PrintWriter write = new PrintWriter(countFile);
+		write.print("");
+		write.close();
 		if(dir.isDirectory()) {
 			for(File file : dir.listFiles()) {
 				if(file.isDirectory()) {
@@ -131,7 +136,7 @@ public class GetCurrentLambdas {
 			}
 			git.close();
 			pw.close();
-			FileWriter counter = new FileWriter(new File(reposDir+"count.txt"),true);
+			FileWriter counter = new FileWriter(countFile,true);
 			counter.append(repoName + " " + count + "\n");
 			counter.close();
 		}

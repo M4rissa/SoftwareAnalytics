@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -119,7 +120,7 @@ public class Parse {
 	}
 
 	//read file content into a string
-	public String readFileToString(String filePath) throws IOException {
+	public String readFileToString(String filePath) throws IOException, FileNotFoundException {
 		StringBuilder fileData = new StringBuilder(1000);
 		BufferedReader reader = new BufferedReader(new FileReader(filePath));
 
