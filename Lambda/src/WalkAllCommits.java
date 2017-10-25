@@ -44,7 +44,7 @@ import java.util.Collection;
  * See the original discussion at http://stackoverflow.com/a/40803945/411846
  */
 public class WalkAllCommits {
-	
+
 	static String repoLoc;
 
 	public static void walkRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
@@ -83,14 +83,20 @@ public class WalkAllCommits {
 	 */
 	private static void walkCommits(Repository repository) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		// get a list of all known heads, tags, remotes, ...
+		Ref head = null;
 		Collection<Ref> allRefs = repository.getAllRefs().values();
-
+		int c = 0;
+		for(Ref r: allRefs){
+			c++;
+			if(c==2){
+				head = r;
+			}
+		}
 		// a RevWalk allows to walk over commits based on some filtering that is defined
 		try (RevWalk revWalk = new RevWalk( repository )) {
 			//                for( Ref ref : allRefs ) {
 			//                    revWalk.markStart( revWalk.parseCommit( ref.getObjectId() ));
-			//                }
-			Ref head = repository.exactRef("refs/heads/master"); 		//doesn't work if master isnt called master
+			//                }	//doesn't work if master isnt called master
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			//System.out.println("Walking all commits starting with " + allRefs.size() + " refs: " + allRefs);
 			int count = 0;
@@ -101,16 +107,18 @@ public class WalkAllCommits {
 			pw.write("sep=,\n");
 			pw.write("Hash,Lambda count,Time\n");
 			boolean commitBefore = false;
-			for( RevCommit commit : revWalk ) {
-				if(commit.getCommitTime() > 1394233200 || !commitBefore){
-					git.checkout().setName(commit.name()).call();
-					int lambdaCount = lambdasInCommit(commit,treeWalk);
-					pw.write(commit.getName() + ',' + lambdaCount + ',' + commit.getCommitTime() + "000" + "\n");
-					if(commit.getCommitTime() <= 1394233200){
-						commitBefore = true;
-					}
+			RevCommit commit = revWalk.parseCommit(head.getObjectId());
+			while(commit.getCommitTime() > 1394233200 || !commitBefore){
+				git.checkout().setName(commit.name()).call();
+				int lambdaCount = lambdasInCommit(commit,treeWalk);
+				pw.write(commit.getName() + ',' + lambdaCount + ',' + commit.getCommitTime() + "000" + "\n");
+				if(commit.getCommitTime() <= 1394233200){
+					commitBefore = true;
 				}
+				commit = revWalk.parseCommit(commit.getParent(0).getId());
 			}
+
+
 			pw.close();
 			//System.out.println("Had " + count + " commits");
 		}
