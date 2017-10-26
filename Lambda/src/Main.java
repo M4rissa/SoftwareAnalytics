@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,23 +20,37 @@ import org.eclipse.jgit.api.errors.RefNotFoundException;
 
 public class Main {
 
-	static String reposDir = "C:/Users/Justin/SA/repos/";
-	static int nrOfRandomLambdas = 5;
-	// static String githubRepoName = "gumtree/";
+	static String reposDir = "C:/Users/install/Repos/Testdir/";
+	static int nrOfRandomLambdas = 385;
+	static String randomFile = "random.txt";
 
 	public static void main(String[] args) throws RefAlreadyExistsException, RefNotFoundException,
 			InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
 		GetCurrentLambdas.curLambdasAllRepos(reposDir);
 		HashMap<String, ArrayList<Integer>> selectedLambdasPerRepo = selectLambdasPerRepo(reposDir);
-		HashMap<String,String> gitHubRepoNames = readGitHubRepoNames(reposDir);
-		for (String repoName : selectedLambdasPerRepo.keySet()) {
-			ArrayList<Integer> nrsOfLambdas = selectedLambdasPerRepo.get(repoName);
-			if (nrsOfLambdas.size() != 0) {
-				HashMap<String,ArrayList<String>> selectedLambdasInRepo = selectedLambdasInRepo(reposDir + repoName, selectedLambdasPerRepo.get(repoName));
-				GetLambdaChanges.walkRepo(reposDir, repoName,gitHubRepoNames.get(repoName), selectedLambdasInRepo);
-			}
-		}
+		createRandomLambdasFile(selectedLambdasPerRepo);
+//		HashMap<String,String> gitHubRepoNames = readGitHubRepoNames(reposDir);
+//		for (String repoName : selectedLambdasPerRepo.keySet()) {
+//			ArrayList<Integer> nrsOfLambdas = selectedLambdasPerRepo.get(repoName);
+//			if (nrsOfLambdas.size() != 0) {
+//				HashMap<String,ArrayList<String>> selectedLambdasInRepo = selectedLambdasInRepo(reposDir + repoName, selectedLambdasPerRepo.get(repoName));
+//				GetLambdaChanges.walkRepo(reposDir, repoName,gitHubRepoNames.get(repoName), selectedLambdasInRepo);
+//			}
+//		}
 		System.out.println(selectedLambdasPerRepo);
+	}
+	
+	private static void createRandomLambdasFile(HashMap<String,ArrayList<Integer>> selectedLambdasPerRepo) throws IOException {
+		FileWriter fw = new FileWriter(new File(reposDir+randomFile));
+		for(String repoName : selectedLambdasPerRepo.keySet()) {
+			ArrayList<Integer> selectedLambdas = selectedLambdasPerRepo.get(repoName);
+			String out = repoName;
+			for(Integer i : selectedLambdas) {
+				out += " " + i;
+			}
+			fw.write(out + "\n");
+		}
+		fw.close();
 	}
 
 	private static HashMap<String, String> readGitHubRepoNames(String reposDir) throws FileNotFoundException {
