@@ -63,7 +63,7 @@ public class GetLambdaChanges {
 
 	
 	//TODO make this walkCommits again and do it for all files at once
-	public static void walkRepo(String reposDir,String repoName,String gitHubRepoName, HashMap<String,ArrayList<String>> selectedLambdas) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+	public static void walkRepo(String reposDir,String repoName,String gitHubRepoName,HashMap<String,ArrayList<String>> selectedLambdas) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		GetLambdaChanges.reposDir = reposDir;
 		GetLambdaChanges.repoName = reposDir + repoName;
 		pw = new FileWriter(new File(GetLambdaChanges.repoName+"RQ2Lambdas.csv"),true);
