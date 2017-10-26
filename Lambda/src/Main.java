@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -18,7 +19,7 @@ import org.eclipse.jgit.api.errors.RefNotFoundException;
 
 public class Main {
 
-	static String reposDir = "C:/Users/install/Repos/Testdir/";
+	static String reposDir = "C:/Users/Justin/SA/repos/";
 	static int nrOfRandomLambdas = 5;
 	// static String githubRepoName = "gumtree/";
 
@@ -26,14 +27,28 @@ public class Main {
 			InvalidRefNameException, CheckoutConflictException, IOException, GitAPIException {
 		GetCurrentLambdas.curLambdasAllRepos(reposDir);
 		HashMap<String, ArrayList<Integer>> selectedLambdasPerRepo = selectLambdasPerRepo(reposDir);
+		HashMap<String,String> gitHubRepoNames = readGitHubRepoNames(reposDir);
 		for (String repoName : selectedLambdasPerRepo.keySet()) {
 			ArrayList<Integer> nrsOfLambdas = selectedLambdasPerRepo.get(repoName);
 			if (nrsOfLambdas.size() != 0) {
 				HashMap<String,ArrayList<String>> selectedLambdasInRepo = selectedLambdasInRepo(reposDir + repoName, selectedLambdasPerRepo.get(repoName));
-				GetLambdaChanges.walkRepo(reposDir, repoName, selectedLambdasInRepo);
+				GetLambdaChanges.walkRepo(reposDir, repoName,gitHubRepoNames.get(repoName), selectedLambdasInRepo);
 			}
 		}
 		System.out.println(selectedLambdasPerRepo);
+	}
+
+	private static HashMap<String, String> readGitHubRepoNames(String reposDir) throws FileNotFoundException {
+		HashMap<String,String> repoNames = new HashMap<String,String>();
+		File gitHubRepoNames = new File(reposDir + "GitHubRepoNames.txt");
+		Scanner sc = new Scanner(new FileReader(gitHubRepoNames)); 
+		while(sc.hasNextLine()){
+			String line = sc.nextLine();
+			String[] split = line.split(" ");
+			repoNames.put(split[0],split[1]+"/"+split[0]);
+		}
+		sc.close();
+		return repoNames;
 	}
 
 	private static HashMap<String,ArrayList<String>> selectedLambdasInRepo(String repoName, ArrayList<Integer> lambdaNrs)
