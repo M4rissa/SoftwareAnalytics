@@ -40,6 +40,22 @@ public class Main {
 		System.out.println(selectedLambdasPerRepo);
 	}
 	
+	
+	private static HashMap<String, ArrayList<Integer>> getSelectedRandomLambdas() throws FileNotFoundException{
+		HashMap<String, ArrayList<Integer>> selectedLambdasPerRepo = new HashMap<String,ArrayList<Integer>>();
+		Scanner sc = new Scanner(new File(reposDir+randomFile));
+		while(sc.hasNextLine()) {
+			String repoName = sc.next();
+			ArrayList<Integer> lambdas = new ArrayList<Integer>();
+			while(sc.hasNextInt()) {
+				lambdas.add(sc.nextInt());
+			}
+			sc.nextLine();
+			selectedLambdasPerRepo.put(repoName, lambdas);
+		}
+		return selectedLambdasPerRepo;
+	}
+	
 	private static void createRandomLambdasFile(HashMap<String,ArrayList<Integer>> selectedLambdasPerRepo) throws IOException {
 		FileWriter fw = new FileWriter(new File(reposDir+randomFile));
 		for(String repoName : selectedLambdasPerRepo.keySet()) {
