@@ -107,6 +107,7 @@ public class Main {
 		nextLine = reader.readLine();
 		selectedLambdas.add(nextLine);
 		for(String selected: selectedLambdas) {
+			try {
 			String[] entry = selected.split("#");
 			String fileName = entry[1];
 			ArrayList<String> inFile = new ArrayList<String>();
@@ -116,6 +117,10 @@ public class Main {
 			}
 			inFile.add(entry[0]);
 			selectedLambdasInRepoPerFile.put(fileName, inFile);
+			}
+			catch(NullPointerException e) {
+				System.out.println("Couldn't find lambda in allLamdas file for " + repoName);
+			}
 		}
 		reader.close();
 		return selectedLambdasInRepoPerFile;
