@@ -17,6 +17,9 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRefNameException;
 import org.eclipse.jgit.api.errors.RefAlreadyExistsException;
 import org.eclipse.jgit.api.errors.RefNotFoundException;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.CorruptObjectException;
 import org.eclipse.jgit.errors.IncorrectObjectTypeException;
 import org.eclipse.jgit.errors.MissingObjectException;
@@ -27,9 +30,13 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
+import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.treewalk.EmptyTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
 
 import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -38,6 +45,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 
 
@@ -53,12 +61,15 @@ public class GetLambdaChanges {
 	static String repoName;
 	static FileWriter pw;
 
+	
+	//TODO make this walkCommits again and do it for all files at once
 	public static void walkRepo(String reposDir,String repoName,HashMap<String,ArrayList<String>> selectedLambdas) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		GetLambdaChanges.reposDir = reposDir;
 		GetLambdaChanges.repoName = reposDir + repoName;
 		pw = new FileWriter(new File(GetLambdaChanges.repoName+"RQ2Lambdas.csv"),true);
 		pw.write("sep=#\n");
-		pw.write("Github_diffs#Github_file_after#Github_file_before#Hash_After#Hash_Before#Filename#toString\n");
+		//pw.write("Github_diffs#Github_file_after#Github_file_before#Hash_After#Hash_Before#Filename#toString\n");
+		pw.write("Change_type#Github_diffs#Github_file_after#Github_file_before#Filename#toString#Hash_Before#Hash_After\n");
 		try (Repository repository = getRepository(GetLambdaChanges.repoName)) {
 			walkFiles(repository,"GumTreeDiff/gumtree/",selectedLambdas);
 		}
@@ -95,71 +106,101 @@ public class GetLambdaChanges {
 				head = r;
 			}
 		}
+		DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
+		df.setRepository(repository);
+        df.setDiffComparator(RawTextComparator.DEFAULT);
+        df.setDetectRenames(true);
 		try (RevWalk revWalk = new RevWalk( repository )) {
 			System.out.println(head);
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
 			Git git = new Git(repository);
 			//TreeWalk treeWalk = new TreeWalk(repository);
-
-			RevCommit oldcommit = null;
-			RevCommit commit = revWalk.parseCommit(head.getObjectId());
-			boolean commitBefore = false;
+			RevCommit commitAfter = null;
+			RevCommit thisCommit = revWalk.parseCommit(head.getObjectId());
+			boolean commitBeforeJ8 = false;
 			boolean noLambdas = false;
-			while((commit.getCommitTime() > 1394233200 || !commitBefore)&&!noLambdas){
-				git.checkout().setName(commit.name()).call();
-				try {
-					lambdasInFileBefore = lambdasInFile(commit,fileName);
-				}catch(FileNotFoundException e) {
-					pw.write("RENAME/INSERT"
-							+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
-							+ "#" 
-							+ "#" + oldcommit.getName() 
-							+ "#" + commit.getName() 
-							+ "#" + fileName 
-							+ "#" + "\n");
-					noLambdas = true;
+			while((thisCommit.getCommitTime() > 1394233200 || !commitBeforeJ8)&&!noLambdas){
+				git.checkout().setName(thisCommit.name()).call();
+				List<DiffEntry> diffs = null;
+				if(commitAfter==null) {
+					  diffs = new ArrayList<DiffEntry>();
 				}
-				int changeCount = 0;
-				ArrayList<String> changedLambdas = new ArrayList<String>();
-				for(String lambda:lambdasInFile) {
-					if(!lambdasInFileBefore.contains(lambda)) {
-						changeCount +=1;
-						changedLambdas.add(lambda);
+				else {
+					diffs = df.scan(thisCommit,commitAfter);
+				}
+				for(int i = 0; i<diffs.size();i++) {
+					DiffEntry diff = diffs.get(i);
+					
+					if(diff.getNewPath().equals(fileName)) {
+						for(String lambdaToString : lambdasToString) {
+							if(diff.getChangeType() == DiffEntry.ChangeType.MODIFY) {
+								//System.out.println(getDiffText(repository,diff));
+								//System.out.println(fileName + " has changed");
+								pw.write("CHANGEFILE"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + commitAfter.getName() + "\" )"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commitAfter.getName() + "/" + fileName + "\" )"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + thisCommit.getName() + "/" + fileName + "\" )"
+										+ "#" + fileName
+										+ "#" + lambdaToString
+										+ "#" + thisCommit.getName()
+										+ "#" + commitAfter.getName()
+										+ "\n");
+							}else if (diff.getChangeType()== DiffEntry.ChangeType.RENAME) {				
+								pw.write("RENAME"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + commitAfter.getName() + "\" )"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commitAfter.getName() + "/" + fileName + "\" )"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + thisCommit.getName() + "/" + diff.getOldPath() + "\" )"
+										+ "#" + fileName
+										+ "#" + lambdaToString 
+										+ "#" + thisCommit.getName()
+										+ "#" + commitAfter.getName()
+										+ "\n");
+								fileName = diff.getOldPath();
+							}
+							else if(diff.getChangeType()==DiffEntry.ChangeType.ADD) {
+								pw.write("ADDFILE"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + commitAfter.getName() + "\" )"
+										+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commitAfter.getName() + "/" + fileName + "\" )"
+										+ "#" + ""
+										+ "#" + fileName
+										+ "#" + lambdaToString
+										+ "#" + thisCommit.getName()
+										+ "#" + commitAfter.getName()
+										+ "\n");
+								noLambdas = true;
+							}try {
+								if(!noLambdas && lambdasInFile(thisCommit,fileName).size()==0) {
+									noLambdas = true;
+								}
+							}catch(FileNotFoundException e) {
+								System.out.println(thisCommit.getName()+ " " + fileName);
+								throw new FileNotFoundException();
+							}
+						}
 					}
 				}
-				if(changeCount>0){
-					for(String changedLambda : changedLambdas) {
-						pw.write("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
-								+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
-								+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commit.getName() + "/" + fileName + "\" )"
-								+ "#" + oldcommit.getName() 
-								+ "#" + commit.getName() 
-								+ "#" + fileName 
-								+ "#" + changedLambda + "\n");
-						//						System.out.println("=HYPERLINK(\"https://github.com/"+ githubRepoName + "commit/" + oldcommit.getName() + "\" )"
-						//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + oldcommit.getName() + "/" + fileName + "\" )"
-						//						+ "#" + "=HYPERLINK(\"https://github.com/"+ githubRepoName + "blob/" + commit.getName() + "/" + fileName + "\" )"
-						//						+ "#" + oldcommit.getName() 
-						//						+ "#" + commit.getName() 
-						//						+ "#" + fileName 
-						//						+ "#" + changedLambda + "\n");
-					}
-					if(lambdasInFileBefore.size()==0) {
-						noLambdas = true;
-					}
-					else if((lambdasInFile.size()-changeCount)==lambdasInFileBefore.size()) {
-						lambdasInFile = lambdasInFileBefore;
-					}
-
-				}
-				oldcommit = commit;
-				commit = revWalk.parseCommit(commit.getParent(0).getId());
-				if(commit.getCommitTime() <= 1394233200){
-					commitBefore = true;
+				//System.out.println(commit.name() + " " + diffs);
+				commitAfter = thisCommit;
+				thisCommit = revWalk.parseCommit(thisCommit.getParent(0).getId());
+				if(thisCommit.getCommitTime() <= 1394233200){
+					commitBeforeJ8 = true;
 				}
 			}
 			git.close();
 			
+		}
+	}
+	
+	private static String getDiffText(Repository repo, DiffEntry diff) throws IOException {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        try (DiffFormatter df2 = new DiffFormatter(out)) {
+            String diffText;
+            df2.setRepository(repo);
+			df2.format(diff);
+			diffText = out.toString("UTF-8");
+			return diffText;
+		} catch (Throwable e) {
+			return "";
 		}
 	}
 
