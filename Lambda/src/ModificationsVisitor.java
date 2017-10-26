@@ -19,23 +19,27 @@ public class ModificationsVisitor implements CommitVisitor {
     @Override
     public void process(SCMRepository repo, Commit commit, PersistenceMechanism writer) {
         
-    	for(Modification m : commit.getModifications()) {
-            String source = m.getSourceCode();
-            int lambdas = 0;
-            try {
-                lambdas = parser.countLambdas(source);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            writer.write(
-            		"MOD",
-                    commit.getDate().getTimeInMillis(),
-                    m.getType(),
-                    m.getOldPath(),
-                    m.getNewPath(),
-                    lambdas
-            );
-    	}
+    	writer.write(
+    			commit.getDate().getTimeInMillis(),
+    			commit.getHash()
+    			);
+//    	for(Modification m : commit.getModifications()) {
+//            String source = m.getSourceCode();
+//            int lambdas = 0;
+//            try {
+//                lambdas = parser.countLambdas(source);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            writer.write(
+//            		"MOD",
+//                    commit.getDate().getTimeInMillis(),
+//                    m.getType(),
+//                    m.getOldPath(),
+//                    m.getNewPath(),
+//                    lambdas
+//            );
+//    	}
     	
         }        
 }

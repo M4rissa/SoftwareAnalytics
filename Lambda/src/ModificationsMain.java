@@ -21,13 +21,13 @@ public class ModificationsMain implements Study{
 	@Override
 	public void execute() {
 		Calendar date = Calendar.getInstance();
-		date.set(2017, 6, 1);
+		date.set(2014, 1, 1);
 		String input = repo_path;
 		CSVFile csv = new CSVFile(csv_path);
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
-		 .through(Commits.all())
-//		.through(Commits.since(date))
+//		 .through(Commits.all())
+		.through(Commits.since(date))
 		.filters(new OnlyInMainBranch())
 		.process(new ModificationsVisitor(), csv)
 		.mine();

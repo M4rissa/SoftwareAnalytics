@@ -8,7 +8,7 @@ def generate_postprocess_info(repo_names):
     with open(repo_names, "r") as f:
         for l in f.readlines():
             repo_name = l.strip()
-            if repo_name not in ["ansj_seg", "HanLP", "platform_frameworks_base"]:
+            if repo_name in ["ansj_seg"]:
                 repo_csv = "./preprocess/{}_mod.csv".format(repo_name)
                 repo_output = "./postprocess/{}.json".format(repo_name)
                 repo = RepoProcessing(repo_csv, repo_output)
