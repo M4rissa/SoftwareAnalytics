@@ -68,7 +68,7 @@ public class GetCurrentLambdas {
 	public static void curLambdasRepo(String reposDir,File repoDir) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		if(repoDir.isDirectory()&&!repoDir.getName().contains("randomLambdas")) {
 			GetCurrentLambdas.reposDir = reposDir;
-			GetCurrentLambdas.repoName = repoName+"/";
+			GetCurrentLambdas.repoName = repoDir.getName()+"/";
 			System.out.println(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName);
 			try (Repository repository = getRepository(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName)) {
 				walkCommit(repository,repoName);
