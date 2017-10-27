@@ -59,18 +59,20 @@ public class GetCurrentLambdas {
 		if(dir.isDirectory()) {
 			for(File file : dir.listFiles()) {
 				if(file.isDirectory()&&!file.getName().contains("randomLambdas")) {
-					curLambdasRepo(reposDir,file.getName());
+					curLambdasRepo(reposDir,file);
 				}
 			}
 		}
 	}
 
-	private static void curLambdasRepo(String reposDir,String repoName) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
-		GetCurrentLambdas.reposDir = reposDir;
-		GetCurrentLambdas.repoName = repoName+"/";
-		System.out.println(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName);
-		try (Repository repository = getRepository(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName)) {
-			walkCommit(repository,repoName);
+	public static void curLambdasRepo(String reposDir,File repoDir) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
+		if(repoDir.isDirectory()&&!repoDir.getName().contains("randomLambdas")) {
+			GetCurrentLambdas.reposDir = reposDir;
+			GetCurrentLambdas.repoName = repoName+"/";
+			System.out.println(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName);
+			try (Repository repository = getRepository(GetCurrentLambdas.reposDir+GetCurrentLambdas.repoName)) {
+				walkCommit(repository,repoName);
+			}
 		}
 	}
 
