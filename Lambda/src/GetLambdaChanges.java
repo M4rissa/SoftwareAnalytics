@@ -64,7 +64,8 @@ public class GetLambdaChanges {
 	public static void walkRepo(String reposDir,String repoName,String gitHubRepoName,HashMap<String,ArrayList<String>> selectedLambdas) throws IOException, RefAlreadyExistsException, RefNotFoundException, InvalidRefNameException, CheckoutConflictException, GitAPIException {
 		GetLambdaChanges.reposDir = reposDir;
 		GetLambdaChanges.repoName = reposDir + repoName;
-		pw = new FileWriter(new File(GetLambdaChanges.repoName+"RQ2Lambdas.csv"));
+		System.out.println(repoName);
+		pw = new FileWriter(new File(reposDir+"randomLambdas/"+repoName.substring(0, repoName.length() - 1)+"RQ2Lambdas.csv"));
 		pw.write("sep=#\n");
 		//pw.write("Github_diffs#Github_file_after#Github_file_before#Hash_After#Hash_Before#Filename#toString\n");
 		pw.write("Change_type#Github_diffs#Github_file_after#Github_file_before#Filename#toString#Hash_Before#Hash_After\n");
@@ -111,9 +112,12 @@ public class GetLambdaChanges {
 			//TreeWalk treeWalk = new TreeWalk(repository);
 			RevCommit commitAfter = null;
 			RevCommit thisCommit = revWalk.parseCommit(head.getObjectId());
+			//git.checkout().setCreateBranch(true).setStartPoint(thisCommit).call();
 			boolean commitBeforeJ8 = false;
 			int nrFiles = lambdasPerFile.keySet().size();
 			while((thisCommit.getCommitTime() > 1394233200 || !commitBeforeJ8) && nrFiles>0){
+				//System.out.println(thisCommit.name());
+				
 				git.checkout().setName(thisCommit.name()).call();
 				List<DiffEntry> diffs = null;
 				if(commitAfter==null) {
@@ -173,8 +177,9 @@ public class GetLambdaChanges {
 										nrFiles = nrFiles-1;
 									}
 								}catch(FileNotFoundException e) {
+									pw.write("EXCEPTION\n");
 									System.out.println(thisCommit.getName()+ " " + fileName);
-									throw new FileNotFoundException();
+									//throw new FileNotFoundException();
 								}
 							}
 						}
@@ -184,10 +189,9 @@ public class GetLambdaChanges {
 				if(thisCommit.getCommitTime() <= 1394233200){
 					commitBeforeJ8 = true;
 				}
-				git.close();
+				pw.flush();
 			}
-			
-			
+			git.close();
 		}
 	}
 	

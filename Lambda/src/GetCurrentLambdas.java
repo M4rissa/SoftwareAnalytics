@@ -58,7 +58,7 @@ public class GetCurrentLambdas {
 		write.close();
 		if(dir.isDirectory()) {
 			for(File file : dir.listFiles()) {
-				if(file.isDirectory()) {
+				if(file.isDirectory()&&!file.getName().contains("randomLambdas/")) {
 					curLambdasRepo(reposDir,file.getName());
 				}
 			}
