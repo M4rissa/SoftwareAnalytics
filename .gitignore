@@ -24,6 +24,7 @@ repos/
 repos_with_branches/
 repos_all/
 repo_cleansing/
+repo_with_lambdas/
 
 # password
 password.py
