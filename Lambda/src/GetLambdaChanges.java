@@ -103,8 +103,8 @@ public class GetLambdaChanges {
 		}
 		DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
 		df.setRepository(repository);
-        df.setDiffComparator(RawTextComparator.DEFAULT);
-        df.setDetectRenames(true);
+		df.setDiffComparator(RawTextComparator.DEFAULT);
+		df.setDetectRenames(true);
 		try (RevWalk revWalk = new RevWalk( repository )) {
 			System.out.println(head);
 			revWalk.markStart( revWalk.parseCommit(head.getObjectId() ));
@@ -117,11 +117,11 @@ public class GetLambdaChanges {
 			int nrFiles = lambdasPerFile.keySet().size();
 			while((thisCommit.getCommitTime() > 1394233200 || !commitBeforeJ8) && nrFiles>0){
 				//System.out.println(thisCommit.name());
-				
+
 				git.checkout().setName(thisCommit.name()).call();
 				List<DiffEntry> diffs = null;
 				if(commitAfter==null) {
-					  diffs = new ArrayList<DiffEntry>();
+					diffs = new ArrayList<DiffEntry>();
 				}
 				else {
 					diffs = df.scan(thisCommit,commitAfter);
@@ -184,22 +184,27 @@ public class GetLambdaChanges {
 							}
 						}
 				}
-				commitAfter = thisCommit;
-				thisCommit = revWalk.parseCommit(thisCommit.getParent(0).getId());
-				if(thisCommit.getCommitTime() <= 1394233200){
-					commitBeforeJ8 = true;
+				try{
+					commitAfter = thisCommit;
+					thisCommit = revWalk.parseCommit(thisCommit.getParent(0).getId());
+					if(thisCommit.getCommitTime() <= 1394233200){
+						commitBeforeJ8 = true;
+					}
+					pw.flush();
 				}
-				pw.flush();
+				catch(ArrayIndexOutOfBoundsException e){
+					System.out.println(thisCommit.getName());
+				}
 			}
 			git.close();
 		}
 	}
-	
+
 	private static String getDiffText(Repository repo, DiffEntry diff) throws IOException {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        try (DiffFormatter df2 = new DiffFormatter(out)) {
-            String diffText;
-            df2.setRepository(repo);
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		try (DiffFormatter df2 = new DiffFormatter(out)) {
+			String diffText;
+			df2.setRepository(repo);
 			df2.format(diff);
 			diffText = out.toString("UTF-8");
 			return diffText;
