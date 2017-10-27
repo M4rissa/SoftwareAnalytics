@@ -26,8 +26,8 @@ public class ModificationsMain implements Study{
 		CSVFile csv = new CSVFile(csv_path);
 		new RepositoryMining()
 		.in(GitRepository.singleProject(input))
-//		 .through(Commits.all())
-		.through(Commits.since(date))
+		 .through(Commits.all())
+//		.through(Commits.since(date))
 		.filters(new OnlyInMainBranch())
 		.process(new ModificationsVisitor(), csv)
 		.mine();

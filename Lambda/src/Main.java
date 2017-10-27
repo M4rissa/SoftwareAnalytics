@@ -14,7 +14,7 @@ public class Main {
 			List<String> repos = new ArrayList<>();
 
 			try {
-				File file = new File("with_lambdas.csv");
+				File file = new File("n.csv");
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
 				String line;
@@ -27,7 +27,7 @@ public class Main {
 			}
 			
 			for (String repo_path : repos) {
-				new RepoDriller().start(new ModificationsMain("./repos_all/" + repo_path, "./hash_time/" + repo_path + "_hash.csv"));
+				new RepoDriller().start(new ModificationsMain("./repos_all/" + repo_path, "./preprocess/" + repo_path + "_mod.csv"));
 			}			
 		}
 
