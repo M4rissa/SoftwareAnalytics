@@ -138,9 +138,9 @@ public class GetCurrentLambdas {
 			}
 			git.close();
 			pw.close();
-			FileWriter counter = new FileWriter(countFile,true);
-			counter.append(repoName + " " + count + "\n");
-			counter.close();
+//			FileWriter counter = new FileWriter(countFile,true);
+//			counter.append(repoName + " " + count + "\n");
+//			counter.close();
 		}
 	}
 
