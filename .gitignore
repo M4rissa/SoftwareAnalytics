@@ -1,7 +1,7 @@
 *.txt
 *.csv
 *.json
-
+/data
 # Eclipse
 .classpath
 .project

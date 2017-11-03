@@ -13,6 +13,7 @@ def get_jsons():
 
 # CURRENT PROJECTS WITH LAMBDAS
 
+# YEAR OF INTRODUCTION
 names = set()
 with open("current_lambdas.csv", "r") as f:
     for l in f.readlines():
@@ -20,35 +21,45 @@ with open("current_lambdas.csv", "r") as f:
         names.add(name)
 repos = import_repos(names)  # contains the Repos
 json_studied = []
+json_studied_names = []
 for j in get_jsons():
     name, data = j
     if name in names:
         json_studied.append(data)
+        json_studied_names.append(name)
 in_dates = []
-for j in json_studied:
-    dates = list(sorted(j.keys()))
+names_index = []
+for j in range(len(json_studied)):
+    dates = list(sorted(json_studied[j].keys()))
     for d in dates:
-        if int(j[d]) > 0:
+        if int(json_studied[j][d]) > 0:
             in_dates.append(d)
+            names_index.append(json_studied_names[j])
             break
-print(len(in_dates))
-print(in_dates)
 mapp = {0: "2014-2015", 1: "2015-2016", 2: "2016-2017", 3: "2017-"}
 dic = {i: 0 for i in range(4)}
 ranges = [[1394755200000, 1426291200000], [1426291200000, 1457913600000], [
     1457913600000, 1489449600000], [1489449600000, 1509494400000]]
 c = 0
-for d in in_dates:
-    d = int(d)
+plot_dates = []
+name_date = []
+for d in range(len(in_dates)):
+    dd = int(in_dates[d])
     for i in range(4):
-        if d >= ranges[i][0] and d < ranges[i][1]:
-            dic[i] += 1 
-    if d < ranges[0][0]:
-            c+= 1
-print(dic)
-dic_ = {mapp[i]:j*105/100 for i,j in dic.items()}
+        if dd >= ranges[i][0] and dd < ranges[i][1]:
+            dic[i] += 1
+            plot_dates.append(dd)
+            t = (names_index[d], dd)
+            name_date.append(t)
+            print(t)
+    if dd < ranges[0][0]:
+            c += 1
+dic_={mapp[i]: j*105/100 for i, j in dic.items()}
 print(dic_)
-print(sum(dic.values()))
+print(plot_dates)
+print([i + 1 for i in range(105)])
+print(sorted(name_date, key=lambda x:x[1]))
+
 
 
 # LAMBDAS PER LOC ANALYSIS
